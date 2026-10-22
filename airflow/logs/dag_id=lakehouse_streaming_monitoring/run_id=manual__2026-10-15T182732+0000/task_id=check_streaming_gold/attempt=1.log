@@ -1,6 +1,0 @@
-{"timestamp":"2026-10-15T18:27:38.309920Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
-{"timestamp":"2026-10-15T18:27:38.311470Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/lakehouse_streaming_monitoring.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2026-10-15T18:27:38.447127Z","level":"info","event":"iceberg.gold.water_level_hourly_stream: actual=27, expected=27","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:27:38.518165Z","level":"info","event":"iceberg.gold.hourly_hydrology_stream: actual=27, expected=27","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:27:38.518804Z","level":"info","event":"STREAMING GOLD: PASS","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:27:38.518177Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":217}

@@ -6,3 +6,6 @@ superset/.git-backup/
 __pycache__/
 *.pyc
 *.pack
+*.log
+airflow/logs/*  
+reports/*

@@ -1,9 +1,0 @@
-﻿Step,Capability,Status,Observed result,Evidence log,Limitations / notes
-7.1,Iceberg table creation,PASS,100 records; 12 columns; initial snapshot,01_setup_20261006.txt,"Existing demo table, no rerun"
-7.2,Snapshot versioning,PASS,Append 1 row; 100 -> 101; snapshots 1 -> 2,02_snapshot_20261006.txt,Snapshot IDs recorded
-7.3,Time travel,PASS,Snapshot 1 = 100; snapshot 2 = 101,03_time_travel_20261006.txt,Historical read only
-7.4,Schema evolution,PASS,Added demo_note; 12 -> 13 columns; 101 rows unchanged,04_schema_evolution_20261006.txt,Metadata-only; 2 data snapshots unchanged
-7.5,ACID update / versioning,PASS (scope limited),1 demo record UPDATE committed; overwrite snapshot; 101 rows unchanged,05_acid_update_partial_20261006.txt; 06_acid_readonly_verified_20261007.txt,Not a general proof of concurrent transaction isolation
-7.6A,Metadata management,PASS,101 records; 2 data files; 3 manifests; 3 snapshots,07_metadata_readonly_20261007.txt,Read only
-7.6B,Daily partitioning,PASS,168 rows; 7 local days; 8 UTC partitions; 8 files,08_partition_ctas_partial_20261007.txt; 09_partition_readonly_verified_20261007.txt,UTC/local boundary verified
-7.6B,Partition filtering / predicate pushdown,PASS (scope limited),24 records on 2018-04-25; 2/8 matching files; IcebergScan timestamp filters; snapshot unchanged,10_partition_pruning_20261007.txt,Matching files are not measured scanned files; no 75% I/O or performance claim

@@ -1,8 +1,0 @@
-{"timestamp":"2026-10-15T18:18:30.689925Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
-{"timestamp":"2026-10-15T18:18:30.691138Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/lakehouse_batch_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2026-10-15T18:18:30.819869Z","level":"info","event":"WAREHOUSE fact_hydrology: actual=73656, expected=73656","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:18:30.865835Z","level":"info","event":"WAREHOUSE fact_rainfall: actual=73656, expected=73656","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:18:30.923379Z","level":"info","event":"WAREHOUSE fact_water_level: actual=73656, expected=73656","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:18:30.974871Z","level":"info","event":"WAREHOUSE fact_data_quality: actual=73656, expected=73656","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:18:30.975440Z","level":"info","event":"DATA WAREHOUSE: PASS","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:18:30.974891Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":217}

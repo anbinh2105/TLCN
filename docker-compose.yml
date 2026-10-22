@@ -87,6 +87,42 @@ services:
 
     restart: unless-stopped
 
+    # ==========================================================
+  # APACHE SUPERSET - DATA VISUALIZATION
+  # ==========================================================
+  superset:
+    build:
+      context: ./docker/superset
+      dockerfile: Dockerfile
+
+    ports:
+      - "8088:8088"
+
+    environment:
+      SUPERSET_SECRET_KEY: "abcdefg"
+
+    volumes:
+      - superset_home:/app/superset_home
+
+    command: >
+      /bin/sh -c "
+      superset db upgrade &&
+      superset fab create-admin
+      --username admin
+      --firstname Admin
+      --lastname User
+      --email admin@example.com
+      --password admin || true;
+      superset init;
+      /usr/bin/run-server.sh
+      "
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+    restart: unless-stopped
+
 
 # ============================================================
 # PERSISTENT VOLUMES
@@ -96,6 +132,6 @@ volumes:
   # Existing MinIO volume
   # DO NOT DELETE
   minio_data:
-
+  superset_home:
   # Hive Metastore PostgreSQL data
   postgres_data:

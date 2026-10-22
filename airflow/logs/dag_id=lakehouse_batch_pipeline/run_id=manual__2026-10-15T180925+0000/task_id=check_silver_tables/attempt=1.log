@@ -1,9 +1,0 @@
-{"timestamp":"2026-10-15T18:09:28.426410Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
-{"timestamp":"2026-10-15T18:09:28.427842Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/lakehouse_batch_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2026-10-15T18:09:28.597812Z","level":"info","event":"SILVER weather: actual=73656, expected=73656","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:09:28.680034Z","level":"info","event":"SILVER rainfall: actual=73656, expected=73656","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:09:28.761125Z","level":"info","event":"SILVER river_discharge: actual=3069, expected=3069","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:09:28.843132Z","level":"info","event":"SILVER water_level: actual=220085, expected=220085","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:09:28.924668Z","level":"info","event":"SILVER tide: actual=43822, expected=43822","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:09:28.925301Z","level":"info","event":"SILVER TABLES: PASS","logger":"task.stdout"}
-{"timestamp":"2026-10-15T18:09:28.924632Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":217}
