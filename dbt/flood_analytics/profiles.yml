@@ -1,0 +1,13 @@
+flood_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: dbt
+      host: localhost
+      port: 8080
+      database: iceberg
+      schema: marts
+      threads: 2
+      http_scheme: http

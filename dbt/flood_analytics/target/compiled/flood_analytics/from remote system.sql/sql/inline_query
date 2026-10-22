@@ -1,0 +1,7 @@
+
+SELECT
+    usable_source_count,
+    COUNT(*) AS total_hours
+FROM "iceberg"."marts"."mart_data_quality"
+GROUP BY usable_source_count
+ORDER BY usable_source_count

@@ -1,0 +1,83 @@
+{
+  "batch_id": "20261001_223615",
+  "source": "river_discharge",
+  "source_file": "river_discharge_can_tho_2018_2026.csv",
+  "object_path": "bronze/river_discharge/ingestion_date=2026-10-01/batch_id=20261001_223615/river_discharge_can_tho_2018_2026.csv",
+  "checksum": "f7acc9b0e3d39d64da122abe15b5935c0135e4fdc6bfbe43793886f4622c0f7d",
+  "validation_timestamp": "2026-10-02T17:10:48.791810+00:00",
+  "validation_engine": "Great Expectations 1.x + Custom Checks",
+  "record_count": 1323,
+  "critical": {
+    "file_not_empty": {
+      "success": true,
+      "observed_row_count": 1323
+    },
+    "required_columns_exist": {
+      "success": true,
+      "missing_columns": [],
+      "details": {
+        "timestamp": {
+          "success": true
+        },
+        "station": {
+          "success": true
+        },
+        "discharge_m3s": {
+          "success": true
+        }
+      }
+    },
+    "timestamp_parseable": {
+      "success": true,
+      "invalid_count": 0,
+      "details": {
+        "timestamp": {
+          "success": true,
+          "invalid_count": 0
+        }
+      }
+    },
+    "numeric_parseable": {
+      "success": true,
+      "invalid_count": 0,
+      "details": {
+        "discharge_m3s": {
+          "success": true,
+          "invalid_count": 0
+        }
+      }
+    }
+  },
+  "critical_failed": [],
+  "warnings": {
+    "nulls": {
+      "has_warning": false,
+      "total_nulls": 0,
+      "details": {
+        "timestamp": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "station": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "discharge_m3s": {
+          "null_count": 0,
+          "null_pct": 0.0
+        }
+      }
+    },
+    "duplicates": {
+      "has_warning": false,
+      "duplicate_count": 0,
+      "key_columns": [
+        "station",
+        "timestamp"
+      ]
+    }
+  },
+  "warning_count": 0,
+  "quality_status": "PASS",
+  "quarantine_path": null
+}

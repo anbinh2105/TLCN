@@ -1,0 +1,600 @@
+{
+  "target_start": "2018-04-25 14:15:00",
+  "target_end": "2026-09-18 15:45:00",
+  "dry_run": false,
+  "failed_windows": 0,
+  "results": [
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20180919_20181231.csv",
+      "sha256": "b9ff6d89b6907e3c93407710ac0e56247017e14c51bedf232e2f01b8d128bd7c",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2018-09-19 00:00:00",
+        "end": "2018-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2018-09-19",
+          "end_date": "2018-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:48.424417+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20190101_20190424.csv",
+      "sha256": "ec4839385351e2656ec3283a0a77fcadcc03b48fa686cea20302550d9a391ec0",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 114,
+        "start": "2019-01-01 00:00:00",
+        "end": "2019-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2019-01-01",
+          "end_date": "2019-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:49.699380+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20190919_20191231.csv",
+      "sha256": "d3508a691aa542f17d7c6bd15417ab3c42cdc1e3708226eb77a6e10b2b1550ff",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2019-09-19 00:00:00",
+        "end": "2019-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2019-09-19",
+          "end_date": "2019-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:50.985313+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20200101_20200424.csv",
+      "sha256": "30553501a463ccc9e982d9f7671631fd451193789db408e0b97bcdadadf8542f",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 115,
+        "start": "2020-01-01 00:00:00",
+        "end": "2020-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2020-01-01",
+          "end_date": "2020-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:52.262583+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20200919_20201231.csv",
+      "sha256": "cee22c9e9e31ab832a114bb7b9a1599787e1cd7059655a6d761cc87f3fd4f573",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2020-09-19 00:00:00",
+        "end": "2020-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2020-09-19",
+          "end_date": "2020-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:53.541860+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20210101_20210424.csv",
+      "sha256": "1a19da8a46c1d75437938cfe8227abb79455ae8480ce7c0bf901681da19b3600",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 114,
+        "start": "2021-01-01 00:00:00",
+        "end": "2021-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2021-01-01",
+          "end_date": "2021-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:54.825615+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20210919_20211231.csv",
+      "sha256": "58c249b51ff343c87848ac4c939b35a6814ea528c208d4de27eebb99bea55010",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2021-09-19 00:00:00",
+        "end": "2021-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2021-09-19",
+          "end_date": "2021-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:56.107986+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20220101_20220424.csv",
+      "sha256": "6bc0741be3d63a11ce8022edc9393eb7b680ab18293706a6904e8bc1b3e5f668",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 114,
+        "start": "2022-01-01 00:00:00",
+        "end": "2022-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2022-01-01",
+          "end_date": "2022-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:57.372313+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20220919_20221231.csv",
+      "sha256": "3618533c70864b807a08d9db1cc93a1b504ac67bbb9181b2e56a80c687145a0a",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2022-09-19 00:00:00",
+        "end": "2022-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2022-09-19",
+          "end_date": "2022-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:58.645297+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20230101_20230424.csv",
+      "sha256": "0a511596791adfff4b0dc98c2113b461211c8c9a0db7098ffb1329354ad5a3f6",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 114,
+        "start": "2023-01-01 00:00:00",
+        "end": "2023-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2023-01-01",
+          "end_date": "2023-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:04:59.927679+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20230919_20231231.csv",
+      "sha256": "1ed84ace2beace6ce607715b92312dd8717437ae5ced7c85a55127dea163c56c",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2023-09-19 00:00:00",
+        "end": "2023-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2023-09-19",
+          "end_date": "2023-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:05:01.195101+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20240101_20240424.csv",
+      "sha256": "a67ef93e663defae118c42d5497edc91fb51cbac1ee55e3f9dc7ea31d57bce79",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 115,
+        "start": "2024-01-01 00:00:00",
+        "end": "2024-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2024-01-01",
+          "end_date": "2024-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:05:02.472188+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20240919_20241231.csv",
+      "sha256": "2ab00738c9e0f14e5b7bf25b1996cc58939d792a6b5e4acfa98fa2142616a6de",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2024-09-19 00:00:00",
+        "end": "2024-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2024-09-19",
+          "end_date": "2024-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:05:03.751561+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20250101_20250424.csv",
+      "sha256": "ad41bed2ac0acbed30780be87de49a8e69750b82c5caf760de8a78e2445c2735",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 114,
+        "start": "2025-01-01 00:00:00",
+        "end": "2025-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2025-01-01",
+          "end_date": "2025-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:05:05.019750+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20250919_20251231.csv",
+      "sha256": "a7138e9efc35d50f34f8e948140da4a08a11f8308a55f3aa4dd0e2f7e4bcd539",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 104,
+        "start": "2025-09-19 00:00:00",
+        "end": "2025-12-31 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2025-09-19",
+          "end_date": "2025-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:05:06.292350+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "river_discharge",
+      "file": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20260101_20260424.csv",
+      "sha256": "82d39ad84ee12701802f16f19a3bdc269de41e6e82480e507e301533ce660794",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 114,
+        "start": "2026-01-01 00:00:00",
+        "end": "2026-04-24 00:00:00",
+        "null_counts": {
+          "discharge_m3s": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://flood-api.open-meteo.com/v1/flood",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2026-01-01",
+          "end_date": "2026-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "daily": "river_discharge"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.025002,
+        "response_longitude": 105.775024,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "river_discharge": "m³/s"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:05:07.570211+00:00"
+    }
+  ]
+}

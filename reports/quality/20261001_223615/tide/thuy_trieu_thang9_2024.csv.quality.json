@@ -1,0 +1,81 @@
+{
+  "batch_id": "20261001_223615",
+  "source": "tide",
+  "source_file": "thuy_trieu_thang9_2024.csv",
+  "object_path": "bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2024.csv",
+  "checksum": "222f330e7fbff40c92fa81738b59ae352da98b7a712992c6ab8d079f145ef8a4",
+  "validation_timestamp": "2026-10-02T17:11:01.273589+00:00",
+  "validation_engine": "Great Expectations 1.x + Custom Checks",
+  "record_count": 720,
+  "critical": {
+    "file_not_empty": {
+      "success": true,
+      "observed_row_count": 720
+    },
+    "required_columns_exist": {
+      "success": true,
+      "missing_columns": [],
+      "details": {
+        "Ngày": {
+          "success": true
+        },
+        "Giờ": {
+          "success": true
+        },
+        "Độ cao (m)": {
+          "success": true
+        }
+      }
+    },
+    "date_parseable": {
+      "success": true,
+      "invalid_count": 0
+    },
+    "time_parseable": {
+      "success": true,
+      "invalid_count": 0
+    },
+    "numeric_parseable": {
+      "success": true,
+      "invalid_count": 0,
+      "details": {
+        "Độ cao (m)": {
+          "success": true,
+          "invalid_count": 0
+        }
+      }
+    }
+  },
+  "critical_failed": [],
+  "warnings": {
+    "nulls": {
+      "has_warning": false,
+      "total_nulls": 0,
+      "details": {
+        "Ngày": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Giờ": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Độ cao (m)": {
+          "null_count": 0,
+          "null_pct": 0.0
+        }
+      }
+    },
+    "duplicates": {
+      "has_warning": false,
+      "duplicate_count": 0,
+      "key_columns": [
+        "Ngày",
+        "Giờ"
+      ]
+    }
+  },
+  "warning_count": 0,
+  "quality_status": "PASS",
+  "quarantine_path": null
+}

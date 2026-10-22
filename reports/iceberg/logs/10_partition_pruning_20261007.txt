@@ -1,0 +1,177 @@
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> python -m demo.iceberg.verify_partition_pruning
+WARNING: Using incubator modules: jdk.incubator.vector
+:: loading settings :: url = jar:file:/C:/Users/User/OneDrive/Documents/TLCN/.venv/Lib/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\User\.ivy2.5.2\cache
+The jars for the packages stored in: C:\Users\User\.ivy2.5.2\jars
+org.apache.hadoop#hadoop-aws added as a dependency
+org.apache.iceberg#iceberg-spark-runtime-4.1_2.13 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-8460abfa-6ff7-4d2e-aeb1-c3d1a8d16c54;1.0
+        confs: [default]
+        found org.apache.hadoop#hadoop-aws;3.4.2 in central
+        found software.amazon.awssdk#bundle;2.29.52 in central
+        found software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 in central
+        found org.wildfly.openssl#wildfly-openssl;2.1.4.Final in central
+        found org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 in central
+:: resolution report :: resolve 251ms :: artifacts dl 16ms
+        :: modules in use:
+        org.apache.hadoop#hadoop-aws;3.4.2 from central in [default]
+        org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 from central in [default]
+        org.wildfly.openssl#wildfly-openssl;2.1.4.Final from central in [default]
+        software.amazon.awssdk#bundle;2.29.52 from central in [default]
+        software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   5   |   0   |   0   |   0   ||   5   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-8460abfa-6ff7-4d2e-aeb1-c3d1a8d16c54
+        confs: [default]
+        0 artifacts copied, 5 already retrieved (0kB/9ms)
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+==========================================================================================
+ICEBERG PARTITION PRUNING - READ ONLY
+==========================================================================================
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+[1] Verify table state
+Total records : 168                                                             
+Total files   : 8
+Snapshot ID   : 8362217845622271219
+
+[2] Filter one local day
+Target date      : 2018-04-25                                                   
+Filtered records : 24
+
+[3] Matching data files
++------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+|data_file                                                                                                                                                   |partition_day|
++------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+|s3a://flood-lakehouse/warehouse/demo.db/weather_partitioned_demo/data/timestamp_day=2018-04-24/00000-10-09e422cb-a64e-46e4-a34b-98a07c949a5e-0-00006.parquet|2018-04-24   |
+|s3a://flood-lakehouse/warehouse/demo.db/weather_partitioned_demo/data/timestamp_day=2018-04-25/00000-10-09e422cb-a64e-46e4-a34b-98a07c949a5e-0-00007.parquet|2018-04-25   |
++------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+
+All table files : 8
+Matching files  : 2
+Matching file reduction [PASS]
+
+[4] Physical execution plan
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|plan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|== Physical Plan ==\n* Project (4)\n+- * Filter (3)\n   +- * ColumnarToRow (2)\n      +- BatchScan lakehouse.demo.weather_partitioned_demo (1)\n\n\n(1) BatchScan lakehouse.demo.weather_partitioned_demo\nOutput [4]: [timestamp#141, temperature_c#142, _partition#154, _file#155]\nIcebergScan(table=lakehouse.demo.weather_partitioned_demo, schemaId=0, snapshotId=8362217845622271219, branch=null, filters=timestamp IS NOT NULL, timestamp >= 1524589200000000, timestamp < 1524675600000000, runtimeFilters=, groupedBy=)\n\n(2) ColumnarToRow [codegen id : 1]\nInput [4]: [timestamp#141, temperature_c#142, _partition#154, _file#155]\n\n(3) Filter [codegen id : 1]\nInput [4]: [timestamp#141, temperature_c#142, _partition#154, _file#155]\nCondition : ((timestamp#141 >= 2018-04-25 00:00:00) AND (timestamp#141 < 2018-04-26 00:00:00))\n\n(4) Project [codegen id : 1]\nOutput [4]: [timestamp#141, temperature_c#142, _file#155 AS data_file#135, _partition#154.timestamp_day AS partition_day#136]\nInput [4]: [timestamp#141, temperature_c#142, _partition#154, _file#155]\n\n|
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+[5] Filtered partition distribution
++-------------+-----+
+|partition_day|count|
++-------------+-----+
+|2018-04-24   |7    |
+|2018-04-25   |17   |
++-------------+-----+
+
+
+[6] Verify snapshot unchanged
+Snapshot unchanged [PASS]
+
+==========================================================================================
+PARTITION FILTER VERIFICATION: PASS
+==========================================================================================
+Total files      : 8
+Matching files   : 2
+Filtered records : 24
+Review the physical plan to confirm actual Iceberg partition pruning.
+26/10/07 12:52:11 WARN SparkEnv: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-d7b08caa-3867-43f2-bfa7-987c26469f2b\userFiles-320a9a6e-bd58-42eb-a492-7701c2daa374
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-d7b08caa-3867-43f2-bfa7-987c26469f2b\userFiles-320a9a6e-bd58-42eb-a492-7701c2daa374\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.SparkEnv.stop(SparkEnv.scala:131)
+        at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2406)
+        at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1314)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2406)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2308)
+        at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:552)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+        at py4j.Gateway.invoke(Gateway.java:282)
+        at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+        at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/07 12:52:11 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-d7b08caa-3867-43f2-bfa7-987c26469f2b\userFiles-320a9a6e-bd58-42eb-a492-7701c2daa374
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-d7b08caa-3867-43f2-bfa7-987c26469f2b\userFiles-320a9a6e-bd58-42eb-a492-7701c2daa374\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:70)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:67)
+        at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1324)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:67)
+        at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:231)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at scala.util.Try$.apply(Try.scala:217)
+        at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:205)
+        at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:184)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/07 12:52:11 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-d7b08caa-3867-43f2-bfa7-987c26469f2b
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-d7b08caa-3867-43f2-bfa7-987c26469f2b\userFiles-320a9a6e-bd58-42eb-a492-7701c2daa374\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:70)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:67)
+        at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1324)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:67)
+        at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:231)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at scala.util.Try$.apply(Try.scala:217)
+        at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:205)
+        at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:184)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> SUCCESS: The process with PID 29824 (child process of PID 19776) has been terminated.
+SUCCESS: The process with PID 19776 (child process of PID 25264) has been terminated.
+SUCCESS: The process with PID 25264 (child process of PID 31960) has been terminated.

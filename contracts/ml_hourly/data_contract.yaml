@@ -1,0 +1,147 @@
+
+contract_version: "1.0.0"
+status: VALIDATED
+
+data_product:
+  name: cantho_ml_hourly
+  table: iceberg.gold.ml_hourly
+  source_table: iceberg.gold.hourly_hydrology
+  storage_format: iceberg_parquet
+  producer: data_engineering
+  consumer: machine_learning
+  origin: historical_batch
+
+grain:
+  description: "One row per hour per location"
+  primary_key:
+    - hour_start
+    - location_id
+
+time:
+  column: hour_start
+  type: "timestamp(6) with time zone"
+  timezone_for_interpretation: Asia/Ho_Chi_Minh
+  resolution: 1h
+  interval_semantics: hour_start
+  missing_hour_policy: preserve
+
+schema:
+  identifiers:
+    hour_start: timestamp_with_time_zone
+    location_id: varchar
+    water_level_station_code: varchar
+
+  water_level:
+    water_level_mean: double
+    water_level_min: double
+    water_level_max: double
+    water_level_last: double
+    water_level_obs_count: bigint
+    water_level_expected_count: integer
+    water_level_completeness: double
+    water_level_quality_flag: varchar
+    water_level_present: boolean
+    water_level_usable: boolean
+
+  rainfall:
+    rainfall_mm: double
+    rainfall_quality_flag: varchar
+    rainfall_present: boolean
+    rainfall_usable: boolean
+
+  tide:
+    tide_height_m: double
+    tide_quality_flag: varchar
+    tide_is_recovered: boolean
+    tide_recovery_method: varchar
+    tide_present: boolean
+    tide_usable: boolean
+
+  discharge:
+    discharge_m3s: double
+    discharge_quality_flag: varchar
+    discharge_alignment_method: varchar
+    discharge_source_date: date
+    discharge_source_temporal_grain: varchar
+    discharge_is_hourly_observation: boolean
+    discharge_present: boolean
+    discharge_usable: boolean
+
+  weather:
+    temperature_c: double
+    humidity_pct: double
+    pressure_hpa: double
+    wind_speed: double
+    wind_direction: double
+    weather_quality_flag: varchar
+    weather_present: boolean
+    weather_usable: boolean
+
+  overall_quality:
+    present_source_count: integer
+    usable_source_count: integer
+    all_five_present: boolean
+    all_five_usable: boolean
+
+  metadata:
+    gold_processed_at: timestamp_with_time_zone
+
+units:
+  water_level_mean: m
+  water_level_min: m
+  water_level_max: m
+  water_level_last: m
+  rainfall_mm: mm
+  tide_height_m: m
+  discharge_m3s: m3/s
+  temperature_c: degC
+  humidity_pct: percent
+  pressure_hpa: hPa
+  wind_speed: TO_BE_VERIFIED
+  wind_direction: degrees
+
+null_policy:
+  preserve_null: true
+  fill_missing_with_zero: false
+  reject_null_primary_key: true
+  require_all_features_non_null: false
+
+quality_policy:
+  present_does_not_imply_usable: true
+  preserve_quality_flags: true
+  preserve_tide_recovery_metadata: true
+  preserve_discharge_alignment_metadata: true
+
+discharge_semantics:
+  original_resolution: DAILY
+  hourly_expansion: DAILY_EXPANDED
+  hourly_expansion_is_new_observation: false
+
+ml_usage:
+  task: water_level_forecasting
+  target_owner: machine_learning
+  target_created_from_future_observations: true
+  target_requires_usable_water_level: true
+  suggested_forecast_horizons_hours: [1, 3, 6, 12, 24]
+  chronological_split_required: true
+  future_observation_leakage_forbidden: true
+  gold_processed_at_as_feature: false
+  simulation_in_training: false
+
+flood_threshold_reference:
+  station_code: "039803"
+  alarm_level_1_m: 1.8
+  alarm_level_2_m: 1.9
+  alarm_level_3_m: 2.0
+  legal_document: "05/2020/QD-TTg"
+  effective_from: "2020-03-20"
+  vertical_datum: null
+  datum_status: UNVERIFIED
+  usage: REFERENCE_ONLY
+  official_warning_allowed: false
+
+versioning:
+  contract_version: "1.0.0"
+  iceberg_snapshot_id: "2528388719354325991"
+  snapshot_committed_at_utc: "2026-10-15T06:22:13.077Z"
+  validation_status: PASS

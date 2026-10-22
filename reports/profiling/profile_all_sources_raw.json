@@ -1,0 +1,2462 @@
+{
+  "generated_at": "2026-10-09T08:01:01.098707",
+  "mode": "raw",
+  "scope_note": "Raw source files and read-only Silver post-backfill tables are different data stages; do not combine row counts.",
+  "raw": {
+    "weather": {
+      "files": [
+        {
+          "file": "data\\raw\\weather\\weather_can_tho_2018_2026.csv",
+          "size_bytes": 2638277,
+          "format": ".csv",
+          "read_mode": "csv:','",
+          "row_count": 31752,
+          "columns": [
+            "timestamp",
+            "temperature",
+            "humidity",
+            "pressure",
+            "wind_speed",
+            "wind_direction",
+            "latitude",
+            "longitude",
+            "date",
+            "year",
+            "month",
+            "day",
+            "hour"
+          ],
+          "column_types": {
+            "timestamp": "string",
+            "temperature": "string",
+            "humidity": "string",
+            "pressure": "string",
+            "wind_speed": "string",
+            "wind_direction": "string",
+            "latitude": "string",
+            "longitude": "string",
+            "date": "string",
+            "year": "string",
+            "month": "string",
+            "day": "string",
+            "hour": "string"
+          },
+          "null_counts": {
+            "timestamp": 0,
+            "temperature": 17,
+            "humidity": 17,
+            "pressure": 17,
+            "wind_speed": 17,
+            "wind_direction": 17,
+            "latitude": 0,
+            "longitude": 0,
+            "date": 0,
+            "year": 0,
+            "month": 0,
+            "day": 0,
+            "hour": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "timestamp",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2018-04-25 00:00:00",
+          "max_timestamp": "2026-09-18 23:00:00",
+          "duplicate_timestamps": 0,
+          "numeric_parse": {
+            "temperature": {
+              "nonempty": 31735,
+              "parse_failures": 0
+            },
+            "humidity": {
+              "nonempty": 31735,
+              "parse_failures": 0
+            },
+            "pressure": {
+              "nonempty": 31735,
+              "parse_failures": 0
+            },
+            "wind_speed": {
+              "nonempty": 31735,
+              "parse_failures": 0
+            },
+            "wind_direction": {
+              "nonempty": 31735,
+              "parse_failures": 0
+            },
+            "latitude": {
+              "nonempty": 31752,
+              "parse_failures": 0
+            },
+            "longitude": {
+              "nonempty": 31752,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        }
+      ],
+      "file_count": 1,
+      "total_rows_across_files": 31752,
+      "schema_variants": [
+        {
+          "columns": [
+            "timestamp",
+            "temperature",
+            "humidity",
+            "pressure",
+            "wind_speed",
+            "wind_direction",
+            "latitude",
+            "longitude",
+            "date",
+            "year",
+            "month",
+            "day",
+            "hour"
+          ],
+          "file_count": 1
+        }
+      ],
+      "schema_consistent": true
+    },
+    "rainfall": {
+      "files": [
+        {
+          "file": "data\\raw\\rainfall\\rainfall_can_tho_2018_2026.csv",
+          "size_bytes": 1882219,
+          "format": ".csv",
+          "read_mode": "csv:','",
+          "row_count": 31752,
+          "columns": [
+            "timestamp",
+            "rainfall_mm",
+            "latitude",
+            "longitude",
+            "date",
+            "year",
+            "month",
+            "day",
+            "hour"
+          ],
+          "column_types": {
+            "timestamp": "string",
+            "rainfall_mm": "string",
+            "latitude": "string",
+            "longitude": "string",
+            "date": "string",
+            "year": "string",
+            "month": "string",
+            "day": "string",
+            "hour": "string"
+          },
+          "null_counts": {
+            "timestamp": 0,
+            "rainfall_mm": 17,
+            "latitude": 0,
+            "longitude": 0,
+            "date": 0,
+            "year": 0,
+            "month": 0,
+            "day": 0,
+            "hour": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "timestamp",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2018-04-25 00:00:00",
+          "max_timestamp": "2026-09-18 23:00:00",
+          "duplicate_timestamps": 0,
+          "numeric_parse": {
+            "rainfall_mm": {
+              "nonempty": 31735,
+              "parse_failures": 0
+            },
+            "latitude": {
+              "nonempty": 31752,
+              "parse_failures": 0
+            },
+            "longitude": {
+              "nonempty": 31752,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        }
+      ],
+      "file_count": 1,
+      "total_rows_across_files": 31752,
+      "schema_variants": [
+        {
+          "columns": [
+            "timestamp",
+            "rainfall_mm",
+            "latitude",
+            "longitude",
+            "date",
+            "year",
+            "month",
+            "day",
+            "hour"
+          ],
+          "file_count": 1
+        }
+      ],
+      "schema_consistent": true
+    },
+    "water_level": {
+      "files": [
+        {
+          "file": "data\\raw\\water_level\\water_level_can_tho_2018_2026.xlsx",
+          "size_bytes": 10482762,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 220085,
+          "columns": [
+            "Country Code",
+            "Station Code",
+            "Parameter",
+            "Label",
+            "Timestamp (UTC+07:00)",
+            "Value",
+            "Unit",
+            "Observed or Estimated",
+            "Approval Level",
+            "Grade"
+          ],
+          "column_types": {
+            "Country Code": "object",
+            "Station Code": "object",
+            "Parameter": "object",
+            "Label": "object",
+            "Timestamp (UTC+07:00)": "object",
+            "Value": "object",
+            "Unit": "object",
+            "Observed or Estimated": "object",
+            "Approval Level": "object",
+            "Grade": "object"
+          },
+          "null_counts": {
+            "Country Code": 0,
+            "Station Code": 0,
+            "Parameter": 0,
+            "Label": 0,
+            "Timestamp (UTC+07:00)": 0,
+            "Value": 0,
+            "Unit": 0,
+            "Observed or Estimated": 0,
+            "Approval Level": 0,
+            "Grade": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": null,
+          "invalid_timestamps": null,
+          "duplicate_timestamps": null,
+          "numeric_parse": {},
+          "status": "OK"
+        }
+      ],
+      "file_count": 1,
+      "total_rows_across_files": 220085,
+      "schema_variants": [
+        {
+          "columns": [
+            "country code",
+            "station code",
+            "parameter",
+            "label",
+            "timestamp (utc+07:00)",
+            "value",
+            "unit",
+            "observed or estimated",
+            "approval level",
+            "grade"
+          ],
+          "file_count": 1
+        }
+      ],
+      "schema_consistent": true
+    },
+    "river_discharge": {
+      "files": [
+        {
+          "file": "data\\raw\\river_discharge\\river_discharge_can_tho_2018_2026.csv",
+          "size_bytes": 76004,
+          "format": ".csv",
+          "read_mode": "csv:','",
+          "row_count": 1323,
+          "columns": [
+            "timestamp",
+            "station",
+            "discharge_m3s",
+            "date",
+            "year",
+            "month"
+          ],
+          "column_types": {
+            "timestamp": "string",
+            "station": "string",
+            "discharge_m3s": "string",
+            "date": "string",
+            "year": "string",
+            "month": "string"
+          },
+          "null_counts": {
+            "timestamp": 0,
+            "station": 0,
+            "discharge_m3s": 0,
+            "date": 0,
+            "year": 0,
+            "month": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "timestamp",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2018-04-25 00:00:00",
+          "max_timestamp": "2026-09-18 00:00:00",
+          "duplicate_timestamps": 0,
+          "numeric_parse": {
+            "discharge_m3s": {
+              "nonempty": 1323,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        }
+      ],
+      "file_count": 1,
+      "total_rows_across_files": 1323,
+      "schema_variants": [
+        {
+          "columns": [
+            "timestamp",
+            "station",
+            "discharge_m3s",
+            "date",
+            "year",
+            "month"
+          ],
+          "file_count": 1
+        }
+      ],
+      "schema_consistent": true
+    },
+    "tide": {
+      "files": [
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang10_2021.xlsx",
+          "size_bytes": 23614,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-10-01 00:00:00",
+          "max_timestamp": "2021-10-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 670
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang10_2022.xlsx",
+          "size_bytes": 21808,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-10-01 00:00:00",
+          "max_timestamp": "2022-10-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang10_2023.xlsx",
+          "size_bytes": 20671,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-10-01 00:00:00",
+          "max_timestamp": "2023-10-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang10_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-10-01 00:00:00",
+          "max_timestamp": "2024-10-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang10_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-10-01 00:00:00",
+          "max_timestamp": "2025-10-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang11_2021.xlsx",
+          "size_bytes": 24504,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 718,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-11-01 00:00:00",
+          "max_timestamp": "2021-11-30 00:00:00",
+          "duplicate_timestamps": 688,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 718,
+              "parse_failures": 644
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang11_2022.xlsx",
+          "size_bytes": 20306,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-11-01 00:00:00",
+          "max_timestamp": "2022-11-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang11_2023.xlsx",
+          "size_bytes": 20287,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-11-01 00:00:00",
+          "max_timestamp": "2023-11-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang11_2024.csv",
+          "size_bytes": 15570,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-11-01 00:00:00",
+          "max_timestamp": "2024-11-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang11_2025.csv",
+          "size_bytes": 15570,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-11-01 00:00:00",
+          "max_timestamp": "2025-11-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang12_2021.xlsx",
+          "size_bytes": 22080,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-12-01 00:00:00",
+          "max_timestamp": "2021-12-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang12_2022.xlsx",
+          "size_bytes": 20807,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-12-01 00:00:00",
+          "max_timestamp": "2022-12-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang12_2023.xlsx",
+          "size_bytes": 20696,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-12-01 00:00:00",
+          "max_timestamp": "2023-12-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang12_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-12-01 00:00:00",
+          "max_timestamp": "2024-12-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang12_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-12-01 00:00:00",
+          "max_timestamp": "2025-12-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang1_2021.xlsx",
+          "size_bytes": 14306,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-01-01 00:00:00",
+          "max_timestamp": "2021-01-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang1_2022.xlsx",
+          "size_bytes": 14259,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-01-01 00:00:00",
+          "max_timestamp": "2022-01-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang1_2023.xlsx",
+          "size_bytes": 20655,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-01-01 00:00:00",
+          "max_timestamp": "2023-01-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang1_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-01-01 00:00:00",
+          "max_timestamp": "2024-01-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang1_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-01-01 00:00:00",
+          "max_timestamp": "2025-01-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang2_2021.xlsx",
+          "size_bytes": 26244,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 672,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-02-01 00:00:00",
+          "max_timestamp": "2021-02-28 00:00:00",
+          "duplicate_timestamps": 644,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 672,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang2_2022.xlsx",
+          "size_bytes": 20844,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 672,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-02-01 00:00:00",
+          "max_timestamp": "2022-02-28 00:00:00",
+          "duplicate_timestamps": 644,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 672,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang2_2023.xlsx",
+          "size_bytes": 19485,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 672,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-02-01 00:00:00",
+          "max_timestamp": "2023-02-28 00:00:00",
+          "duplicate_timestamps": 644,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 672,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang2_2024.csv",
+          "size_bytes": 15052,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 696,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-02-01 00:00:00",
+          "max_timestamp": "2024-02-29 00:00:00",
+          "duplicate_timestamps": 667,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 696,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang2_2025.csv",
+          "size_bytes": 14534,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 672,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-02-01 00:00:00",
+          "max_timestamp": "2025-02-28 00:00:00",
+          "duplicate_timestamps": 644,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 672,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang3_2021.xlsx",
+          "size_bytes": 26482,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-03-01 00:00:00",
+          "max_timestamp": "2021-03-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang3_2022.xlsx",
+          "size_bytes": 22030,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-03-01 00:00:00",
+          "max_timestamp": "2022-03-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang3_2023.xlsx",
+          "size_bytes": 20666,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-03-01 00:00:00",
+          "max_timestamp": "2023-03-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang3_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-03-01 00:00:00",
+          "max_timestamp": "2024-03-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang3_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-03-01 00:00:00",
+          "max_timestamp": "2025-03-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang4_2021.xlsx",
+          "size_bytes": 22908,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-04-01 00:00:00",
+          "max_timestamp": "2021-04-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 617
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang4_2022.xlsx",
+          "size_bytes": 21584,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-04-01 00:00:00",
+          "max_timestamp": "2022-04-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang4_2023.xlsx",
+          "size_bytes": 20225,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-04-01 00:00:00",
+          "max_timestamp": "2023-04-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang4_2024.csv",
+          "size_bytes": 15570,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-04-01 00:00:00",
+          "max_timestamp": "2024-04-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang4_2025.csv",
+          "size_bytes": 15570,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-04-01 00:00:00",
+          "max_timestamp": "2025-04-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang5_2021.xlsx",
+          "size_bytes": 24088,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-05-01 00:00:00",
+          "max_timestamp": "2021-05-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 610
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang5_2022.xlsx",
+          "size_bytes": 21975,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-05-01 00:00:00",
+          "max_timestamp": "2022-05-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang5_2023.xlsx",
+          "size_bytes": 20631,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-05-01 00:00:00",
+          "max_timestamp": "2023-05-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang5_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-05-01 00:00:00",
+          "max_timestamp": "2024-05-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang5_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-05-01 00:00:00",
+          "max_timestamp": "2025-05-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang6_2021.xlsx",
+          "size_bytes": 23373,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-06-01 00:00:00",
+          "max_timestamp": "2021-06-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 575
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang6_2022.xlsx",
+          "size_bytes": 21366,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-06-01 00:00:00",
+          "max_timestamp": "2022-06-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang6_2023.xlsx",
+          "size_bytes": 20236,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-06-01 00:00:00",
+          "max_timestamp": "2023-06-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang6_2024.csv",
+          "size_bytes": 15570,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-06-01 00:00:00",
+          "max_timestamp": "2024-06-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang6_2025.csv",
+          "size_bytes": 15571,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-06-01 00:00:00",
+          "max_timestamp": "2025-06-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang7_2021.xlsx",
+          "size_bytes": 23652,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-07-01 00:00:00",
+          "max_timestamp": "2021-07-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 610
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang7_2022.xlsx",
+          "size_bytes": 27654,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-07-01 00:00:00",
+          "max_timestamp": "2022-07-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang7_2023.xlsx",
+          "size_bytes": 20661,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-07-01 00:00:00",
+          "max_timestamp": "2023-07-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang7_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-07-01 00:00:00",
+          "max_timestamp": "2024-07-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang7_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-07-01 00:00:00",
+          "max_timestamp": "2025-07-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang8_2021.xlsx",
+          "size_bytes": 24063,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-08-01 00:00:00",
+          "max_timestamp": "2021-08-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 628
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang8_2022.xlsx",
+          "size_bytes": 21627,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-08-01 00:00:00",
+          "max_timestamp": "2022-08-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang8_2023.xlsx",
+          "size_bytes": 20706,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-08-01 00:00:00",
+          "max_timestamp": "2023-08-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang8_2024.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-08-01 00:00:00",
+          "max_timestamp": "2024-08-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang8_2025.csv",
+          "size_bytes": 16088,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 744,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-08-01 00:00:00",
+          "max_timestamp": "2025-08-31 00:00:00",
+          "duplicate_timestamps": 713,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 744,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang9_2021.xlsx",
+          "size_bytes": 23791,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2021-09-01 00:00:00",
+          "max_timestamp": "2021-09-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 632
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang9_2022.xlsx",
+          "size_bytes": 21263,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2022-09-01 00:00:00",
+          "max_timestamp": "2022-09-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang9_2023.xlsx",
+          "size_bytes": 20219,
+          "format": ".xlsx",
+          "read_mode": "xlsx",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "object",
+            "Giờ": "object",
+            "Độ cao (m)": "object"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2023-09-01 00:00:00",
+          "max_timestamp": "2023-09-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang9_2024.csv",
+          "size_bytes": 15570,
+          "format": ".csv",
+          "read_mode": "csv:';'",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2024-09-01 00:00:00",
+          "max_timestamp": "2024-09-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "file": "data\\raw\\tide\\thuy_trieu_thang9_2025.csv",
+          "size_bytes": 15149,
+          "format": ".csv",
+          "read_mode": "csv:','",
+          "row_count": 720,
+          "columns": [
+            "Ngày",
+            "Giờ",
+            "Độ cao (m)"
+          ],
+          "column_types": {
+            "Ngày": "string",
+            "Giờ": "string",
+            "Độ cao (m)": "string"
+          },
+          "null_counts": {
+            "Ngày": 0,
+            "Giờ": 0,
+            "Độ cao (m)": 0
+          },
+          "duplicate_rows": 0,
+          "timestamp_column": "Ngày",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2025-09-01 00:00:00",
+          "max_timestamp": "2025-09-30 00:00:00",
+          "duplicate_timestamps": 690,
+          "numeric_parse": {
+            "Độ cao (m)": {
+              "nonempty": 720,
+              "parse_failures": 0
+            }
+          },
+          "status": "OK"
+        }
+      ],
+      "file_count": 60,
+      "total_rows_across_files": 43822,
+      "schema_variants": [
+        {
+          "columns": [
+            "ngày",
+            "giờ",
+            "độ cao (m)"
+          ],
+          "file_count": 60
+        }
+      ],
+      "schema_consistent": true
+    }
+  },
+  "silver": null
+}

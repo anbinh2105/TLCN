@@ -1,0 +1,153 @@
+sources:
+
+  weather:
+    file_types:
+      - .csv
+
+    csv:
+      delimiter: ","
+
+    required_columns:
+      - timestamp
+      - temperature
+      - humidity
+      - pressure
+      - wind_speed
+      - wind_direction
+
+    timestamp_columns:
+      - timestamp
+
+    numeric_columns:
+      - temperature
+      - humidity
+      - pressure
+      - wind_speed
+      - wind_direction
+
+    critical_rules:
+      file_not_empty: true
+      required_columns_exist: true
+      timestamp_parseable: true
+      numeric_parseable: true
+
+    warning_rules:
+      check_nulls: true
+      check_duplicate_timestamp: true
+
+
+  rainfall:
+    file_types:
+      - .csv
+
+    csv:
+      delimiter: ","
+
+    required_columns:
+      - timestamp
+      - rainfall_mm
+
+    timestamp_columns:
+      - timestamp
+
+    numeric_columns:
+      - rainfall_mm
+
+    critical_rules:
+      file_not_empty: true
+      required_columns_exist: true
+      timestamp_parseable: true
+      numeric_parseable: true
+
+    warning_rules:
+      check_nulls: true
+      check_duplicate_timestamp: true
+
+
+  river_discharge:
+    file_types:
+      - .csv
+
+    csv:
+      delimiter: ","
+
+    required_columns:
+      - timestamp
+      - station
+      - discharge_m3s
+
+    timestamp_columns:
+      - timestamp
+
+    numeric_columns:
+      - discharge_m3s
+
+    critical_rules:
+      file_not_empty: true
+      required_columns_exist: true
+      timestamp_parseable: true
+      numeric_parseable: true
+
+    warning_rules:
+      check_nulls: true
+      check_duplicate_timestamp: true
+
+
+  water_level:
+    file_types:
+      - .xlsx
+
+    required_columns:
+      - Country Code
+      - Station Code
+      - Parameter
+      - Timestamp (UTC+07:00)
+      - Value
+      - Unit
+
+    timestamp_columns:
+      - Timestamp (UTC+07:00)
+
+    numeric_columns:
+      - Value
+
+    critical_rules:
+      file_not_empty: true
+      required_columns_exist: true
+      timestamp_parseable: true
+      numeric_parseable: true
+
+    warning_rules:
+      check_nulls: true
+      check_duplicate_timestamp: true
+
+
+  tide:
+    file_types:
+      - .csv
+      - .xlsx
+
+    csv:
+      delimiter: auto
+
+    required_columns:
+      - Ngày
+      - Giờ
+      - Độ cao (m)
+
+    date_column: Ngày
+    time_column: Giờ
+
+    numeric_columns:
+      - Độ cao (m)
+
+    critical_rules:
+      file_not_empty: true
+      required_columns_exist: true
+      date_parseable: true
+      time_parseable: true
+      numeric_parseable: true
+
+    warning_rules:
+      check_nulls: true
+      check_duplicate_datetime: true

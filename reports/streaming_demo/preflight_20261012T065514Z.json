@@ -1,0 +1,102 @@
+{
+  "stage": "S8.1",
+  "demo_type": "historical_replay",
+  "generated_at_utc": "2026-10-12T06:55:14.381108+00:00",
+  "record_counts": {
+    "silver_stream": 10,
+    "gold_hourly_stream": 3,
+    "gold_integrated_stream": 3,
+    "gold_batch": 73656
+  },
+  "summary": {
+    "pass": 14,
+    "fail": 0
+  },
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "check_id": "TABLE-SILVER_STREAM",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "TABLE-GOLD_HOURLY_STREAM",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "TABLE-GOLD_INTEGRATED_STREAM",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "TABLE-GOLD_BATCH",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check_id": "NONEMPTY-SILVER_STREAM",
+      "status": "PASS",
+      "observed": 10,
+      "expected": "> 0"
+    },
+    {
+      "check_id": "BASELINE-SILVER_STREAM",
+      "status": "PASS",
+      "observed": 10,
+      "expected": 10
+    },
+    {
+      "check_id": "NONEMPTY-GOLD_HOURLY_STREAM",
+      "status": "PASS",
+      "observed": 3,
+      "expected": "> 0"
+    },
+    {
+      "check_id": "BASELINE-GOLD_HOURLY_STREAM",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "check_id": "NONEMPTY-GOLD_INTEGRATED_STREAM",
+      "status": "PASS",
+      "observed": 3,
+      "expected": "> 0"
+    },
+    {
+      "check_id": "BASELINE-GOLD_INTEGRATED_STREAM",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "check_id": "NONEMPTY-GOLD_BATCH",
+      "status": "PASS",
+      "observed": 73656,
+      "expected": "> 0"
+    },
+    {
+      "check_id": "SIMULATION-SILVER_STREAM",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check_id": "SIMULATION-GOLD_HOURLY_STREAM",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check_id": "SIMULATION-GOLD_INTEGRATED_STREAM",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0
+    }
+  ]
+}

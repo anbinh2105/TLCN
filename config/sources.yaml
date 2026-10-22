@@ -1,0 +1,27 @@
+sources:
+
+  weather:
+    path: data/raw/weather
+    extensions:
+      - .csv
+
+  rainfall:
+    path: data/raw/rainfall
+    extensions:
+      - .csv
+
+  water_level:
+    path: data/raw/water_level
+    extensions:
+      - .xlsx
+
+  river_discharge:
+    path: data/raw/river_discharge
+    extensions:
+      - .csv
+
+  tide:
+    path: data/raw/tide
+    extensions:
+      - .csv
+      - .xlsx

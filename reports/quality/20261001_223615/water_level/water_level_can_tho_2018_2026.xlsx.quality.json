@@ -1,0 +1,104 @@
+{
+  "batch_id": "20261001_223615",
+  "source": "water_level",
+  "source_file": "water_level_can_tho_2018_2026.xlsx",
+  "object_path": "bronze/water_level/ingestion_date=2026-10-01/batch_id=20261001_223615/water_level_can_tho_2018_2026.xlsx",
+  "checksum": "51a0c52ef302ba5ea0f36f87a0a07fb0d4004f8a30cf6ab4b75af09013f39e8c",
+  "validation_timestamp": "2026-10-02T17:10:48.690974+00:00",
+  "validation_engine": "Great Expectations 1.x + Custom Checks",
+  "record_count": 220085,
+  "critical": {
+    "file_not_empty": {
+      "success": true,
+      "observed_row_count": 220085
+    },
+    "required_columns_exist": {
+      "success": true,
+      "missing_columns": [],
+      "details": {
+        "Country Code": {
+          "success": true
+        },
+        "Station Code": {
+          "success": true
+        },
+        "Parameter": {
+          "success": true
+        },
+        "Timestamp (UTC+07:00)": {
+          "success": true
+        },
+        "Value": {
+          "success": true
+        },
+        "Unit": {
+          "success": true
+        }
+      }
+    },
+    "timestamp_parseable": {
+      "success": true,
+      "invalid_count": 0,
+      "details": {
+        "Timestamp (UTC+07:00)": {
+          "success": true,
+          "invalid_count": 0
+        }
+      }
+    },
+    "numeric_parseable": {
+      "success": true,
+      "invalid_count": 0,
+      "details": {
+        "Value": {
+          "success": true,
+          "invalid_count": 0
+        }
+      }
+    }
+  },
+  "critical_failed": [],
+  "warnings": {
+    "nulls": {
+      "has_warning": false,
+      "total_nulls": 0,
+      "details": {
+        "Country Code": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Station Code": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Parameter": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Timestamp (UTC+07:00)": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Value": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "Unit": {
+          "null_count": 0,
+          "null_pct": 0.0
+        }
+      }
+    },
+    "duplicates": {
+      "has_warning": false,
+      "duplicate_count": 0,
+      "key_columns": [
+        "Station Code",
+        "Timestamp (UTC+07:00)"
+      ]
+    }
+  },
+  "warning_count": 0,
+  "quality_status": "PASS",
+  "quarantine_path": null
+}

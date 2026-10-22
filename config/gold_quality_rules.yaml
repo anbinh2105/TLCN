@@ -1,0 +1,71 @@
+
+gold_alignment:
+  timezone: Asia/Ho_Chi_Minh
+
+  tables:
+    water_level:
+      name: lakehouse.gold.water_level_hourly
+      expected_rows: 54982
+      keys: [station_code, hour_start]
+      required_columns:
+        - station_code
+        - hour_start
+        - water_level_obs_count
+
+    rainfall:
+      name: lakehouse.gold.rainfall_hourly
+      expected_rows: 31752
+      keys: [hour_start]
+      required_columns:
+        - hour_start
+        - rainfall_mm
+        - rainfall_quality_flag
+        - rainfall_is_missing
+      expected_quality_counts:
+        OBSERVED: 31735
+        MISSING: 17
+
+    weather:
+      name: lakehouse.gold.weather_hourly
+      expected_rows: 31752
+      keys: [hour_start]
+      required_columns:
+        - hour_start
+        - temperature_c
+        - humidity_pct
+        - pressure_hpa
+        - wind_speed
+        - wind_direction
+        - weather_quality_flag
+        - weather_is_missing
+      expected_quality_counts:
+        OBSERVED: 31735
+        MISSING: 17
+
+    tide:
+      name: lakehouse.gold.tide_hourly
+      expected_rows: 43822
+      keys: [hour_start]
+      required_columns:
+        - hour_start
+        - tide_height_m
+        - tide_quality_flag
+        - tide_is_recovered
+        - recovery_method
+      expected_quality_counts:
+        OBSERVED: 38836
+        RECOVERED: 4986
+
+    discharge:
+      name: lakehouse.gold.discharge_hourly
+      expected_rows: 31752
+      keys: [station, hour_start]
+      required_columns:
+        - hour_start
+        - station
+        - discharge_m3s
+        - discharge_quality_flag
+        - alignment_method
+        - source_date
+        - source_temporal_grain
+        - is_hourly_observation

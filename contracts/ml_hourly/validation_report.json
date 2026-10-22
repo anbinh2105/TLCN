@@ -1,0 +1,100 @@
+{
+  "data_product": "iceberg.gold.ml_hourly",
+  "validated_at_utc": "2026-10-15T07:13:36.688129+00:00",
+  "contract_version": "1.0.0",
+  "snapshot_id": "2528388719354325991",
+  "total_rows": 73656,
+  "summary": {
+    "passed": 14,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "schema_errors": {},
+  "unexpected_columns": [],
+  "tests": [
+    {
+      "test": "schema_mismatches",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "unexpected_columns",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "null_hour_start",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "null_location_id",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "duplicate_keys",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "invalid_hour_alignment",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "water_level_mean_usable_but_null",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "rainfall_mm_usable_but_null",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "tide_height_m_usable_but_null",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "discharge_m3s_usable_but_null",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "invalid_all_five_usable",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "source_mismatched_rows",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "row_count_difference",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "test": "snapshot_matches_contract",
+      "actual": "2528388719354325991",
+      "expected": "2528388719354325991",
+      "status": "PASS"
+    }
+  ]
+}

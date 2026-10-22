@@ -1,0 +1,12 @@
+{
+  "step": "S2",
+  "replay_run_id": "20261015T155821Z",
+  "source_table": "lakehouse.silver.water_level",
+  "topic": "hydrology.water_level.raw",
+  "dry_run": false,
+  "attempted": 96,
+  "sent": 96,
+  "failed": 0,
+  "duration_seconds": 36.98,
+  "status": "PASS"
+}

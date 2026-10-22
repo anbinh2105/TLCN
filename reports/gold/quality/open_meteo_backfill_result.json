@@ -1,0 +1,776 @@
+{
+  "target_start": "2018-04-25 14:15:00",
+  "target_end": "2026-09-18 15:45:00",
+  "dry_run": false,
+  "failed_windows": 0,
+  "results": [
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20180919_20181231.csv",
+      "sha256": "cc4ba4799550fc3903f6baa68fe6ad5fb806fb6e75fab13b86446cbe2d418826",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2018-09-19 00:00:00",
+        "end": "2018-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2018-09-19",
+          "end_date": "2018-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:45.450162+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20190101_20190424.csv",
+      "sha256": "17cf7445b5c818f306c271299cff0773a666fc86f957eb60820b0d09581a0a5a",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2736,
+        "start": "2019-01-01 00:00:00",
+        "end": "2019-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2019-01-01",
+          "end_date": "2019-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:47.256819+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20190919_20191231.csv",
+      "sha256": "b93eaf465023dfc7f03603c065f3d73743c73e1d64085861a719802e81496657",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2019-09-19 00:00:00",
+        "end": "2019-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2019-09-19",
+          "end_date": "2019-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:48.837417+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20200101_20200424.csv",
+      "sha256": "b04989ae044d83accf8e135d00e9e36a1573f61ccf5d38953fc50cd619b64876",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2760,
+        "start": "2020-01-01 00:00:00",
+        "end": "2020-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2020-01-01",
+          "end_date": "2020-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:50.434015+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20200919_20201231.csv",
+      "sha256": "0a9299fc6547c9aa7b0c20af1014f3352c09709b71850a1df6c72e2e91b13ad3",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2020-09-19 00:00:00",
+        "end": "2020-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2020-09-19",
+          "end_date": "2020-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:52.012616+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20210101_20210424.csv",
+      "sha256": "dd736e6592f21437cee113281f185b272c3426e3f074f6d07828efa922f034c0",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2736,
+        "start": "2021-01-01 00:00:00",
+        "end": "2021-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2021-01-01",
+          "end_date": "2021-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:53.574229+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20210919_20211231.csv",
+      "sha256": "eb2fa68092bb41b08b3e970c5b790721777b9f0072dd3a275c12e9e5ccf92dd9",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2021-09-19 00:00:00",
+        "end": "2021-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2021-09-19",
+          "end_date": "2021-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:55.134056+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20220101_20220424.csv",
+      "sha256": "62413d71588cb6095eb03ec1c234ffa658e1c5a7b135f558a60adb4460acf7e6",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2736,
+        "start": "2022-01-01 00:00:00",
+        "end": "2022-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2022-01-01",
+          "end_date": "2022-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:56.733560+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20220919_20221231.csv",
+      "sha256": "f4f7f8945821deae5413ca2d3053e1509c358ffff7bb8ba3880503783f64a93a",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2022-09-19 00:00:00",
+        "end": "2022-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2022-09-19",
+          "end_date": "2022-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:58.282522+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20230101_20230424.csv",
+      "sha256": "ee063e5ea5b9473a3857d6e64872d88135027914155405cdea2abf0c9f5651c5",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2736,
+        "start": "2023-01-01 00:00:00",
+        "end": "2023-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2023-01-01",
+          "end_date": "2023-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:02:59.843614+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20230919_20231231.csv",
+      "sha256": "3535bfa7b50dedba1f5e7df3ed56135fe1153952ff98fb651feb64034121d003",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2023-09-19 00:00:00",
+        "end": "2023-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2023-09-19",
+          "end_date": "2023-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:03:01.408409+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20240101_20240424.csv",
+      "sha256": "16038ecf248196b99adb796284952820ab8847938cdd476acbb51a90cb836fda",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2760,
+        "start": "2024-01-01 00:00:00",
+        "end": "2024-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2024-01-01",
+          "end_date": "2024-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:03:02.987818+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20240919_20241231.csv",
+      "sha256": "b9277b67ca73cc6bfc35889f599df82b1c35b77cfe5107ab6678b6e397989223",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2024-09-19 00:00:00",
+        "end": "2024-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2024-09-19",
+          "end_date": "2024-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:03:04.595293+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20250101_20250424.csv",
+      "sha256": "b3e18d1135c26d333fa8793fe16e89c11a766835878a0230f4b1d3603f98127f",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2736,
+        "start": "2025-01-01 00:00:00",
+        "end": "2025-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2025-01-01",
+          "end_date": "2025-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:03:06.199460+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20250919_20251231.csv",
+      "sha256": "8f9b0c0049f00ae4e093c48ca466e83706d7a8070b3a44a71deeb10b0b2cd839",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2496,
+        "start": "2025-09-19 00:00:00",
+        "end": "2025-12-31 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2025-09-19",
+          "end_date": "2025-12-31",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:03:07.758128+00:00"
+    },
+    {
+      "status": "DOWNLOADED",
+      "source": "weather",
+      "file": "data\\raw\\backfill\\weather\\weather_backfill_20260101_20260424.csv",
+      "sha256": "be1ef4cdf49a95dc8ef93ecea662114bc7612b252ca0d33cc77462c979b33f50",
+      "validation": {
+        "status": "PASS_TIMESTAMP_COVERAGE",
+        "row_count": 2736,
+        "start": "2026-01-01 00:00:00",
+        "end": "2026-04-24 23:00:00",
+        "null_counts": {
+          "temperature": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "wind_speed": 0,
+          "wind_direction": 0
+        },
+        "measurement_values_complete": true
+      },
+      "api_metadata": {
+        "api_url": "https://archive-api.open-meteo.com/v1/archive",
+        "request_params": {
+          "latitude": 10.027,
+          "longitude": 105.769,
+          "start_date": "2026-01-01",
+          "end_date": "2026-04-24",
+          "timezone": "Asia/Ho_Chi_Minh",
+          "cell_selection": "nearest",
+          "hourly": "temperature_2m,relative_humidity_2m,pressure_msl,wind_speed_10m,wind_direction_10m",
+          "models": "era5",
+          "temperature_unit": "celsius",
+          "wind_speed_unit": "ms"
+        },
+        "response_timezone": "Asia/Ho_Chi_Minh",
+        "response_latitude": 10.0,
+        "response_longitude": 105.75,
+        "response_utc_offset_seconds": 25200,
+        "response_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°"
+        }
+      },
+      "downloaded_at_utc": "2026-10-08T08:03:09.319371+00:00"
+    }
+  ]
+}

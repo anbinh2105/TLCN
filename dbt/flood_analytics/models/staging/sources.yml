@@ -1,0 +1,23 @@
+﻿version: 2
+
+sources:
+  - name: warehouse
+    description: "Existing Iceberg Snowflake Data Warehouse"
+    database: iceberg
+    schema: dw
+
+    tables:
+      - name: dim_year
+      - name: dim_month
+      - name: dim_date
+      - name: dim_time
+      - name: dim_region
+      - name: dim_location
+      - name: dim_station_type
+      - name: dim_station
+      - name: dim_flood_threshold
+
+      - name: fact_hydrology
+      - name: fact_water_level
+      - name: fact_rainfall
+      - name: fact_data_quality

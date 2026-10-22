@@ -1,0 +1,208 @@
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> python -m demo.iceberg.demo_acid
+WARNING: Using incubator modules: jdk.incubator.vector
+:: loading settings :: url = jar:file:/C:/Users/User/OneDrive/Documents/TLCN/.venv/Lib/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\User\.ivy2.5.2\cache
+The jars for the packages stored in: C:\Users\User\.ivy2.5.2\jars
+org.apache.hadoop#hadoop-aws added as a dependency
+org.apache.iceberg#iceberg-spark-runtime-4.1_2.13 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-8d4019f0-90c5-4836-bd3c-3c933020ff26;1.0
+        confs: [default]
+        found org.apache.hadoop#hadoop-aws;3.4.2 in central
+        found software.amazon.awssdk#bundle;2.29.52 in central
+        found software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 in central
+        found org.wildfly.openssl#wildfly-openssl;2.1.4.Final in central
+        found org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 in central
+:: resolution report :: resolve 496ms :: artifacts dl 63ms
+        :: modules in use:
+        org.apache.hadoop#hadoop-aws;3.4.2 from central in [default]
+        org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 from central in [default]
+        org.wildfly.openssl#wildfly-openssl;2.1.4.Final from central in [default]
+        software.amazon.awssdk#bundle;2.29.52 from central in [default]
+        software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   5   |   0   |   0   |   0   ||   5   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-8d4019f0-90c5-4836-bd3c-3c933020ff26
+        confs: [default]
+        0 artifacts copied, 5 already retrieved (0kB/83ms)
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/07 11:33:00 ERROR Inbox: Ignoring error
+java.lang.NullPointerException: Cannot invoke "org.apache.spark.storage.BlockManagerId.executorId()" because "idWithoutTopologyInfo" is null
+        at org.apache.spark.storage.BlockManagerMasterEndpoint.org$apache$spark$storage$BlockManagerMasterEndpoint$$register(BlockManagerMasterEndpoint.scala:696)
+        at org.apache.spark.storage.BlockManagerMasterEndpoint$$anonfun$receiveAndReply$1.applyOrElse(BlockManagerMasterEndpoint.scala:141)
+        at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:104)
+        at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:216)
+        at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+        at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:76)
+        at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:42)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/07 11:33:00 WARN Executor: Issue communicating with driver in heartbeater
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+        at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:53)
+        at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:359)
+        at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+        at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:101)
+        at org.apache.spark.rpc.RpcEndpointRef.askSync(RpcEndpointRef.scala:85)
+        at org.apache.spark.storage.BlockManagerMaster.registerBlockManager(BlockManagerMaster.scala:81)
+        at org.apache.spark.storage.BlockManager.reregister(BlockManager.scala:674)
+        at org.apache.spark.executor.Executor.reportHeartBeat(Executor.scala:1363)
+        at org.apache.spark.executor.Executor.$anonfun$heartbeater$1(Executor.scala:356)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.Heartbeater$$anon$1.run(Heartbeater.scala:46)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+        at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.spark.storage.BlockManagerId.executorId()" because "idWithoutTopologyInfo" is null
+        at org.apache.spark.storage.BlockManagerMasterEndpoint.org$apache$spark$storage$BlockManagerMasterEndpoint$$register(BlockManagerMasterEndpoint.scala:696)
+        at org.apache.spark.storage.BlockManagerMasterEndpoint$$anonfun$receiveAndReply$1.applyOrElse(BlockManagerMasterEndpoint.scala:141)
+        at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:104)
+        at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:216)
+        at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+        at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:76)
+        at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:42)
+        ... 3 more
+====================================================================================================
+ICEBERG CAPABILITY DEMO — ACID VERIFICATION / RESUME
+====================================================================================================
+
+[1] Safety check: lakehouse.demo.weather_iceberg_demo
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Demo namespace safety check [PASS]
+This verification script is READ ONLY.
+No UPDATE / INSERT / DELETE will be executed.
+
+[2] Verifying current table
+Current record count: 101                                                       
+Current table structure [PASS]
+
+[3] Verifying snapshot history
++-----------------------+-------------------+-------------------+---------+
+|committed_at           |snapshot_id        |parent_id          |operation|
++-----------------------+-------------------+-------------------+---------+
+|2026-10-06 15:09:56.856|4064462945497131262|NULL               |append   |
+|2026-10-06 15:20:24.982|8625072115902793184|4064462945497131262|append   |
+|2026-10-06 17:20:29.574|7829982116285418825|8625072115902793184|overwrite|
++-----------------------+-------------------+-------------------+---------+
+
+Snapshot count = 3 [PASS]                                                       
+Snapshot 3 parent = Snapshot 2 (8625072115902793184) [PASS]
+Snapshot 3 operation = overwrite
+
+[4] Verifying current committed value
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+|timestamp          |temperature_c|humidity_pct|source      |source_file   |demo_note           |
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+|2018-04-29 04:00:00|27.0         |88.0        |ICEBERG_DEMO|snapshot_demo_generated_record|ACID_COMMIT_VERIFIED|
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+
+Current state contains demo_note = 'ACID_COMMIT_VERIFIED' [PASS]                
+
+[5] Reading PRE-UPDATE Snapshot 2 (historical schema)
++-------------------+-------------+------------+------------+------------------------------+
+|timestamp          |temperature_c|humidity_pct|source      |source_file   |
++-------------------+-------------+------------+------------+------------------------------+
+|2018-04-29 04:00:00|27.0         |88.0        |ICEBERG_DEMO|snapshot_demo_generated_record|
++-------------------+-------------+------------+------------+------------------------------+
+
+Snapshot 2 historical record is readable [PASS]
+Snapshot 2 predates Schema Evolution, so column 'demo_note' is not part of its historical schema [PASS]
+
+[6] Reading POST-UPDATE Snapshot 3
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+|timestamp          |temperature_c|humidity_pct|source      |source_file   |demo_note           |
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+|2018-04-29 04:00:00|27.0         |88.0        |ICEBERG_DEMO|snapshot_demo_generated_record|ACID_COMMIT_VERIFIED|
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+
+Snapshot 3 contains demo_note = 'ACID_COMMIT_VERIFIED' [PASS]
+
+[7] Verifying record-count consistency
+Snapshot 2 records : 101
+Snapshot 3 records : 101
+Current records    : 101
+Record count remains 101 across pre/post committed states [PASS]
+
+[8] Verifying target uniqueness
+Controlled target count: 1
+Controlled target remains unique [PASS]
+
+[9] Verifying validation created no additional snapshot
+Snapshot count before validation : 3
+Snapshot count after validation  : 3
+No additional snapshot created [PASS]
+
+====================================================================================================
+ICEBERG ACID DEMO: PASS
+====================================================================================================
+Table                     : lakehouse.demo.weather_iceberg_demo
+Records                   : 101 -> 101
+Updated rows              : 1
+Updated column            : demo_note
+Committed value           : ACID_COMMIT_VERIFIED
+Snapshots                 : 2 -> 3
+Pre-update snapshot ID    : 8625072115902793184
+Post-update snapshot ID   : 7829982116285418825
+Post-update parent ID     : 8625072115902793184
+Snapshot operation        : overwrite
+
+ATOMIC COMMIT EVIDENCE:
+The UPDATE became visible through exactly one new committed Iceberg snapshot.
+
+CONSISTENCY EVIDENCE:
+The table remained at 101 records and the controlled record remained unique.
+
+SNAPSHOT ISOLATION / VERSION EVIDENCE:
+The historical pre-update snapshot remains readable independently from the post-update committed snapshot.
+
+SCHEMA EVOLUTION INTERACTION:
+Snapshot 2 predates the demo_note schema addition, while Snapshot 3 uses the evolved 13-column schema.
+
+DURABILITY EVIDENCE:
+The committed value was successfully re-read from both the current table and Snapshot 3.
+
+This verification was READ ONLY; Snapshot 3 was preserved.
+26/10/07 11:34:43 WARN SparkEnv: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-4de9266c-be28-4ba7-af72-01662e863b43\userFiles-1209d063-ffbe-47fd-a0be-72d77688264c
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-4de9266c-be28-4ba7-af72-01662e863b43\userFiles-1209d063-ffbe-47fd-a0be-72d77688264c\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.SparkEnv.stop(SparkEnv.scala:131)
+        at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2406)
+        at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1314)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2406)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2308)
+        at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:552)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+        at py4j.Gateway.invoke(Gateway.java:282)
+        at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+        at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+SUCCESS: The process with PID 18068 (child process of PID 14932) has been terminated.
+SUCCESS: The process with PID 14932 (child process of PID 11784) has been terminated.
+SUCCESS: The process with PID 11784 (child process of PID 24168) has been terminated.
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> 

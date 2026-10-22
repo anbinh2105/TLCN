@@ -1,0 +1,652 @@
+{
+  "analysis": "raw_backfill_validation",
+  "validated_at_utc": "2026-10-08T08:26:29.749785+00:00",
+  "sources": {
+    "weather": {
+      "source": "weather",
+      "status": "PASS_WITH_WARNINGS",
+      "files": [
+        {
+          "path": "data\\raw\\weather\\weather_can_tho_2018_2026.csv",
+          "kind": "ORIGINAL",
+          "rows": 31752,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 17,
+            "humidity": 17,
+            "pressure": 17,
+            "wind_speed": 17,
+            "wind_direction": 17
+          },
+          "sha256": "664c597aaf5232b5f139361a406dab256bd51d9a234f844f37d7d7599dac22b7"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20180919_20181231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "cc4ba4799550fc3903f6baa68fe6ad5fb806fb6e75fab13b86446cbe2d418826"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20190101_20190424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "17cf7445b5c818f306c271299cff0773a666fc86f957eb60820b0d09581a0a5a"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20190919_20191231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "b93eaf465023dfc7f03603c065f3d73743c73e1d64085861a719802e81496657"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20200101_20200424.csv",
+          "kind": "BACKFILL",
+          "rows": 2760,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "b04989ae044d83accf8e135d00e9e36a1573f61ccf5d38953fc50cd619b64876"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20200919_20201231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "0a9299fc6547c9aa7b0c20af1014f3352c09709b71850a1df6c72e2e91b13ad3"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20210101_20210424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "dd736e6592f21437cee113281f185b272c3426e3f074f6d07828efa922f034c0"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20210919_20211231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "eb2fa68092bb41b08b3e970c5b790721777b9f0072dd3a275c12e9e5ccf92dd9"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20220101_20220424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "62413d71588cb6095eb03ec1c234ffa658e1c5a7b135f558a60adb4460acf7e6"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20220919_20221231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "f4f7f8945821deae5413ca2d3053e1509c358ffff7bb8ba3880503783f64a93a"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20230101_20230424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "ee063e5ea5b9473a3857d6e64872d88135027914155405cdea2abf0c9f5651c5"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20230919_20231231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "3535bfa7b50dedba1f5e7df3ed56135fe1153952ff98fb651feb64034121d003"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20240101_20240424.csv",
+          "kind": "BACKFILL",
+          "rows": 2760,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "16038ecf248196b99adb796284952820ab8847938cdd476acbb51a90cb836fda"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20240919_20241231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "b9277b67ca73cc6bfc35889f599df82b1c35b77cfe5107ab6678b6e397989223"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20250101_20250424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "b3e18d1135c26d333fa8793fe16e89c11a766835878a0230f4b1d3603f98127f"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20250919_20251231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "8f9b0c0049f00ae4e093c48ca466e83706d7a8070b3a44a71deeb10b0b2cd839"
+        },
+        {
+          "path": "data\\raw\\backfill\\weather\\weather_backfill_20260101_20260424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "temperature": 0,
+            "humidity": 0,
+            "pressure": 0,
+            "wind_speed": 0,
+            "wind_direction": 0
+          },
+          "sha256": "be1ef4cdf49a95dc8ef93ecea662114bc7612b252ca0d33cc77462c979b33f50"
+        }
+      ],
+      "issues": [
+        {
+          "level": "WARNING",
+          "message": "Null or non-numeric measurement values exist"
+        }
+      ],
+      "total_rows": 73656,
+      "unique_timestamps": 73656,
+      "duplicate_timestamps": 0,
+      "missing_timestamps": 0,
+      "extra_timestamps": 0,
+      "null_measurements": {
+        "temperature": 17,
+        "humidity": 17,
+        "pressure": 17,
+        "wind_speed": 17,
+        "wind_direction": 17
+      },
+      "expected_timestamps": 73656,
+      "missing_examples": [],
+      "extra_examples": []
+    },
+    "rainfall": {
+      "source": "rainfall",
+      "status": "PASS_WITH_WARNINGS",
+      "files": [
+        {
+          "path": "data\\raw\\rainfall\\rainfall_can_tho_2018_2026.csv",
+          "kind": "ORIGINAL",
+          "rows": 31752,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 17
+          },
+          "sha256": "3f74c08b67e9d1188c997d5491526f79dd4228d460fbd0b26efb83a18b302853"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20180919_20181231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "357f33a3a7e5360c416ea7819344e0346168869c21edcf9e2ae649a9d165346f"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20190101_20190424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "cdfebbf79b2e479c6301af303525ef4b8e15eec1452a05f022e2579451b54d63"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20190919_20191231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "b907272e5b9345afe5fd3524ffef6ee3415e507b041363c7b5c7269d86f8dd61"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20200101_20200424.csv",
+          "kind": "BACKFILL",
+          "rows": 2760,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "e338216f4a9683d6abf74aec88240bb4ab12122090cd1590e6d02da7c82dd811"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20200919_20201231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "f206ec39449b62b8c144489112f0de7501db3d700036e3da704deeb8bdfee6b7"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20210101_20210424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "da0cd2e9f2d4b1d26e1c24e411c9efff35b1d1c01e60f95ebc93d1f810632644"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20210919_20211231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "3b249479d32a283cd4fdd3f115b26b06bfe3c1a8dfa1ae18a36470dc5876f935"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20220101_20220424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "1328f5dad3e6edaccaeea080e88ddd2f0cf3b9be2d1a968a5dbe696cfd622a5c"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20220919_20221231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "021491df44e77ff103266c4e61864882934576efad4e0a8809e8544df9055813"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20230101_20230424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "0f6f576cd3f6ea10956438f7b3de8e6117ee79d6a70fd5ae1bb59bf5e4a5dcc6"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20230919_20231231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "aa2b0be78a0953771cd6df2ca19a2d88bde72e903d4272e99f27211184b7ccf6"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20240101_20240424.csv",
+          "kind": "BACKFILL",
+          "rows": 2760,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "36091b19cb21f61e71654f6fa8757fb9573f69d5fa7e1637b92da6906ce80a51"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20240919_20241231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "c1d84351f9c3ac466a4e26857752bd9b85eefaa24ad35862479856eecd3d9b75"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20250101_20250424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "7cbbaff4fec9063eb4a10b1854513f4e9fad592efeb043aaf0068f1189a1177f"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20250919_20251231.csv",
+          "kind": "BACKFILL",
+          "rows": 2496,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "69cce7bd5fe296327e10414fff9fb94f66ab8259d99e1c5e18d4ffb42d8bb083"
+        },
+        {
+          "path": "data\\raw\\backfill\\rainfall\\rainfall_backfill_20260101_20260424.csv",
+          "kind": "BACKFILL",
+          "rows": 2736,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "rainfall_mm": 0
+          },
+          "sha256": "d72d099ba3627262b0417419431847e126b110f69b99e4e1f85c7f12d0d3c187"
+        }
+      ],
+      "issues": [
+        {
+          "level": "WARNING",
+          "message": "Null or non-numeric measurement values exist"
+        }
+      ],
+      "total_rows": 73656,
+      "unique_timestamps": 73656,
+      "duplicate_timestamps": 0,
+      "missing_timestamps": 0,
+      "extra_timestamps": 0,
+      "null_measurements": {
+        "rainfall_mm": 17
+      },
+      "expected_timestamps": 73656,
+      "missing_examples": [],
+      "extra_examples": []
+    },
+    "river_discharge": {
+      "source": "river_discharge",
+      "status": "PASS",
+      "files": [
+        {
+          "path": "data\\raw\\river_discharge\\river_discharge_can_tho_2018_2026.csv",
+          "kind": "ORIGINAL",
+          "rows": 1323,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "f7acc9b0e3d39d64da122abe15b5935c0135e4fdc6bfbe43793886f4622c0f7d"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20180919_20181231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "b9ff6d89b6907e3c93407710ac0e56247017e14c51bedf232e2f01b8d128bd7c"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20190101_20190424.csv",
+          "kind": "BACKFILL",
+          "rows": 114,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "ec4839385351e2656ec3283a0a77fcadcc03b48fa686cea20302550d9a391ec0"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20190919_20191231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "d3508a691aa542f17d7c6bd15417ab3c42cdc1e3708226eb77a6e10b2b1550ff"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20200101_20200424.csv",
+          "kind": "BACKFILL",
+          "rows": 115,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "30553501a463ccc9e982d9f7671631fd451193789db408e0b97bcdadadf8542f"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20200919_20201231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "cee22c9e9e31ab832a114bb7b9a1599787e1cd7059655a6d761cc87f3fd4f573"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20210101_20210424.csv",
+          "kind": "BACKFILL",
+          "rows": 114,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "1a19da8a46c1d75437938cfe8227abb79455ae8480ce7c0bf901681da19b3600"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20210919_20211231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "58c249b51ff343c87848ac4c939b35a6814ea528c208d4de27eebb99bea55010"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20220101_20220424.csv",
+          "kind": "BACKFILL",
+          "rows": 114,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "6bc0741be3d63a11ce8022edc9393eb7b680ab18293706a6904e8bc1b3e5f668"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20220919_20221231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "3618533c70864b807a08d9db1cc93a1b504ac67bbb9181b2e56a80c687145a0a"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20230101_20230424.csv",
+          "kind": "BACKFILL",
+          "rows": 114,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "0a511596791adfff4b0dc98c2113b461211c8c9a0db7098ffb1329354ad5a3f6"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20230919_20231231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "1ed84ace2beace6ce607715b92312dd8717437ae5ced7c85a55127dea163c56c"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20240101_20240424.csv",
+          "kind": "BACKFILL",
+          "rows": 115,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "a67ef93e663defae118c42d5497edc91fb51cbac1ee55e3f9dc7ea31d57bce79"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20240919_20241231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "2ab00738c9e0f14e5b7bf25b1996cc58939d792a6b5e4acfa98fa2142616a6de"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20250101_20250424.csv",
+          "kind": "BACKFILL",
+          "rows": 114,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "ad41bed2ac0acbed30780be87de49a8e69750b82c5caf760de8a78e2445c2735"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20250919_20251231.csv",
+          "kind": "BACKFILL",
+          "rows": 104,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "a7138e9efc35d50f34f8e948140da4a08a11f8308a55f3aa4dd0e2f7e4bcd539"
+        },
+        {
+          "path": "data\\raw\\backfill\\river_discharge\\river_discharge_backfill_20260101_20260424.csv",
+          "kind": "BACKFILL",
+          "rows": 114,
+          "invalid_timestamps": 0,
+          "null_measurements": {
+            "discharge_m3s": 0
+          },
+          "sha256": "82d39ad84ee12701802f16f19a3bdc269de41e6e82480e507e301533ce660794"
+        }
+      ],
+      "issues": [],
+      "total_rows": 3069,
+      "unique_timestamps": 3069,
+      "duplicate_timestamps": 0,
+      "missing_timestamps": 0,
+      "extra_timestamps": 0,
+      "null_measurements": {
+        "discharge_m3s": 0
+      },
+      "expected_timestamps": 3069,
+      "missing_examples": [],
+      "extra_examples": []
+    }
+  }
+}

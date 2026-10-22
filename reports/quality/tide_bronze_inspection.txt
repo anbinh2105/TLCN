@@ -1,0 +1,3555 @@
+====================================================================================================
+CAN THO FLOOD LAKEHOUSE
+BRONZE TIDE FULL INSPECTION
+====================================================================================================
+
+Bucket : flood-lakehouse
+Prefix : bronze/tide/
+
+Total Tide objects: 60
+
+====================================================================================================
+1. TIDE BRONZE INVENTORY
+====================================================================================================
+01. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2021.xlsx
+    size=23614 bytes | year=2021 | type=.xlsx
+02. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2022.xlsx
+    size=21808 bytes | year=2022 | type=.xlsx
+03. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2023.xlsx
+    size=20671 bytes | year=2023 | type=.xlsx
+04. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+05. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+06. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2021.xlsx
+    size=24504 bytes | year=2021 | type=.xlsx
+07. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2022.xlsx
+    size=20306 bytes | year=2022 | type=.xlsx
+08. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2023.xlsx
+    size=20287 bytes | year=2023 | type=.xlsx
+09. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2024.csv
+    size=15570 bytes | year=2024 | type=.csv
+10. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2025.csv
+    size=15570 bytes | year=2025 | type=.csv
+11. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2021.xlsx
+    size=22080 bytes | year=2021 | type=.xlsx
+12. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2022.xlsx
+    size=20807 bytes | year=2022 | type=.xlsx
+13. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2023.xlsx
+    size=20696 bytes | year=2023 | type=.xlsx
+14. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+15. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+16. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2021.xlsx
+    size=14306 bytes | year=2021 | type=.xlsx
+17. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2022.xlsx
+    size=14259 bytes | year=2022 | type=.xlsx
+18. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2023.xlsx
+    size=20655 bytes | year=2023 | type=.xlsx
+19. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+20. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+21. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2021.xlsx
+    size=26244 bytes | year=2021 | type=.xlsx
+22. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2022.xlsx
+    size=20844 bytes | year=2022 | type=.xlsx
+23. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2023.xlsx
+    size=19485 bytes | year=2023 | type=.xlsx
+24. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2024.csv
+    size=15052 bytes | year=2024 | type=.csv
+25. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2025.csv
+    size=14534 bytes | year=2025 | type=.csv
+26. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2021.xlsx
+    size=26482 bytes | year=2021 | type=.xlsx
+27. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2022.xlsx
+    size=22030 bytes | year=2022 | type=.xlsx
+28. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2023.xlsx
+    size=20666 bytes | year=2023 | type=.xlsx
+29. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+30. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+31. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2021.xlsx
+    size=22908 bytes | year=2021 | type=.xlsx
+32. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2022.xlsx
+    size=21584 bytes | year=2022 | type=.xlsx
+33. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2023.xlsx
+    size=20225 bytes | year=2023 | type=.xlsx
+34. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2024.csv
+    size=15570 bytes | year=2024 | type=.csv
+35. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2025.csv
+    size=15570 bytes | year=2025 | type=.csv
+36. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2021.xlsx
+    size=24088 bytes | year=2021 | type=.xlsx
+37. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2022.xlsx
+    size=21975 bytes | year=2022 | type=.xlsx
+38. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2023.xlsx
+    size=20631 bytes | year=2023 | type=.xlsx
+39. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+40. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+41. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2021.xlsx
+    size=23373 bytes | year=2021 | type=.xlsx
+42. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2022.xlsx
+    size=21366 bytes | year=2022 | type=.xlsx
+43. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2023.xlsx
+    size=20236 bytes | year=2023 | type=.xlsx
+44. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2024.csv
+    size=15570 bytes | year=2024 | type=.csv
+45. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2025.csv
+    size=15571 bytes | year=2025 | type=.csv
+46. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2021.xlsx
+    size=23652 bytes | year=2021 | type=.xlsx
+47. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2022.xlsx
+    size=27654 bytes | year=2022 | type=.xlsx
+48. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2023.xlsx
+    size=20661 bytes | year=2023 | type=.xlsx
+49. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+50. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+51. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2021.xlsx
+    size=24063 bytes | year=2021 | type=.xlsx
+52. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2022.xlsx
+    size=21627 bytes | year=2022 | type=.xlsx
+53. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2023.xlsx
+    size=20706 bytes | year=2023 | type=.xlsx
+54. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2024.csv
+    size=16088 bytes | year=2024 | type=.csv
+55. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2025.csv
+    size=16088 bytes | year=2025 | type=.csv
+56. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2021.xlsx
+    size=23791 bytes | year=2021 | type=.xlsx
+57. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2022.xlsx
+    size=21263 bytes | year=2022 | type=.xlsx
+58. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2023.xlsx
+    size=20219 bytes | year=2023 | type=.xlsx
+59. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2024.csv
+    size=15570 bytes | year=2024 | type=.csv
+60. bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2025.csv
+    size=15149 bytes | year=2025 | type=.csv
+
+====================================================================================================
+2. PER-FILE INSPECTION
+====================================================================================================
+
+####################################################################################################
+FILE 1/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2021.xlsx
+Size   : 23614 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(0, 0), datetime.datetime(2026, 4, 3, 0, 0)]
+  Row 3: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(1, 0), datetime.datetime(2026, 4, 3, 0, 0)]
+  Row 4: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(2, 0), datetime.datetime(2026, 4, 3, 0, 0)]
+  Row 5: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 6: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 7: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 8: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(6, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 9: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 10: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+  Row 11: [datetime.datetime(2021, 10, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 670
+  STRING_NUMERIC      : 74
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 670
+  'General'                     : 74
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[DATETIME] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(0, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=3 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(1, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=4 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(2, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=5 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=8 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(6, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=12 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(10, 0) | height=datetime.datetime(2026, 1, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 6, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 3, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 7, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+[STRING_NUMERIC] showing 15 examples
+  row=16 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(14, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=24 | date=datetime.datetime(2021, 10, 1, 0, 0) | time=datetime.time(22, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=39 | date=datetime.datetime(2021, 10, 2, 0, 0) | time=datetime.time(13, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=91 | date=datetime.datetime(2021, 10, 4, 0, 0) | time=datetime.time(17, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=96 | date=datetime.datetime(2021, 10, 4, 0, 0) | time=datetime.time(22, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=100 | date=datetime.datetime(2021, 10, 5, 0, 0) | time=datetime.time(2, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=109 | date=datetime.datetime(2021, 10, 5, 0, 0) | time=datetime.time(11, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=116 | date=datetime.datetime(2021, 10, 5, 0, 0) | time=datetime.time(18, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=122 | date=datetime.datetime(2021, 10, 6, 0, 0) | time=datetime.time(0, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=124 | date=datetime.datetime(2021, 10, 6, 0, 0) | time=datetime.time(2, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=130 | date=datetime.datetime(2021, 10, 6, 0, 0) | time=datetime.time(8, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=132 | date=datetime.datetime(2021, 10, 6, 0, 0) | time=datetime.time(10, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=145 | date=datetime.datetime(2021, 10, 6, 0, 0) | time=datetime.time(23, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=148 | date=datetime.datetime(2021, 10, 7, 0, 0) | time=datetime.time(2, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=150 | date=datetime.datetime(2021, 10, 7, 0, 0) | time=datetime.time(4, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+
+####################################################################################################
+FILE 2/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2022.xlsx
+Size   : 21808 bytes
+Sheets : ['Thuy trieu 10-2022']
+Active data sheet: Thuy trieu 10-2022
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 10, 1, 0, 0), '00:00', 2.4]
+  Row 3: [datetime.datetime(2022, 10, 1, 0, 0), '01:00', 2.6]
+  Row 4: [datetime.datetime(2022, 10, 1, 0, 0), '02:00', 3]
+  Row 5: [datetime.datetime(2022, 10, 1, 0, 0), '03:00', 3.6]
+  Row 6: [datetime.datetime(2022, 10, 1, 0, 0), '04:00', 4]
+  Row 7: [datetime.datetime(2022, 10, 1, 0, 0), '05:00', 4.2]
+  Row 8: [datetime.datetime(2022, 10, 1, 0, 0), '06:00', 4]
+  Row 9: [datetime.datetime(2022, 10, 1, 0, 0), '07:00', 3.5]
+  Row 10: [datetime.datetime(2022, 10, 1, 0, 0), '08:00', 2.9]
+  Row 11: [datetime.datetime(2022, 10, 1, 0, 0), '09:00', 2.1]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.9
+  max: 4.5
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 3/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2023.xlsx
+Size   : 20671 bytes
+Sheets : ['Thuy trieu 10-2023']
+Active data sheet: Thuy trieu 10-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 10, 1, 0, 0), '00:00', 2.3]
+  Row 3: [datetime.datetime(2023, 10, 1, 0, 0), '01:00', 3.2]
+  Row 4: [datetime.datetime(2023, 10, 1, 0, 0), '02:00', 3.9]
+  Row 5: [datetime.datetime(2023, 10, 1, 0, 0), '03:00', 4.2]
+  Row 6: [datetime.datetime(2023, 10, 1, 0, 0), '04:00', 4.2]
+  Row 7: [datetime.datetime(2023, 10, 1, 0, 0), '05:00', 3.7]
+  Row 8: [datetime.datetime(2023, 10, 1, 0, 0), '06:00', 3]
+  Row 9: [datetime.datetime(2023, 10, 1, 0, 0), '07:00', 2.3]
+  Row 10: [datetime.datetime(2023, 10, 1, 0, 0), '08:00', 1.7]
+  Row 11: [datetime.datetime(2023, 10, 1, 0, 0), '09:00', 1.3]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.8
+  max: 4.5
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 4/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/10/01', '0:00', '3.3']
+  Row 3: ['2024/10/01', '1:00', '3.8']
+  Row 4: ['2024/10/01', '2:00', '4.0']
+  Row 5: ['2024/10/01', '3:00', '3.9']
+  Row 6: ['2024/10/01', '4:00', '3.5']
+  Row 7: ['2024/10/01', '5:00', '3.1']
+  Row 8: ['2024/10/01', '6:00', '2.6']
+  Row 9: ['2024/10/01', '7:00', '2.3']
+  Row 10: ['2024/10/01', '8:00', '2.0']
+  Row 11: ['2024/10/01', '9:00', '2.0']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 5/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/10/01', '0:00', '3.3']
+  Row 3: ['2025/10/01', '1:00', '3.4']
+  Row 4: ['2025/10/01', '2:00', '3.4']
+  Row 5: ['2025/10/01', '3:00', '3.4']
+  Row 6: ['2025/10/01', '4:00', '3.4']
+  Row 7: ['2025/10/01', '5:00', '3.5']
+  Row 8: ['2025/10/01', '6:00', '3.5']
+  Row 9: ['2025/10/01', '7:00', '3.4']
+  Row 10: ['2025/10/01', '8:00', '3.3']
+  Row 11: ['2025/10/01', '9:00', '3.1']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 6/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2021.xlsx
+Size   : 24504 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(0, 0), '4.0']
+  Row 3: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(1, 0), '4.0']
+  Row 4: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(2, 0), datetime.datetime(2026, 8, 3, 0, 0)]
+  Row 5: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 5, 3, 0, 0)]
+  Row 6: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+  Row 7: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 9, 2, 0, 0)]
+  Row 8: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(6, 0), datetime.datetime(2026, 7, 2, 0, 0)]
+  Row 9: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 7, 2, 0, 0)]
+  Row 10: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 8, 2, 0, 0)]
+  Row 11: [datetime.datetime(2021, 11, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 1, 3, 0, 0)]
+
+Total non-empty data rows: 718
+
+Date column Python types:
+  datetime            : 718
+
+Time column Python types:
+  time                : 718
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 644
+  STRING_NUMERIC      : 74
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 644
+  'General'                     : 74
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[STRING_NUMERIC] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(0, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=3 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(1, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=26 | date=datetime.datetime(2021, 11, 2, 0, 0) | time=datetime.time(0, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=28 | date=datetime.datetime(2021, 11, 2, 0, 0) | time=datetime.time(2, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=50 | date=datetime.datetime(2021, 11, 3, 0, 0) | time=datetime.time(0, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=57 | date=datetime.datetime(2021, 11, 3, 0, 0) | time=datetime.time(7, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=63 | date=datetime.datetime(2021, 11, 3, 0, 0) | time=datetime.time(13, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=64 | date=datetime.datetime(2021, 11, 3, 0, 0) | time=datetime.time(14, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=69 | date=datetime.datetime(2021, 11, 3, 0, 0) | time=datetime.time(19, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=84 | date=datetime.datetime(2021, 11, 4, 0, 0) | time=datetime.time(10, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=95 | date=datetime.datetime(2021, 11, 4, 0, 0) | time=datetime.time(21, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=99 | date=datetime.datetime(2021, 11, 5, 0, 0) | time=datetime.time(1, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=123 | date=datetime.datetime(2021, 11, 6, 0, 0) | time=datetime.time(1, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=129 | date=datetime.datetime(2021, 11, 6, 0, 0) | time=datetime.time(7, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=132 | date=datetime.datetime(2021, 11, 6, 0, 0) | time=datetime.time(10, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+
+[DATETIME] showing 15 examples
+  row=4 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(2, 0) | height=datetime.datetime(2026, 8, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=5 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 5, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=8 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(6, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 1, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=12 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(10, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 5, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 5, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=16 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(14, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 5, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=18 | date=datetime.datetime(2021, 11, 1, 0, 0) | time=datetime.time(16, 0) | height=datetime.datetime(2026, 1, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+####################################################################################################
+FILE 7/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2022.xlsx
+Size   : 20306 bytes
+Sheets : ['Thuy trieu 11-2022']
+Active data sheet: Thuy trieu 11-2022
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 11, 1, 0, 0), '00:00', 3.5]
+  Row 3: [datetime.datetime(2022, 11, 1, 0, 0), '01:00', 3.5]
+  Row 4: [datetime.datetime(2022, 11, 1, 0, 0), '02:00', 3.5]
+  Row 5: [datetime.datetime(2022, 11, 1, 0, 0), '03:00', 3.6]
+  Row 6: [datetime.datetime(2022, 11, 1, 0, 0), '04:00', 3.9]
+  Row 7: [datetime.datetime(2022, 11, 1, 0, 0), '05:00', 4.1]
+  Row 8: [datetime.datetime(2022, 11, 1, 0, 0), '06:00', 4.1]
+  Row 9: [datetime.datetime(2022, 11, 1, 0, 0), '07:00', 3.9]
+  Row 10: [datetime.datetime(2022, 11, 1, 0, 0), '08:00', 3.6]
+  Row 11: [datetime.datetime(2022, 11, 1, 0, 0), '09:00', 3.1]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 0.7
+  max: 4.7
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 8/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2023.xlsx
+Size   : 20287 bytes
+Sheets : ['Thuy trieu 11-2023']
+Active data sheet: Thuy trieu 11-2023
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 11, 1, 0, 0), '00:00', 3.1]
+  Row 3: [datetime.datetime(2023, 11, 1, 0, 0), '01:00', 3.5]
+  Row 4: [datetime.datetime(2023, 11, 1, 0, 0), '02:00', 4.1]
+  Row 5: [datetime.datetime(2023, 11, 1, 0, 0), '03:00', 4.4]
+  Row 6: [datetime.datetime(2023, 11, 1, 0, 0), '04:00', 4.4]
+  Row 7: [datetime.datetime(2023, 11, 1, 0, 0), '05:00', 4.1]
+  Row 8: [datetime.datetime(2023, 11, 1, 0, 0), '06:00', 3.4]
+  Row 9: [datetime.datetime(2023, 11, 1, 0, 0), '07:00', 2.6]
+  Row 10: [datetime.datetime(2023, 11, 1, 0, 0), '08:00', 1.8]
+  Row 11: [datetime.datetime(2023, 11, 1, 0, 0), '09:00', 1.2]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 0.8
+  max: 4.5
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 9/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2024.csv
+Size   : 15570 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/11/01', '0:00', '3.6']
+  Row 3: ['2024/11/01', '1:00', '4.0']
+  Row 4: ['2024/11/01', '2:00', '4.2']
+  Row 5: ['2024/11/01', '3:00', '4.0']
+  Row 6: ['2024/11/01', '4:00', '3.6']
+  Row 7: ['2024/11/01', '5:00', '2.9']
+  Row 8: ['2024/11/01', '6:00', '2.3']
+  Row 9: ['2024/11/01', '7:00', '1.8']
+  Row 10: ['2024/11/01', '8:00', '1.5']
+  Row 11: ['2024/11/01', '9:00', '1.4']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 10/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2025.csv
+Size   : 15570 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/11/01', '0:00', '3.9']
+  Row 3: ['2025/11/01', '1:00', '3.8']
+  Row 4: ['2025/11/01', '2:00', '3.6']
+  Row 5: ['2025/11/01', '3:00', '3.3']
+  Row 6: ['2025/11/01', '4:00', '3.0']
+  Row 7: ['2025/11/01', '5:00', '2.9']
+  Row 8: ['2025/11/01', '6:00', '2.8']
+  Row 9: ['2025/11/01', '7:00', '2.9']
+  Row 10: ['2025/11/01', '8:00', '3.1']
+  Row 11: ['2025/11/01', '9:00', '3.3']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 11/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2021.xlsx
+Size   : 22080 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(0, 0), 4.3]
+  Row 3: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(1, 0), 4.1]
+  Row 4: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(2, 0), 3.7]
+  Row 5: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(3, 0), 3.2]
+  Row 6: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(4, 0), 2.7]
+  Row 7: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(5, 0), 2.4]
+  Row 8: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(6, 0), 2.1]
+  Row 9: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(7, 0), 2.2]
+  Row 10: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(8, 0), 2.4]
+  Row 11: [datetime.datetime(2021, 12, 1, 0, 0), datetime.time(9, 0), 2.8]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+Numeric height statistics:
+  min: 0.6
+  max: 4.7
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 12/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2022.xlsx
+Size   : 20807 bytes
+Sheets : ['Thuy trieu 12-2022']
+Active data sheet: Thuy trieu 12-2022
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 12, 1, 0, 0), '00:00', 3.7]
+  Row 3: [datetime.datetime(2022, 12, 1, 0, 0), '01:00', 3.5]
+  Row 4: [datetime.datetime(2022, 12, 1, 0, 0), '02:00', 3.3]
+  Row 5: [datetime.datetime(2022, 12, 1, 0, 0), '03:00', 3.3]
+  Row 6: [datetime.datetime(2022, 12, 1, 0, 0), '04:00', 3.4]
+  Row 7: [datetime.datetime(2022, 12, 1, 0, 0), '05:00', 3.6]
+  Row 8: [datetime.datetime(2022, 12, 1, 0, 0), '06:00', 3.8]
+  Row 9: [datetime.datetime(2022, 12, 1, 0, 0), '07:00', 3.9]
+  Row 10: [datetime.datetime(2022, 12, 1, 0, 0), '08:00', 3.8]
+  Row 11: [datetime.datetime(2022, 12, 1, 0, 0), '09:00', 3.5]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.6
+  max: 4.8
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 13/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2023.xlsx
+Size   : 20696 bytes
+Sheets : ['Thuy trieu 12-2023']
+Active data sheet: Thuy trieu 12-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 12, 1, 0, 0), '00:00', 3.5]
+  Row 3: [datetime.datetime(2023, 12, 1, 0, 0), '01:00', 3.8]
+  Row 4: [datetime.datetime(2023, 12, 1, 0, 0), '02:00', 4.1]
+  Row 5: [datetime.datetime(2023, 12, 1, 0, 0), '03:00', 4.4]
+  Row 6: [datetime.datetime(2023, 12, 1, 0, 0), '04:00', 4.4]
+  Row 7: [datetime.datetime(2023, 12, 1, 0, 0), '05:00', 4.1]
+  Row 8: [datetime.datetime(2023, 12, 1, 0, 0), '06:00', 3.6]
+  Row 9: [datetime.datetime(2023, 12, 1, 0, 0), '07:00', 2.9]
+  Row 10: [datetime.datetime(2023, 12, 1, 0, 0), '08:00', 2.1]
+  Row 11: [datetime.datetime(2023, 12, 1, 0, 0), '09:00', 1.6]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.7
+  max: 4.7
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 14/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/12/01', '0:00', '4.1']
+  Row 3: ['2024/12/01', '1:00', '4.3']
+  Row 4: ['2024/12/01', '2:00', '4.3']
+  Row 5: ['2024/12/01', '3:00', '4.1']
+  Row 6: ['2024/12/01', '4:00', '3.5']
+  Row 7: ['2024/12/01', '5:00', '2.8']
+  Row 8: ['2024/12/01', '6:00', '2.1']
+  Row 9: ['2024/12/01', '7:00', '1.6']
+  Row 10: ['2024/12/01', '8:00', '1.3']
+  Row 11: ['2024/12/01', '9:00', '1.2']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 15/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/12/01', '0:00', '4.1']
+  Row 3: ['2025/12/01', '1:00', '3.7']
+  Row 4: ['2025/12/01', '2:00', '3.3']
+  Row 5: ['2025/12/01', '3:00', '2.9']
+  Row 6: ['2025/12/01', '4:00', '2.5']
+  Row 7: ['2025/12/01', '5:00', '2.3']
+  Row 8: ['2025/12/01', '6:00', '2.2']
+  Row 9: ['2025/12/01', '7:00', '2.4']
+  Row 10: ['2025/12/01', '8:00', '2.8']
+  Row 11: ['2025/12/01', '9:00', '3.2']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 16/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2021.xlsx
+Size   : 14306 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 1, 1, 0, 0), 0, 3.7]
+  Row 3: [datetime.datetime(2021, 1, 1, 0, 0), 1, 4.1]
+  Row 4: [datetime.datetime(2021, 1, 1, 0, 0), 2, 4.4]
+  Row 5: [datetime.datetime(2021, 1, 1, 0, 0), 3, 4.6]
+  Row 6: [datetime.datetime(2021, 1, 1, 0, 0), 4, 4.4]
+  Row 7: [datetime.datetime(2021, 1, 1, 0, 0), 5, 3.9]
+  Row 8: [datetime.datetime(2021, 1, 1, 0, 0), 6, 3.2]
+  Row 9: [datetime.datetime(2021, 1, 1, 0, 0), 7, 2.4]
+  Row 10: [datetime.datetime(2021, 1, 1, 0, 0), 8, 1.7]
+  Row 11: [datetime.datetime(2021, 1, 1, 0, 0), 9, 1.2]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  int                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+Numeric height statistics:
+  min: 0.6
+  max: 4.6
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 17/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2022.xlsx
+Size   : 14259 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 1, 1, 0, 0), 0, 4.5]
+  Row 3: [datetime.datetime(2022, 1, 1, 0, 0), 1, 4.4]
+  Row 4: [datetime.datetime(2022, 1, 1, 0, 0), 2, 4.1]
+  Row 5: [datetime.datetime(2022, 1, 1, 0, 0), 3, 3.4]
+  Row 6: [datetime.datetime(2022, 1, 1, 0, 0), 4, 2.7]
+  Row 7: [datetime.datetime(2022, 1, 1, 0, 0), 5, 2.1]
+  Row 8: [datetime.datetime(2022, 1, 1, 0, 0), 6, 1.6]
+  Row 9: [datetime.datetime(2022, 1, 1, 0, 0), 7, 1.2]
+  Row 10: [datetime.datetime(2022, 1, 1, 0, 0), 8, 1.2]
+  Row 11: [datetime.datetime(2022, 1, 1, 0, 0), 9, 1.4]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  int                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+Numeric height statistics:
+  min: 0.5
+  max: 4.7
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 18/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2023.xlsx
+Size   : 20655 bytes
+Sheets : ['Thuy trieu 01-2023']
+Active data sheet: Thuy trieu 01-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 1, 1, 0, 0), '00:00', 3.5]
+  Row 3: [datetime.datetime(2023, 1, 1, 0, 0), '01:00', 3.1]
+  Row 4: [datetime.datetime(2023, 1, 1, 0, 0), '02:00', 2.7]
+  Row 5: [datetime.datetime(2023, 1, 1, 0, 0), '03:00', 2.4]
+  Row 6: [datetime.datetime(2023, 1, 1, 0, 0), '04:00', 2.3]
+  Row 7: [datetime.datetime(2023, 1, 1, 0, 0), '05:00', 2.4]
+  Row 8: [datetime.datetime(2023, 1, 1, 0, 0), '06:00', 2.6]
+  Row 9: [datetime.datetime(2023, 1, 1, 0, 0), '07:00', 2.9]
+  Row 10: [datetime.datetime(2023, 1, 1, 0, 0), '08:00', 3.2]
+  Row 11: [datetime.datetime(2023, 1, 1, 0, 0), '09:00', 3.4]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.4
+  max: 4.7
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 19/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/01/01', '0:00', '3.2']
+  Row 3: ['2024/01/01', '1:00', '3.2']
+  Row 4: ['2024/01/01', '2:00', '3.5']
+  Row 5: ['2024/01/01', '3:00', '3.8']
+  Row 6: ['2024/01/01', '4:00', '4.0']
+  Row 7: ['2024/01/01', '5:00', '4.0']
+  Row 8: ['2024/01/01', '6:00', '3.9']
+  Row 9: ['2024/01/01', '7:00', '3.5']
+  Row 10: ['2024/01/01', '8:00', '2.9']
+  Row 11: ['2024/01/01', '9:00', '2.3']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 20/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/01/01', '0:00', '4.0']
+  Row 3: ['2025/01/01', '1:00', '4.3']
+  Row 4: ['2025/01/01', '2:00', '4.5']
+  Row 5: ['2025/01/01', '3:00', '4.5']
+  Row 6: ['2025/01/01', '4:00', '4.1']
+  Row 7: ['2025/01/01', '5:00', '3.5']
+  Row 8: ['2025/01/01', '6:00', '2.7']
+  Row 9: ['2025/01/01', '7:00', '2.0']
+  Row 10: ['2025/01/01', '8:00', '1.4']
+  Row 11: ['2025/01/01', '9:00', '1.0']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 21/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2021.xlsx
+Size   : 26244 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 673 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 2, 1, 0, 0), 0, 2.7]
+  Row 3: [datetime.datetime(2021, 2, 1, 0, 0), 1, 3.1]
+  Row 4: [datetime.datetime(2021, 2, 1, 0, 0), 2, 3.8]
+  Row 5: [datetime.datetime(2021, 2, 1, 0, 0), 3, 4.3]
+  Row 6: [datetime.datetime(2021, 2, 1, 0, 0), 4, 4.6]
+  Row 7: [datetime.datetime(2021, 2, 1, 0, 0), 5, 4.5]
+  Row 8: [datetime.datetime(2021, 2, 1, 0, 0), 6, 4.1]
+  Row 9: [datetime.datetime(2021, 2, 1, 0, 0), 7, 3.3]
+  Row 10: [datetime.datetime(2021, 2, 1, 0, 0), 8, 2.5]
+  Row 11: [datetime.datetime(2021, 2, 1, 0, 0), 9, 1.8]
+
+Total non-empty data rows: 672
+
+Date column Python types:
+  datetime            : 672
+
+Time column Python types:
+  int                 : 672
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 672
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 672
+
+Numeric height statistics:
+  min: 0.6
+  max: 4.6
+  count: 672
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 22/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2022.xlsx
+Size   : 20844 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 673 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(0, 0), 4.1]
+  Row 3: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(1, 0), 4.4]
+  Row 4: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(2, 0), 4.5]
+  Row 5: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(3, 0), 4.2]
+  Row 6: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(4, 0), 3.6]
+  Row 7: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(5, 0), 2.8]
+  Row 8: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(6, 0), 2]
+  Row 9: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(7, 0), 1.3]
+  Row 10: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(8, 0), 0.8]
+  Row 11: [datetime.datetime(2022, 2, 1, 0, 0), datetime.time(9, 0), 0.5]
+
+Total non-empty data rows: 672
+
+Date column Python types:
+  datetime            : 672
+
+Time column Python types:
+  time                : 672
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 672
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 672
+
+Numeric height statistics:
+  min: 0.4
+  max: 4.6
+  count: 672
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 23/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2023.xlsx
+Size   : 19485 bytes
+Sheets : ['Thuy trieu 02-2023']
+Active data sheet: Thuy trieu 02-2023
+Dimensions: 673 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 2, 1, 0, 0), '00:00', 3.4]
+  Row 3: [datetime.datetime(2023, 2, 1, 0, 0), '01:00', 3]
+  Row 4: [datetime.datetime(2023, 2, 1, 0, 0), '02:00', 2.6]
+  Row 5: [datetime.datetime(2023, 2, 1, 0, 0), '03:00', 2.2]
+  Row 6: [datetime.datetime(2023, 2, 1, 0, 0), '04:00', 1.9]
+  Row 7: [datetime.datetime(2023, 2, 1, 0, 0), '05:00', 1.7]
+  Row 8: [datetime.datetime(2023, 2, 1, 0, 0), '06:00', 1.7]
+  Row 9: [datetime.datetime(2023, 2, 1, 0, 0), '07:00', 1.8]
+  Row 10: [datetime.datetime(2023, 2, 1, 0, 0), '08:00', 2]
+  Row 11: [datetime.datetime(2023, 2, 1, 0, 0), '09:00', 2.4]
+
+Total non-empty data rows: 672
+
+Date column Python types:
+  datetime            : 672
+
+Time column Python types:
+  str                 : 672
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 672
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 672
+
+Numeric height statistics:
+  min: 0.5
+  max: 4.5
+  count: 672
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 24/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2024.csv
+Size   : 15052 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/02/01', '0:00', '2.4']
+  Row 3: ['2024/02/01', '1:00', '2.4']
+  Row 4: ['2024/02/01', '2:00', '2.6']
+  Row 5: ['2024/02/01', '3:00', '2.9']
+  Row 6: ['2024/02/01', '4:00', '3.4']
+  Row 7: ['2024/02/01', '5:00', '3.7']
+  Row 8: ['2024/02/01', '6:00', '3.7']
+  Row 9: ['2024/02/01', '7:00', '3.6']
+  Row 10: ['2024/02/01', '8:00', '3.3']
+  Row 11: ['2024/02/01', '9:00', '2.8']
+
+Total non-empty data rows: 696
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 696
+
+####################################################################################################
+FILE 25/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2025.csv
+Size   : 14534 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/02/01', '0:00', '2.9']
+  Row 3: ['2025/02/01', '1:00', '3.4']
+  Row 4: ['2025/02/01', '2:00', '4.1']
+  Row 5: ['2025/02/01', '3:00', '4.5']
+  Row 6: ['2025/02/01', '4:00', '4.7']
+  Row 7: ['2025/02/01', '5:00', '4.4']
+  Row 8: ['2025/02/01', '6:00', '3.8']
+  Row 9: ['2025/02/01', '7:00', '2.9']
+  Row 10: ['2025/02/01', '8:00', '2.1']
+  Row 11: ['2025/02/01', '9:00', '1.4']
+
+Total non-empty data rows: 672
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 672
+
+####################################################################################################
+FILE 26/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2021.xlsx
+Size   : 26482 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 3, 1, 0, 0), 0, 2.7]
+  Row 3: [datetime.datetime(2021, 3, 1, 0, 0), 1, 3.4]
+  Row 4: [datetime.datetime(2021, 3, 1, 0, 0), 2, 4]
+  Row 5: [datetime.datetime(2021, 3, 1, 0, 0), 3, 4.4]
+  Row 6: [datetime.datetime(2021, 3, 1, 0, 0), 4, 4.4]
+  Row 7: [datetime.datetime(2021, 3, 1, 0, 0), 5, 4]
+  Row 8: [datetime.datetime(2021, 3, 1, 0, 0), 6, 3.3]
+  Row 9: [datetime.datetime(2021, 3, 1, 0, 0), 7, 2.5]
+  Row 10: [datetime.datetime(2021, 3, 1, 0, 0), 8, 1.8]
+  Row 11: [datetime.datetime(2021, 3, 1, 0, 0), 9, 1.2]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  int                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+Numeric height statistics:
+  min: 0.7
+  max: 4.5
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 27/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2022.xlsx
+Size   : 22030 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(0, 0), 4]
+  Row 3: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(1, 0), 4]
+  Row 4: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(2, 0), 3.8]
+  Row 5: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(3, 0), 3.3]
+  Row 6: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(4, 0), 2.6]
+  Row 7: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(5, 0), 1.9]
+  Row 8: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(6, 0), 1.3]
+  Row 9: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(7, 0), 0.8]
+  Row 10: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(8, 0), 0.6]
+  Row 11: [datetime.datetime(2022, 3, 1, 0, 0), datetime.time(9, 0), 0.8]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+Numeric height statistics:
+  min: 0.5
+  max: 4.4
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 28/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2023.xlsx
+Size   : 20666 bytes
+Sheets : ['Thuy trieu 03-2023']
+Active data sheet: Thuy trieu 03-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 3, 1, 0, 0), '00:00', 2.4]
+  Row 3: [datetime.datetime(2023, 3, 1, 0, 0), '01:00', 2.1]
+  Row 4: [datetime.datetime(2023, 3, 1, 0, 0), '02:00', 1.8]
+  Row 5: [datetime.datetime(2023, 3, 1, 0, 0), '03:00', 1.6]
+  Row 6: [datetime.datetime(2023, 3, 1, 0, 0), '04:00', 1.6]
+  Row 7: [datetime.datetime(2023, 3, 1, 0, 0), '05:00', 1.8]
+  Row 8: [datetime.datetime(2023, 3, 1, 0, 0), '06:00', 2]
+  Row 9: [datetime.datetime(2023, 3, 1, 0, 0), '07:00', 2.2]
+  Row 10: [datetime.datetime(2023, 3, 1, 0, 0), '08:00', 2.5]
+  Row 11: [datetime.datetime(2023, 3, 1, 0, 0), '09:00', 2.8]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.7
+  max: 4.3
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 29/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/03/01', '0:00', '1.7']
+  Row 3: ['2024/03/01', '1:00', '1.8']
+  Row 4: ['2024/03/01', '2:00', '2.2']
+  Row 5: ['2024/03/01', '3:00', '2.8']
+  Row 6: ['2024/03/01', '4:00', '3.3']
+  Row 7: ['2024/03/01', '5:00', '3.6']
+  Row 8: ['2024/03/01', '6:00', '3.7']
+  Row 9: ['2024/03/01', '7:00', '3.5']
+  Row 10: ['2024/03/01', '8:00', '3.1']
+  Row 11: ['2024/03/01', '9:00', '2.7']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 30/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/03/01', '0:00', '3.0']
+  Row 3: ['2025/03/01', '1:00', '3.7']
+  Row 4: ['2025/03/01', '2:00', '4.3']
+  Row 5: ['2025/03/01', '3:00', '4.5']
+  Row 6: ['2025/03/01', '4:00', '4.3']
+  Row 7: ['2025/03/01', '5:00', '3.7']
+  Row 8: ['2025/03/01', '6:00', '2.9']
+  Row 9: ['2025/03/01', '7:00', '2.1']
+  Row 10: ['2025/03/01', '8:00', '1.4']
+  Row 11: ['2025/03/01', '9:00', '1.0']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 31/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2021.xlsx
+Size   : 22908 bytes
+Sheets : ['in Dữ liệu dạng dài — 744 dòng ']
+Active data sheet: in Dữ liệu dạng dài — 744 dòng 
+Dimensions: 721 rows x 5 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+  Column 4: None
+  Column 5: None
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(0, 0), datetime.datetime(2026, 2, 1, 0, 0), None, None]
+  Row 3: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(1, 0), datetime.datetime(2026, 8, 1, 0, 0), None, None]
+  Row 4: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(2, 0), datetime.datetime(2026, 6, 2, 0, 0), None, None]
+  Row 5: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 4, 3, 0, 0), None, None]
+  Row 6: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(4, 0), '4.0', None, None]
+  Row 7: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 1, 4, 0, 0), None, None]
+  Row 8: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(6, 0), datetime.datetime(2026, 9, 3, 0, 0), None, None]
+  Row 9: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 4, 3, 0, 0), None, None]
+  Row 10: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 8, 2, 0, 0), None, None]
+  Row 11: [datetime.datetime(2021, 4, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 3, 2, 0, 0), None, None]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  time                : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 617
+  STRING_NUMERIC      : 103
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 617
+  'General'                     : 103
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[DATETIME] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(0, 0) | height=datetime.datetime(2026, 2, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=3 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(1, 0) | height=datetime.datetime(2026, 8, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=4 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(2, 0) | height=datetime.datetime(2026, 6, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=5 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 1, 4, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=8 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(6, 0) | height=datetime.datetime(2026, 9, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 3, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 8, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 9, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 3, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 7, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=19 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(17, 0) | height=datetime.datetime(2026, 1, 4, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=20 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(18, 0) | height=datetime.datetime(2026, 8, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+[STRING_NUMERIC] showing 15 examples
+  row=6 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(4, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=12 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(10, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=16 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(14, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=18 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(16, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=25 | date=datetime.datetime(2021, 4, 1, 0, 0) | time=datetime.time(23, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=26 | date=datetime.datetime(2021, 4, 2, 0, 0) | time=datetime.time(0, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=43 | date=datetime.datetime(2021, 4, 2, 0, 0) | time=datetime.time(17, 0) | height='4.0' | data_type=s | is_date=False | format='General'
+  row=49 | date=datetime.datetime(2021, 4, 2, 0, 0) | time=datetime.time(23, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=50 | date=datetime.datetime(2021, 4, 3, 0, 0) | time=datetime.time(0, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=51 | date=datetime.datetime(2021, 4, 3, 0, 0) | time=datetime.time(1, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=53 | date=datetime.datetime(2021, 4, 3, 0, 0) | time=datetime.time(3, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=75 | date=datetime.datetime(2021, 4, 4, 0, 0) | time=datetime.time(1, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=76 | date=datetime.datetime(2021, 4, 4, 0, 0) | time=datetime.time(2, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=80 | date=datetime.datetime(2021, 4, 4, 0, 0) | time=datetime.time(6, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=85 | date=datetime.datetime(2021, 4, 4, 0, 0) | time=datetime.time(11, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+
+####################################################################################################
+FILE 32/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2022.xlsx
+Size   : 21584 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(0, 0), 3.1]
+  Row 3: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(1, 0), 3.7]
+  Row 4: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(2, 0), 4]
+  Row 5: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(3, 0), 4]
+  Row 6: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(4, 0), 3.6]
+  Row 7: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(5, 0), 2.9]
+  Row 8: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(6, 0), 2.1]
+  Row 9: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(7, 0), 1.5]
+  Row 10: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(8, 0), 1.1]
+  Row 11: [datetime.datetime(2022, 4, 1, 0, 0), datetime.time(9, 0), 0.9]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  time                : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 720
+
+Numeric height statistics:
+  min: 0.6
+  max: 4.1
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 33/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2023.xlsx
+Size   : 20225 bytes
+Sheets : ['Thuy trieu 04-2023']
+Active data sheet: Thuy trieu 04-2023
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 4, 1, 0, 0), '00:00', 2.7]
+  Row 3: [datetime.datetime(2023, 4, 1, 0, 0), '01:00', 2.5]
+  Row 4: [datetime.datetime(2023, 4, 1, 0, 0), '02:00', 2.2]
+  Row 5: [datetime.datetime(2023, 4, 1, 0, 0), '03:00', 1.8]
+  Row 6: [datetime.datetime(2023, 4, 1, 0, 0), '04:00', 1.6]
+  Row 7: [datetime.datetime(2023, 4, 1, 0, 0), '05:00', 1.4]
+  Row 8: [datetime.datetime(2023, 4, 1, 0, 0), '06:00', 1.4]
+  Row 9: [datetime.datetime(2023, 4, 1, 0, 0), '07:00', 1.5]
+  Row 10: [datetime.datetime(2023, 4, 1, 0, 0), '08:00', 1.7]
+  Row 11: [datetime.datetime(2023, 4, 1, 0, 0), '09:00', 2.2]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 0.5
+  max: 4.1
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 34/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2024.csv
+Size   : 15570 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/04/01', '0:00', '1.2']
+  Row 3: ['2024/04/01', '1:00', '1.2']
+  Row 4: ['2024/04/01', '2:00', '1.3']
+  Row 5: ['2024/04/01', '3:00', '1.6']
+  Row 6: ['2024/04/01', '4:00', '2.1']
+  Row 7: ['2024/04/01', '5:00', '2.6']
+  Row 8: ['2024/04/01', '6:00', '2.9']
+  Row 9: ['2024/04/01', '7:00', '3.1']
+  Row 10: ['2024/04/01', '8:00', '3.2']
+  Row 11: ['2024/04/01', '9:00', '3.1']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 35/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2025.csv
+Size   : 15570 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/04/01', '0:00', '1.3']
+  Row 3: ['2025/04/01', '1:00', '2.2']
+  Row 4: ['2025/04/01', '2:00', '3.1']
+  Row 5: ['2025/04/01', '3:00', '3.8']
+  Row 6: ['2025/04/01', '4:00', '4.1']
+  Row 7: ['2025/04/01', '5:00', '4.1']
+  Row 8: ['2025/04/01', '6:00', '3.7']
+  Row 9: ['2025/04/01', '7:00', '3.1']
+  Row 10: ['2025/04/01', '8:00', '2.5']
+  Row 11: ['2025/04/01', '9:00', '2.1']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 36/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2021.xlsx
+Size   : 24088 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(0, 0), '0.5']
+  Row 3: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(1, 0), '0.9']
+  Row 4: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(2, 0), datetime.datetime(2026, 7, 1, 0, 0)]
+  Row 5: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 5, 2, 0, 0)]
+  Row 6: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+  Row 7: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 6, 3, 0, 0)]
+  Row 8: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(6, 0), datetime.datetime(2026, 7, 3, 0, 0)]
+  Row 9: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 6, 3, 0, 0)]
+  Row 10: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+  Row 11: [datetime.datetime(2021, 5, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 9, 2, 0, 0)]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 610
+  STRING_NUMERIC      : 134
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 610
+  'General'                     : 134
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[STRING_NUMERIC] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(0, 0) | height='0.5' | data_type=s | is_date=False | format='General'
+  row=3 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(1, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=21 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(19, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=24 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(22, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=25 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(23, 0) | height='0.6' | data_type=s | is_date=False | format='General'
+  row=26 | date=datetime.datetime(2021, 5, 2, 0, 0) | time=datetime.time(0, 0) | height='0.5' | data_type=s | is_date=False | format='General'
+  row=27 | date=datetime.datetime(2021, 5, 2, 0, 0) | time=datetime.time(1, 0) | height='0.6' | data_type=s | is_date=False | format='General'
+  row=36 | date=datetime.datetime(2021, 5, 2, 0, 0) | time=datetime.time(10, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=40 | date=datetime.datetime(2021, 5, 2, 0, 0) | time=datetime.time(14, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=49 | date=datetime.datetime(2021, 5, 2, 0, 0) | time=datetime.time(23, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=50 | date=datetime.datetime(2021, 5, 3, 0, 0) | time=datetime.time(0, 0) | height='0.7' | data_type=s | is_date=False | format='General'
+  row=51 | date=datetime.datetime(2021, 5, 3, 0, 0) | time=datetime.time(1, 0) | height='0.6' | data_type=s | is_date=False | format='General'
+  row=52 | date=datetime.datetime(2021, 5, 3, 0, 0) | time=datetime.time(2, 0) | height='0.8' | data_type=s | is_date=False | format='General'
+  row=62 | date=datetime.datetime(2021, 5, 3, 0, 0) | time=datetime.time(12, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=63 | date=datetime.datetime(2021, 5, 3, 0, 0) | time=datetime.time(13, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+
+[DATETIME] showing 15 examples
+  row=4 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(2, 0) | height=datetime.datetime(2026, 7, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=5 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 5, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 6, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=8 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(6, 0) | height=datetime.datetime(2026, 7, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 6, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=12 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(10, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 6, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 6, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=16 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(14, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 6, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=18 | date=datetime.datetime(2021, 5, 1, 0, 0) | time=datetime.time(16, 0) | height=datetime.datetime(2026, 9, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+####################################################################################################
+FILE 37/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2022.xlsx
+Size   : 21975 bytes
+Sheets : ['Du lieu dang dai']
+Active data sheet: Du lieu dang dai
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(0, 0), 2.3]
+  Row 3: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(1, 0), 3.1]
+  Row 4: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(2, 0), 3.6]
+  Row 5: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(3, 0), 3.7]
+  Row 6: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(4, 0), 3.6]
+  Row 7: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(5, 0), 3.1]
+  Row 8: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(6, 0), 2.5]
+  Row 9: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(7, 0), 2.1]
+  Row 10: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(8, 0), 1.8]
+  Row 11: [datetime.datetime(2022, 5, 1, 0, 0), datetime.time(9, 0), 1.7]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+Numeric height statistics:
+  min: 0.2
+  max: 4.1
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 38/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2023.xlsx
+Size   : 20631 bytes
+Sheets : ['Thuy trieu 05-2023']
+Active data sheet: Thuy trieu 05-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 5, 1, 0, 0), '00:00', 2.7]
+  Row 3: [datetime.datetime(2023, 5, 1, 0, 0), '01:00', 2.5]
+  Row 4: [datetime.datetime(2023, 5, 1, 0, 0), '02:00', 2.2]
+  Row 5: [datetime.datetime(2023, 5, 1, 0, 0), '03:00', 1.9]
+  Row 6: [datetime.datetime(2023, 5, 1, 0, 0), '04:00', 1.6]
+  Row 7: [datetime.datetime(2023, 5, 1, 0, 0), '05:00', 1.4]
+  Row 8: [datetime.datetime(2023, 5, 1, 0, 0), '06:00', 1.3]
+  Row 9: [datetime.datetime(2023, 5, 1, 0, 0), '07:00', 1.5]
+  Row 10: [datetime.datetime(2023, 5, 1, 0, 0), '08:00', 1.9]
+  Row 11: [datetime.datetime(2023, 5, 1, 0, 0), '09:00', 2.3]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.3
+  max: 4.0
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 39/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/05/01', '0:00', '1.2']
+  Row 3: ['2024/05/01', '1:00', '1.0']
+  Row 4: ['2024/05/01', '2:00', '0.9']
+  Row 5: ['2024/05/01', '3:00', '1.0']
+  Row 6: ['2024/05/01', '4:00', '1.4']
+  Row 7: ['2024/05/01', '5:00', '1.9']
+  Row 8: ['2024/05/01', '6:00', '2.4']
+  Row 9: ['2024/05/01', '7:00', '2.8']
+  Row 10: ['2024/05/01', '8:00', '3.2']
+  Row 11: ['2024/05/01', '9:00', '3.3']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 40/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/05/01', '0:00', '0.5']
+  Row 3: ['2025/05/01', '1:00', '1.2']
+  Row 4: ['2025/05/01', '2:00', '2.1']
+  Row 5: ['2025/05/01', '3:00', '2.9']
+  Row 6: ['2025/05/01', '4:00', '3.4']
+  Row 7: ['2025/05/01', '5:00', '3.7']
+  Row 8: ['2025/05/01', '6:00', '3.7']
+  Row 9: ['2025/05/01', '7:00', '3.4']
+  Row 10: ['2025/05/01', '8:00', '3.1']
+  Row 11: ['2025/05/01', '9:00', '2.9']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 41/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2021.xlsx
+Size   : 23373 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 5 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+  Column 4: None
+  Column 5: None
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(0, 0), '0.6', None, None]
+  Row 3: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(1, 0), '0.5', None, None]
+  Row 4: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(2, 0), '0.7', None, None]
+  Row 5: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 2, 1, 0, 0), None, None]
+  Row 6: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 9, 1, 0, 0), None, None]
+  Row 7: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 5, 2, 0, 0), None, None]
+  Row 8: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(6, 0), datetime.datetime(2026, 1, 3, 0, 0), None, None]
+  Row 9: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 4, 3, 0, 0), None, None]
+  Row 10: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 6, 3, 0, 0), None, None]
+  Row 11: [datetime.datetime(2021, 6, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 5, 3, 0, 0), None, None]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  time                : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 575
+  STRING_NUMERIC      : 145
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 575
+  'General'                     : 145
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[STRING_NUMERIC] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(0, 0) | height='0.6' | data_type=s | is_date=False | format='General'
+  row=3 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(1, 0) | height='0.5' | data_type=s | is_date=False | format='General'
+  row=4 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(2, 0) | height='0.7' | data_type=s | is_date=False | format='General'
+  row=14 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(12, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=26 | date=datetime.datetime(2021, 6, 2, 0, 0) | time=datetime.time(0, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=27 | date=datetime.datetime(2021, 6, 2, 0, 0) | time=datetime.time(1, 0) | height='0.8' | data_type=s | is_date=False | format='General'
+  row=28 | date=datetime.datetime(2021, 6, 2, 0, 0) | time=datetime.time(2, 0) | height='0.7' | data_type=s | is_date=False | format='General'
+  row=29 | date=datetime.datetime(2021, 6, 2, 0, 0) | time=datetime.time(3, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=31 | date=datetime.datetime(2021, 6, 2, 0, 0) | time=datetime.time(5, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=45 | date=datetime.datetime(2021, 6, 2, 0, 0) | time=datetime.time(19, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=52 | date=datetime.datetime(2021, 6, 3, 0, 0) | time=datetime.time(2, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=53 | date=datetime.datetime(2021, 6, 3, 0, 0) | time=datetime.time(3, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=74 | date=datetime.datetime(2021, 6, 4, 0, 0) | time=datetime.time(0, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=87 | date=datetime.datetime(2021, 6, 4, 0, 0) | time=datetime.time(13, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=91 | date=datetime.datetime(2021, 6, 4, 0, 0) | time=datetime.time(17, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+
+[DATETIME] showing 15 examples
+  row=5 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 2, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 9, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 5, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=8 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(6, 0) | height=datetime.datetime(2026, 1, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 6, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 5, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=12 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(10, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=16 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(14, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=18 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(16, 0) | height=datetime.datetime(2026, 1, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=19 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(17, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=20 | date=datetime.datetime(2021, 6, 1, 0, 0) | time=datetime.time(18, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+####################################################################################################
+FILE 42/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2022.xlsx
+Size   : 21366 bytes
+Sheets : ['Sheet1']
+Active data sheet: Sheet1
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2022/06/01', '00:00', '1.2']
+  Row 3: ['2022/06/01', '01:00', '2.0']
+  Row 4: ['2022/06/01', '02:00', '2.7']
+  Row 5: ['2022/06/01', '03:00', '3.2']
+  Row 6: ['2022/06/01', '04:00', '3.4']
+  Row 7: ['2022/06/01', '05:00', '3.4']
+  Row 8: ['2022/06/01', '06:00', '3.2']
+  Row 9: ['2022/06/01', '07:00', '3.0']
+  Row 10: ['2022/06/01', '08:00', '2.8']
+  Row 11: ['2022/06/01', '09:00', '2.7']
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  str                 : 720
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 1
+  STRING_NUMERIC      : 719
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 3.0
+  max: 3.0
+  count: 1
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[STRING_NUMERIC] showing 15 examples
+  row=2 | date='2022/06/01' | time='00:00' | height='1.2' | data_type=s | is_date=False | format='0.0'
+  row=3 | date='2022/06/01' | time='01:00' | height='2.0' | data_type=s | is_date=False | format='0.0'
+  row=4 | date='2022/06/01' | time='02:00' | height='2.7' | data_type=s | is_date=False | format='0.0'
+  row=5 | date='2022/06/01' | time='03:00' | height='3.2' | data_type=s | is_date=False | format='0.0'
+  row=6 | date='2022/06/01' | time='04:00' | height='3.4' | data_type=s | is_date=False | format='0.0'
+  row=7 | date='2022/06/01' | time='05:00' | height='3.4' | data_type=s | is_date=False | format='0.0'
+  row=8 | date='2022/06/01' | time='06:00' | height='3.2' | data_type=s | is_date=False | format='0.0'
+  row=9 | date='2022/06/01' | time='07:00' | height='3.0' | data_type=s | is_date=False | format='0.0'
+  row=10 | date='2022/06/01' | time='08:00' | height='2.8' | data_type=s | is_date=False | format='0.0'
+  row=11 | date='2022/06/01' | time='09:00' | height='2.7' | data_type=s | is_date=False | format='0.0'
+  row=12 | date='2022/06/01' | time='10:00' | height='2.7' | data_type=s | is_date=False | format='0.0'
+  row=13 | date='2022/06/01' | time='11:00' | height='2.8' | data_type=s | is_date=False | format='0.0'
+  row=14 | date='2022/06/01' | time='12:00' | height='3.0' | data_type=s | is_date=False | format='0.0'
+  row=15 | date='2022/06/01' | time='13:00' | height='3.4' | data_type=s | is_date=False | format='0.0'
+  row=16 | date='2022/06/01' | time='14:00' | height='3.7' | data_type=s | is_date=False | format='0.0'
+
+####################################################################################################
+FILE 43/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2023.xlsx
+Size   : 20236 bytes
+Sheets : ['Thuy trieu 06-2023']
+Active data sheet: Thuy trieu 06-2023
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 6, 1, 0, 0), '00:00', 3]
+  Row 3: [datetime.datetime(2023, 6, 1, 0, 0), '01:00', 3]
+  Row 4: [datetime.datetime(2023, 6, 1, 0, 0), '02:00', 2.9]
+  Row 5: [datetime.datetime(2023, 6, 1, 0, 0), '03:00', 2.5]
+  Row 6: [datetime.datetime(2023, 6, 1, 0, 0), '04:00', 2.2]
+  Row 7: [datetime.datetime(2023, 6, 1, 0, 0), '05:00', 1.9]
+  Row 8: [datetime.datetime(2023, 6, 1, 0, 0), '06:00', 1.8]
+  Row 9: [datetime.datetime(2023, 6, 1, 0, 0), '07:00', 1.9]
+  Row 10: [datetime.datetime(2023, 6, 1, 0, 0), '08:00', 2.1]
+  Row 11: [datetime.datetime(2023, 6, 1, 0, 0), '09:00', 2.6]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 0.1
+  max: 4.0
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 44/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2024.csv
+Size   : 15570 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/06/01', '0:00', '2.1']
+  Row 3: ['2024/06/01', '1:00', '1.7']
+  Row 4: ['2024/06/01', '2:00', '1.3']
+  Row 5: ['2024/06/01', '3:00', '1.1']
+  Row 6: ['2024/06/01', '4:00', '1.1']
+  Row 7: ['2024/06/01', '5:00', '1.3']
+  Row 8: ['2024/06/01', '6:00', '1.8']
+  Row 9: ['2024/06/01', '7:00', '2.4']
+  Row 10: ['2024/06/01', '8:00', '3.0']
+  Row 11: ['2024/06/01', '9:00', '3.4']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 45/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2025.csv
+Size   : 15571 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/06/01', '0:00', '0.4']
+  Row 3: ['2025/06/01', '1:00', '0.4']
+  Row 4: ['2025/06/01', '2:00', '0.9']
+  Row 5: ['2025/06/01', '3:00', '1.5']
+  Row 6: ['2025/06/01', '4:00', '2.3']
+  Row 7: ['2025/06/01', '5:00', '2.9']
+  Row 8: ['2025/06/01', '6:00', '3.3']
+  Row 9: ['2025/06/01', '7:00', '3.6']
+  Row 10: ['2025/06/01', '8:00', '3.6']
+  Row 11: ['2025/06/01', '9:00', '3.4']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 46/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2021.xlsx
+Size   : 23652 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 6 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+  Column 4: None
+  Column 5: None
+  Column 6: None
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(0, 0), '0.9', None, None, None]
+  Row 3: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(1, 0), '0.8', None, None, None]
+  Row 4: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(2, 0), '0.9', None, None, None]
+  Row 5: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 3, 1, 0, 0), None, None, None]
+  Row 6: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 8, 1, 0, 0), None, None, None]
+  Row 7: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 5, 2, 0, 0), None, None, None]
+  Row 8: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(6, 0), '3.0', None, None, None]
+  Row 9: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 4, 3, 0, 0), None, None, None]
+  Row 10: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 6, 3, 0, 0), None, None, None]
+  Row 11: [datetime.datetime(2021, 7, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 5, 3, 0, 0), None, None, None]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 610
+  STRING_NUMERIC      : 134
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 610
+  'General'                     : 134
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[STRING_NUMERIC] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(0, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=3 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(1, 0) | height='0.8' | data_type=s | is_date=False | format='General'
+  row=4 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(2, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=8 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(6, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=13 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(11, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=21 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(19, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=41 | date=datetime.datetime(2021, 7, 2, 0, 0) | time=datetime.time(15, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=55 | date=datetime.datetime(2021, 7, 3, 0, 0) | time=datetime.time(5, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=68 | date=datetime.datetime(2021, 7, 3, 0, 0) | time=datetime.time(18, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=75 | date=datetime.datetime(2021, 7, 4, 0, 0) | time=datetime.time(1, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=79 | date=datetime.datetime(2021, 7, 4, 0, 0) | time=datetime.time(5, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=102 | date=datetime.datetime(2021, 7, 5, 0, 0) | time=datetime.time(4, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=113 | date=datetime.datetime(2021, 7, 5, 0, 0) | time=datetime.time(15, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=160 | date=datetime.datetime(2021, 7, 7, 0, 0) | time=datetime.time(14, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=162 | date=datetime.datetime(2021, 7, 7, 0, 0) | time=datetime.time(16, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+
+[DATETIME] showing 15 examples
+  row=5 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 3, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 8, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 5, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 6, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 5, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=12 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(10, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 6, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 4, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=16 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(14, 0) | height=datetime.datetime(2026, 2, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 3, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=18 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(16, 0) | height=datetime.datetime(2026, 5, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=19 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(17, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=20 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(18, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=22 | date=datetime.datetime(2021, 7, 1, 0, 0) | time=datetime.time(20, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+####################################################################################################
+FILE 47/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2022.xlsx
+Size   : 27654 bytes
+Sheets : ['Sheet1']
+Active data sheet: Sheet1
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2022, 7, 1, 0, 0), '00:00', '0.9']
+  Row 3: [datetime.datetime(2022, 7, 1, 0, 0), '01:00', '1.6']
+  Row 4: [datetime.datetime(2022, 7, 1, 0, 0), '02:00', '2.3']
+  Row 5: [datetime.datetime(2022, 7, 1, 0, 0), '03:00', '2.9']
+  Row 6: [datetime.datetime(2022, 7, 1, 0, 0), '04:00', '3.3']
+  Row 7: [datetime.datetime(2022, 7, 1, 0, 0), '05:00', '3.5']
+  Row 8: [datetime.datetime(2022, 7, 1, 0, 0), '06:00', '3.5']
+  Row 9: [datetime.datetime(2022, 7, 1, 0, 0), '07:00', '3.3']
+  Row 10: [datetime.datetime(2022, 7, 1, 0, 0), '08:00', '3.1']
+  Row 11: [datetime.datetime(2022, 7, 1, 0, 0), '09:00', '3.0']
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 742
+  time                : 2
+
+HEIGHT TYPE DISTRIBUTION:
+  STRING_NUMERIC      : 744
+
+HEIGHT NUMBER FORMATS:
+  'General'                     : 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[STRING_NUMERIC] showing 15 examples
+  row=2 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='00:00' | height='0.9' | data_type=s | is_date=False | format='General'
+  row=3 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='01:00' | height='1.6' | data_type=s | is_date=False | format='General'
+  row=4 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='02:00' | height='2.3' | data_type=s | is_date=False | format='General'
+  row=5 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='03:00' | height='2.9' | data_type=s | is_date=False | format='General'
+  row=6 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='04:00' | height='3.3' | data_type=s | is_date=False | format='General'
+  row=7 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='05:00' | height='3.5' | data_type=s | is_date=False | format='General'
+  row=8 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='06:00' | height='3.5' | data_type=s | is_date=False | format='General'
+  row=9 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='07:00' | height='3.3' | data_type=s | is_date=False | format='General'
+  row=10 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='08:00' | height='3.1' | data_type=s | is_date=False | format='General'
+  row=11 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='09:00' | height='3.0' | data_type=s | is_date=False | format='General'
+  row=12 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='10:00' | height='2.9' | data_type=s | is_date=False | format='General'
+  row=13 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='11:00' | height='2.8' | data_type=s | is_date=False | format='General'
+  row=14 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='12:00' | height='3.0' | data_type=s | is_date=False | format='General'
+  row=15 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='13:00' | height='3.3' | data_type=s | is_date=False | format='General'
+  row=16 | date=datetime.datetime(2022, 7, 1, 0, 0) | time='14:00' | height='3.5' | data_type=s | is_date=False | format='General'
+
+####################################################################################################
+FILE 48/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2023.xlsx
+Size   : 20661 bytes
+Sheets : ['Thuy trieu 07-2023']
+Active data sheet: Thuy trieu 07-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 7, 1, 0, 0), '00:00', 3]
+  Row 3: [datetime.datetime(2023, 7, 1, 0, 0), '01:00', 3.1]
+  Row 4: [datetime.datetime(2023, 7, 1, 0, 0), '02:00', 3.1]
+  Row 5: [datetime.datetime(2023, 7, 1, 0, 0), '03:00', 2.9]
+  Row 6: [datetime.datetime(2023, 7, 1, 0, 0), '04:00', 2.7]
+  Row 7: [datetime.datetime(2023, 7, 1, 0, 0), '05:00', 2.5]
+  Row 8: [datetime.datetime(2023, 7, 1, 0, 0), '06:00', 2.5]
+  Row 9: [datetime.datetime(2023, 7, 1, 0, 0), '07:00', 2.5]
+  Row 10: [datetime.datetime(2023, 7, 1, 0, 0), '08:00', 2.7]
+  Row 11: [datetime.datetime(2023, 7, 1, 0, 0), '09:00', 3]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.0
+  max: 4.0
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 49/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/07/01', '0:00', '2.5']
+  Row 3: ['2024/07/01', '1:00', '2.2']
+  Row 4: ['2024/07/01', '2:00', '1.9']
+  Row 5: ['2024/07/01', '3:00', '1.7']
+  Row 6: ['2024/07/01', '4:00', '1.7']
+  Row 7: ['2024/07/01', '5:00', '1.9']
+  Row 8: ['2024/07/01', '6:00', '2.3']
+  Row 9: ['2024/07/01', '7:00', '2.8']
+  Row 10: ['2024/07/01', '8:00', '3.2']
+  Row 11: ['2024/07/01', '9:00', '3.6']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 50/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/07/01', '0:00', '0.7']
+  Row 3: ['2025/07/01', '1:00', '0.7']
+  Row 4: ['2025/07/01', '2:00', '1.0']
+  Row 5: ['2025/07/01', '3:00', '1.5']
+  Row 6: ['2025/07/01', '4:00', '2.2']
+  Row 7: ['2025/07/01', '5:00', '2.9']
+  Row 8: ['2025/07/01', '6:00', '3.3']
+  Row 9: ['2025/07/01', '7:00', '3.6']
+  Row 10: ['2025/07/01', '8:00', '3.6']
+  Row 11: ['2025/07/01', '9:00', '3.3']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 51/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2021.xlsx
+Size   : 24063 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(0, 0), datetime.datetime(2026, 9, 1, 0, 0)]
+  Row 3: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(1, 0), datetime.datetime(2026, 7, 1, 0, 0)]
+  Row 4: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(2, 0), datetime.datetime(2026, 7, 1, 0, 0)]
+  Row 5: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 9, 1, 0, 0)]
+  Row 6: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 3, 2, 0, 0)]
+  Row 7: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 7, 2, 0, 0)]
+  Row 8: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(6, 0), '3.0']
+  Row 9: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 10: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 4, 3, 0, 0)]
+  Row 11: [datetime.datetime(2021, 8, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  time                : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 628
+  STRING_NUMERIC      : 116
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 628
+  'General'                     : 116
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[DATETIME] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(0, 0) | height=datetime.datetime(2026, 9, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=3 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(1, 0) | height=datetime.datetime(2026, 7, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=4 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(2, 0) | height=datetime.datetime(2026, 7, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=5 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 9, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 3, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 4, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=12 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(10, 0) | height=datetime.datetime(2026, 1, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 3, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=15 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(13, 0) | height=datetime.datetime(2026, 9, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=16 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(14, 0) | height=datetime.datetime(2026, 7, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 6, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+[STRING_NUMERIC] showing 15 examples
+  row=8 | date=datetime.datetime(2021, 8, 1, 0, 0) | time=datetime.time(6, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=45 | date=datetime.datetime(2021, 8, 2, 0, 0) | time=datetime.time(19, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=64 | date=datetime.datetime(2021, 8, 3, 0, 0) | time=datetime.time(14, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=81 | date=datetime.datetime(2021, 8, 4, 0, 0) | time=datetime.time(7, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=86 | date=datetime.datetime(2021, 8, 4, 0, 0) | time=datetime.time(12, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=105 | date=datetime.datetime(2021, 8, 5, 0, 0) | time=datetime.time(7, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=110 | date=datetime.datetime(2021, 8, 5, 0, 0) | time=datetime.time(12, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=116 | date=datetime.datetime(2021, 8, 5, 0, 0) | time=datetime.time(18, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=123 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(1, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=127 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(5, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=128 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(6, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=131 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(9, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=136 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(14, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=141 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(19, 0) | height='0.9' | data_type=s | is_date=False | format='General'
+  row=142 | date=datetime.datetime(2021, 8, 6, 0, 0) | time=datetime.time(20, 0) | height='0.8' | data_type=s | is_date=False | format='General'
+
+####################################################################################################
+FILE 52/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2022.xlsx
+Size   : 21627 bytes
+Sheets : ['Sheet1']
+Active data sheet: Sheet1
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2022/08/01', '00:00', 0.7]
+  Row 3: ['2022/08/01', '01:00', 1.2]
+  Row 4: ['2022/08/01', '02:00', 2]
+  Row 5: ['2022/08/01', '03:00', 2.7]
+  Row 6: ['2022/08/01', '04:00', 3.3]
+  Row 7: ['2022/08/01', '05:00', 3.6]
+  Row 8: ['2022/08/01', '06:00', 3.6]
+  Row 9: ['2022/08/01', '07:00', 3.4]
+  Row 10: ['2022/08/01', '08:00', 3.1]
+  Row 11: ['2022/08/01', '09:00', 2.7]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 96
+  str                 : 648
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.1
+  max: 4.1
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 53/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2023.xlsx
+Size   : 20706 bytes
+Sheets : ['Thuy trieu 08-2023']
+Active data sheet: Thuy trieu 08-2023
+Dimensions: 745 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 8, 1, 0, 0), '00:00', 2.3]
+  Row 3: [datetime.datetime(2023, 8, 1, 0, 0), '01:00', 3]
+  Row 4: [datetime.datetime(2023, 8, 1, 0, 0), '02:00', 3.5]
+  Row 5: [datetime.datetime(2023, 8, 1, 0, 0), '03:00', 3.7]
+  Row 6: [datetime.datetime(2023, 8, 1, 0, 0), '04:00', 3.6]
+  Row 7: [datetime.datetime(2023, 8, 1, 0, 0), '05:00', 3.4]
+  Row 8: [datetime.datetime(2023, 8, 1, 0, 0), '06:00', 3.2]
+  Row 9: [datetime.datetime(2023, 8, 1, 0, 0), '07:00', 3]
+  Row 10: [datetime.datetime(2023, 8, 1, 0, 0), '08:00', 2.8]
+  Row 11: [datetime.datetime(2023, 8, 1, 0, 0), '09:00', 2.8]
+
+Total non-empty data rows: 744
+
+Date column Python types:
+  datetime            : 744
+
+Time column Python types:
+  str                 : 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 744
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 744
+
+Numeric height statistics:
+  min: 0.0
+  max: 4.1
+  count: 744
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 54/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2024.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/08/01', '0:00', '3.0']
+  Row 3: ['2024/08/01', '1:00', '3.1']
+  Row 4: ['2024/08/01', '2:00', '3.1']
+  Row 5: ['2024/08/01', '3:00', '3.0']
+  Row 6: ['2024/08/01', '4:00', '2.9']
+  Row 7: ['2024/08/01', '5:00', '2.9']
+  Row 8: ['2024/08/01', '6:00', '2.9']
+  Row 9: ['2024/08/01', '7:00', '2.9']
+  Row 10: ['2024/08/01', '8:00', '3.1']
+  Row 11: ['2024/08/01', '9:00', '3.3']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 55/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2025.csv
+Size   : 16088 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025/08/01', '0:00', '1.7']
+  Row 3: ['2025/08/01', '1:00', '1.6']
+  Row 4: ['2025/08/01', '2:00', '1.8']
+  Row 5: ['2025/08/01', '3:00', '2.1']
+  Row 6: ['2025/08/01', '4:00', '2.6']
+  Row 7: ['2025/08/01', '5:00', '3.0']
+  Row 8: ['2025/08/01', '6:00', '3.4']
+  Row 9: ['2025/08/01', '7:00', '3.5']
+  Row 10: ['2025/08/01', '8:00', '3.4']
+  Row 11: ['2025/08/01', '9:00', '3.1']
+
+Total non-empty data rows: 744
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 744
+
+####################################################################################################
+FILE 56/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2021.xlsx
+Size   : 23791 bytes
+Sheets : ['không viết code in ra toàn bộ d']
+Active data sheet: không viết code in ra toàn bộ d
+Dimensions: 1000 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(0, 0), datetime.datetime(2026, 7, 2, 0, 0)]
+  Row 3: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(1, 0), datetime.datetime(2026, 7, 2, 0, 0)]
+  Row 4: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(2, 0), datetime.datetime(2026, 8, 2, 0, 0)]
+  Row 5: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(3, 0), datetime.datetime(2026, 8, 2, 0, 0)]
+  Row 6: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(4, 0), datetime.datetime(2026, 9, 2, 0, 0)]
+  Row 7: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(5, 0), datetime.datetime(2026, 1, 3, 0, 0)]
+  Row 8: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(6, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+  Row 9: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(7, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 10: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(8, 0), datetime.datetime(2026, 3, 3, 0, 0)]
+  Row 11: [datetime.datetime(2021, 9, 1, 0, 0), datetime.time(9, 0), datetime.datetime(2026, 2, 3, 0, 0)]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  time                : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  DATETIME            : 632
+  STRING_NUMERIC      : 88
+
+HEIGHT NUMBER FORMATS:
+  'd\\.m'                       : 632
+  'General'                     : 88
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+[DATETIME] showing 15 examples
+  row=2 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(0, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=3 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(1, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=4 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(2, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=5 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(3, 0) | height=datetime.datetime(2026, 8, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=6 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(4, 0) | height=datetime.datetime(2026, 9, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=7 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(5, 0) | height=datetime.datetime(2026, 1, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=8 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(6, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=9 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(7, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=10 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(8, 0) | height=datetime.datetime(2026, 3, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=11 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(9, 0) | height=datetime.datetime(2026, 2, 3, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=13 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(11, 0) | height=datetime.datetime(2026, 7, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=14 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(12, 0) | height=datetime.datetime(2026, 4, 2, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=16 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(14, 0) | height=datetime.datetime(2026, 8, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=17 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(15, 0) | height=datetime.datetime(2026, 6, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+  row=18 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(16, 0) | height=datetime.datetime(2026, 5, 1, 0, 0) | data_type=d | is_date=True | format='d\\.m'
+
+[STRING_NUMERIC] showing 15 examples
+  row=12 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(10, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=15 | date=datetime.datetime(2021, 9, 1, 0, 0) | time=datetime.time(13, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=27 | date=datetime.datetime(2021, 9, 2, 0, 0) | time=datetime.time(1, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=28 | date=datetime.datetime(2021, 9, 2, 0, 0) | time=datetime.time(2, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=29 | date=datetime.datetime(2021, 9, 2, 0, 0) | time=datetime.time(3, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=30 | date=datetime.datetime(2021, 9, 2, 0, 0) | time=datetime.time(4, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=37 | date=datetime.datetime(2021, 9, 2, 0, 0) | time=datetime.time(11, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=50 | date=datetime.datetime(2021, 9, 3, 0, 0) | time=datetime.time(0, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=62 | date=datetime.datetime(2021, 9, 3, 0, 0) | time=datetime.time(12, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=74 | date=datetime.datetime(2021, 9, 4, 0, 0) | time=datetime.time(0, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=80 | date=datetime.datetime(2021, 9, 4, 0, 0) | time=datetime.time(6, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=90 | date=datetime.datetime(2021, 9, 4, 0, 0) | time=datetime.time(16, 0) | height='2.0' | data_type=s | is_date=False | format='General'
+  row=94 | date=datetime.datetime(2021, 9, 4, 0, 0) | time=datetime.time(20, 0) | height='1.0' | data_type=s | is_date=False | format='General'
+  row=104 | date=datetime.datetime(2021, 9, 5, 0, 0) | time=datetime.time(6, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+  row=113 | date=datetime.datetime(2021, 9, 5, 0, 0) | time=datetime.time(15, 0) | height='3.0' | data_type=s | is_date=False | format='General'
+
+####################################################################################################
+FILE 57/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2022.xlsx
+Size   : 21263 bytes
+Sheets : ['Sheet1']
+Active data sheet: Sheet1
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2022/09/01', '00:00', 1.3]
+  Row 3: ['2022/09/01', '01:00', 1.6]
+  Row 4: ['2022/09/01', '02:00', 2.2]
+  Row 5: ['2022/09/01', '03:00', 3]
+  Row 6: ['2022/09/01', '04:00', 3.5]
+  Row 7: ['2022/09/01', '05:00', 3.8]
+  Row 8: ['2022/09/01', '06:00', 3.8]
+  Row 9: ['2022/09/01', '07:00', 3.5]
+  Row 10: ['2022/09/01', '08:00', 2.9]
+  Row 11: ['2022/09/01', '09:00', 2.3]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 96
+  str                 : 624
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 0.5
+  max: 4.2
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 58/60
+####################################################################################################
+
+====================================================================================================
+XLSX FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2023.xlsx
+Size   : 20219 bytes
+Sheets : ['Thuy trieu 09-2023']
+Active data sheet: Thuy trieu 09-2023
+Dimensions: 721 rows x 3 columns
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: [datetime.datetime(2023, 9, 1, 0, 0), '00:00', 1.7]
+  Row 3: [datetime.datetime(2023, 9, 1, 0, 0), '01:00', 2.7]
+  Row 4: [datetime.datetime(2023, 9, 1, 0, 0), '02:00', 3.5]
+  Row 5: [datetime.datetime(2023, 9, 1, 0, 0), '03:00', 4]
+  Row 6: [datetime.datetime(2023, 9, 1, 0, 0), '04:00', 4.1]
+  Row 7: [datetime.datetime(2023, 9, 1, 0, 0), '05:00', 3.8]
+  Row 8: [datetime.datetime(2023, 9, 1, 0, 0), '06:00', 3.3]
+  Row 9: [datetime.datetime(2023, 9, 1, 0, 0), '07:00', 2.8]
+  Row 10: [datetime.datetime(2023, 9, 1, 0, 0), '08:00', 2.4]
+  Row 11: [datetime.datetime(2023, 9, 1, 0, 0), '09:00', 2]
+
+Total non-empty data rows: 720
+
+Date column Python types:
+  datetime            : 720
+
+Time column Python types:
+  str                 : 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC             : 720
+
+HEIGHT NUMBER FORMATS:
+  '0.0'                         : 720
+
+Numeric height statistics:
+  min: 0.5
+  max: 4.3
+  count: 720
+
+SUSPICIOUS / SPECIAL HEIGHT EXAMPLES
+
+####################################################################################################
+FILE 59/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2024.csv
+Size   : 15570 bytes
+Encoding : utf-8-sig
+Delimiter: ';'
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2024/09/01', '0:00', '2.9']
+  Row 3: ['2024/09/01', '1:00', '3.4']
+  Row 4: ['2024/09/01', '2:00', '3.7']
+  Row 5: ['2024/09/01', '3:00', '3.7']
+  Row 6: ['2024/09/01', '4:00', '3.5']
+  Row 7: ['2024/09/01', '5:00', '3.3']
+  Row 8: ['2024/09/01', '6:00', '3.0']
+  Row 9: ['2024/09/01', '7:00', '2.8']
+  Row 10: ['2024/09/01', '8:00', '2.6']
+  Row 11: ['2024/09/01', '9:00', '2.6']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+####################################################################################################
+FILE 60/60
+####################################################################################################
+
+====================================================================================================
+CSV FILE
+====================================================================================================
+Object : bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2025.csv
+Size   : 15149 bytes
+Encoding : utf-8-sig
+Delimiter: ','
+
+Headers:
+  Column 1: 'Ngày'
+  Column 2: 'Giờ'
+  Column 3: 'Độ cao (m)'
+
+First 10 data rows:
+  Row 2: ['2025-09-01', '00:00', '2.6']
+  Row 3: ['2025-09-01', '01:00', '2.7']
+  Row 4: ['2025-09-01', '02:00', '2.8']
+  Row 5: ['2025-09-01', '03:00', '2.9']
+  Row 6: ['2025-09-01', '04:00', '3.2']
+  Row 7: ['2025-09-01', '05:00', '3.4']
+  Row 8: ['2025-09-01', '06:00', '3.5']
+  Row 9: ['2025-09-01', '07:00', '3.5']
+  Row 10: ['2025-09-01', '08:00', '3.3']
+  Row 11: ['2025-09-01', '09:00', '3.1']
+
+Total non-empty data rows: 720
+
+HEIGHT TYPE DISTRIBUTION:
+  NUMERIC_STRING      : 720
+
+====================================================================================================
+3. FINAL TIDE SUMMARY
+====================================================================================================
+
+Inventory by year/type:
+  year=2021 | type=.xlsx | files=12
+  year=2022 | type=.xlsx | files=12
+  year=2023 | type=.xlsx | files=12
+  year=2024 | type=.csv | files=12
+  year=2025 | type=.csv | files=12
+
+Schema summary:
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'DATETIME': 670, 'STRING_NUMERIC': 74}
+  height formats: {'d\\.m': 670, 'General': 74}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang10_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 718
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'STRING_NUMERIC': 74, 'DATETIME': 644}
+  height formats: {'General': 74, 'd\\.m': 644}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang11_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang12_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang1_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 672
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 672}
+  height formats: {'General': 672}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 672
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 672}
+  height formats: {'General': 672}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 672
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 672}
+  height formats: {'0.0': 672}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 696
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 696}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang2_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 672
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 672}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang3_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)', None, None]
+  height types: {'DATETIME': 617, 'STRING_NUMERIC': 103}
+  height formats: {'d\\.m': 617, 'General': 103}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'General': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang4_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'STRING_NUMERIC': 134, 'DATETIME': 610}
+  height formats: {'General': 134, 'd\\.m': 610}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang5_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)', None, None]
+  height types: {'STRING_NUMERIC': 145, 'DATETIME': 575}
+  height formats: {'General': 145, 'd\\.m': 575}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'STRING_NUMERIC': 719, 'NUMERIC': 1}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang6_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)', None, None, None]
+  height types: {'STRING_NUMERIC': 134, 'DATETIME': 610}
+  height formats: {'General': 134, 'd\\.m': 610}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'STRING_NUMERIC': 744}
+  height formats: {'General': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang7_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'DATETIME': 628, 'STRING_NUMERIC': 116}
+  height formats: {'d\\.m': 628, 'General': 116}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 744}
+  height formats: {'0.0': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang8_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 744
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 744}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2021.xlsx
+  year    : 2021
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'DATETIME': 632, 'STRING_NUMERIC': 88}
+  height formats: {'d\\.m': 632, 'General': 88}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2022.xlsx
+  year    : 2022
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2023.xlsx
+  year    : 2023
+  type    : xlsx
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC': 720}
+  height formats: {'0.0': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2024.csv
+  year    : 2024
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+Object: bronze/tide/ingestion_date=2026-10-01/batch_id=20261001_223615/thuy_trieu_thang9_2025.csv
+  year    : 2025
+  type    : csv
+  rows    : 720
+  headers : ['Ngày', 'Giờ', 'Độ cao (m)']
+  height types: {'NUMERIC_STRING': 720}
+
+====================================================================================================
+TIDE BRONZE INSPECTION COMPLETE
+====================================================================================================
+
+====================================================================================================
+REPORT SAVED
+====================================================================================================
+File: C:\Users\User\OneDrive\Documents\TLCN\reports\quality\tide_bronze_inspection.txt

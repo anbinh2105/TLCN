@@ -1,0 +1,318 @@
+{
+  "analysis": "raw_coverage_investigation",
+  "sources": {
+    "weather": {
+      "file_count": 1,
+      "files": [
+        {
+          "file": "data\\raw\\weather\\weather_can_tho_2018_2026.csv",
+          "separator": ",",
+          "rows": 31752,
+          "columns": [
+            "timestamp",
+            "temperature",
+            "humidity",
+            "pressure",
+            "wind_speed",
+            "wind_direction",
+            "latitude",
+            "longitude",
+            "date",
+            "year",
+            "month",
+            "day",
+            "hour"
+          ],
+          "timestamp_column": "timestamp",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2018-04-25 00:00:00",
+          "max_timestamp": "2026-09-18 23:00:00"
+        }
+      ],
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2018-04-25",
+          "last_date": "2018-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2019,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2019-04-25",
+          "last_date": "2019-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2020,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2020-04-25",
+          "last_date": "2020-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2021,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2021-04-25",
+          "last_date": "2021-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2022,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2022-04-25",
+          "last_date": "2022-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2023,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2023-04-25",
+          "last_date": "2023-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2024,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2024-04-25",
+          "last_date": "2024-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2025,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2025-04-25",
+          "last_date": "2025-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2026,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2026-04-25",
+          "last_date": "2026-09-18",
+          "days_outside_25Apr_18Sep": 0
+        }
+      ],
+      "status": "INSPECTED",
+      "total_rows": 31752,
+      "unique_dates": 1323,
+      "unique_hours": 31752,
+      "file_errors": 0
+    },
+    "rainfall": {
+      "file_count": 1,
+      "files": [
+        {
+          "file": "data\\raw\\rainfall\\rainfall_can_tho_2018_2026.csv",
+          "separator": ",",
+          "rows": 31752,
+          "columns": [
+            "timestamp",
+            "rainfall_mm",
+            "latitude",
+            "longitude",
+            "date",
+            "year",
+            "month",
+            "day",
+            "hour"
+          ],
+          "timestamp_column": "timestamp",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2018-04-25 00:00:00",
+          "max_timestamp": "2026-09-18 23:00:00"
+        }
+      ],
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2018-04-25",
+          "last_date": "2018-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2019,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2019-04-25",
+          "last_date": "2019-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2020,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2020-04-25",
+          "last_date": "2020-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2021,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2021-04-25",
+          "last_date": "2021-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2022,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2022-04-25",
+          "last_date": "2022-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2023,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2023-04-25",
+          "last_date": "2023-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2024,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2024-04-25",
+          "last_date": "2024-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2025,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2025-04-25",
+          "last_date": "2025-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2026,
+          "unique_days": 147,
+          "unique_hours": 3528,
+          "first_date": "2026-04-25",
+          "last_date": "2026-09-18",
+          "days_outside_25Apr_18Sep": 0
+        }
+      ],
+      "status": "INSPECTED",
+      "total_rows": 31752,
+      "unique_dates": 1323,
+      "unique_hours": 31752,
+      "file_errors": 0
+    },
+    "river_discharge": {
+      "file_count": 1,
+      "files": [
+        {
+          "file": "data\\raw\\river_discharge\\river_discharge_can_tho_2018_2026.csv",
+          "separator": ",",
+          "rows": 1323,
+          "columns": [
+            "timestamp",
+            "station",
+            "discharge_m3s",
+            "date",
+            "year",
+            "month"
+          ],
+          "timestamp_column": "timestamp",
+          "invalid_timestamps": 0,
+          "min_timestamp": "2018-04-25 00:00:00",
+          "max_timestamp": "2026-09-18 00:00:00"
+        }
+      ],
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2018-04-25",
+          "last_date": "2018-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2019,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2019-04-25",
+          "last_date": "2019-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2020,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2020-04-25",
+          "last_date": "2020-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2021,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2021-04-25",
+          "last_date": "2021-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2022,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2022-04-25",
+          "last_date": "2022-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2023,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2023-04-25",
+          "last_date": "2023-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2024,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2024-04-25",
+          "last_date": "2024-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2025,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2025-04-25",
+          "last_date": "2025-09-18",
+          "days_outside_25Apr_18Sep": 0
+        },
+        {
+          "year": 2026,
+          "unique_days": 147,
+          "unique_hours": 0,
+          "first_date": "2026-04-25",
+          "last_date": "2026-09-18",
+          "days_outside_25Apr_18Sep": 0
+        }
+      ],
+      "status": "INSPECTED",
+      "total_rows": 1323,
+      "unique_dates": 1323,
+      "unique_hours": 0,
+      "file_errors": 0
+    }
+  }
+}

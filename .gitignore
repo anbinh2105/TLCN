@@ -1,0 +1,8 @@
+.venv/
+data/* 
+.env
+docker/hive/lib/aws-java-sdk-bundle-1.12.367.jar
+superset/.git-backup/
+__pycache__/
+*.pyc
+*.pack

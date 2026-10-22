@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checks": {
+    "expected_rows": true,
+    "unique_hour": true,
+    "non_null_location_id": true,
+    "valid_source_counts": true,
+    "weather_missing_is_null": true,
+    "rainfall_missing_is_null": true,
+    "discharge_missing_is_null": true,
+    "water_level_missing_is_null": true,
+    "tide_missing_is_null": true,
+    "all_five_present_baseline": true,
+    "all_five_usable_baseline": true,
+    "tide_recovered_preserved": true,
+    "discharge_daily_expanded_preserved": true
+  },
+  "statistics": {
+    "rows": 73656,
+    "non_null_hours": 73656,
+    "distinct_hours": 73656,
+    "all_five_present": 39571,
+    "all_five_usable": 39150,
+    "weather_present": 73656,
+    "weather_usable": 73639,
+    "rainfall_present": 73656,
+    "rainfall_usable": 73639,
+    "discharge_present": 73656,
+    "discharge_usable": 73656,
+    "water_level_present": 54982,
+    "water_level_usable": 54485,
+    "tide_present": 43822,
+    "tide_usable": 43822,
+    "tide_recovered": 4986,
+    "discharge_daily_expanded": 73656
+  },
+  "mode": "write",
+  "target_table": "lakehouse.gold.hourly_hydrology",
+  "generated_at": "2026-10-10T05:17:55.759204+00:00"
+}

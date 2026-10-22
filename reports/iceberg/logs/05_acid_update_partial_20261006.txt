@@ -1,0 +1,223 @@
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> python -m demo.iceberg.demo_acid
+WARNING: Using incubator modules: jdk.incubator.vector
+:: loading settings :: url = jar:file:/C:/Users/User/OneDrive/Documents/TLCN/.venv/Lib/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\User\.ivy2.5.2\cache
+The jars for the packages stored in: C:\Users\User\.ivy2.5.2\jars
+org.apache.hadoop#hadoop-aws added as a dependency
+org.apache.iceberg#iceberg-spark-runtime-4.1_2.13 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-7a27799f-ca1e-483c-97f6-44b6439b2db9;1.0
+        confs: [default]
+        found org.apache.hadoop#hadoop-aws;3.4.2 in central
+        found software.amazon.awssdk#bundle;2.29.52 in central
+        found software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 incentral
+        found org.wildfly.openssl#wildfly-openssl;2.1.4.Final in central
+        found org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 in central
+:: resolution report :: resolve 348ms :: artifacts dl 24ms
+        :: modules in use:
+        org.apache.hadoop#hadoop-aws;3.4.2 from central in [default]
+        org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 from central in [default]
+        org.wildfly.openssl#wildfly-openssl;2.1.4.Final from central in [default]
+        software.amazon.awssdk#bundle;2.29.52 from central in [default]
+        software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   5   |   0   |   0   |   0   ||   5   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-7a27799f-ca1e-483c-97f6-44b6439b2db9
+        confs: [default]
+        0 artifacts copied, 5 already retrieved (0kB/19ms)
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+====================================================================================================
+ICEBERG CAPABILITY DEMO — ACID / ATOMIC COMMIT
+====================================================================================================
+
+[1] Safety check: lakehouse.demo.weather_iceberg_demo
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Demo namespace safety check [PASS]
+Silver tables will NOT be modified.
+
+[2] Verifying schema from Step 7.4
+Required column 'demo_note' exists [PASS]
+
+[3] Verifying current table state
+Current record count: 101                                                       
+Expected record count (101) [PASS]
+
+[4] Snapshot state BEFORE ACID commit
++-----------------------+-------------------+-------------------+---------+     
+|committed_at           |snapshot_id        |parent_id          |operation|
++-----------------------+-------------------+-------------------+---------+
+|2026-10-06 15:09:56.856|4064462945497131262|NULL               |append   |
+|2026-10-06 15:20:24.982|8625072115902793184|4064462945497131262|append   |
++-----------------------+-------------------+-------------------+---------+
+
+Snapshot count before UPDATE: 2                                                 
+Current snapshot before UPDATE: 8625072115902793184
+Expected snapshot state [PASS]
+
+[5] Verifying controlled target record
++-------------------+-------------+------------+------------+------------------------------+---------+
+|timestamp          |temperature_c|humidity_pct|source      |source_file    |demo_note|
++-------------------+-------------+------------+------------+------------------------------+---------+
+|2018-04-29 04:00:00|27.0         |88.0        |ICEBERG_DEMO|snapshot_demo_generated_record|NULL     |
++-------------------+-------------+------------+------------+------------------------------+---------+
+
+Controlled target exists exactly once [PASS]
+demo_note is NULL before UPDATE [PASS]
+
+[6] Performing controlled Iceberg UPDATE
+Setting demo_note = 'ACID_COMMIT_VERIFIED' for the ICEBERG_DEMO record.
+UPDATE statement completed.
+
+[7] Verifying current state AFTER commit
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+|timestamp          |temperature_c|humidity_pct|source      |source_file    |demo_note           |
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+|2018-04-29 04:00:00|27.0         |88.0        |ICEBERG_DEMO|snapshot_demo_generated_record|ACID_COMMIT_VERIFIED|
++-------------------+-------------+------------+------------+------------------------------+--------------------+
+
+Current table sees demo_note = 'ACID_COMMIT_VERIFIED' [PASS]
+
+[8] Verifying table consistency
+Records before UPDATE : 101
+Records after UPDATE  : 101
+Record count preserved [PASS]
+Target record remains unique [PASS]
+
+[9] Snapshot state AFTER ACID commit
++-----------------------+-------------------+-------------------+---------+
+|committed_at           |snapshot_id        |parent_id          |operation|
++-----------------------+-------------------+-------------------+---------+
+|2026-10-06 15:09:56.856|4064462945497131262|NULL               |append   |
+|2026-10-06 15:20:24.982|8625072115902793184|4064462945497131262|append   |
+|2026-10-06 17:20:29.574|7829982116285418825|8625072115902793184|overwrite|
++-----------------------+-------------------+-------------------+---------+
+
+Snapshots before UPDATE : 2
+Snapshots after UPDATE  : 3
+New snapshot ID        : 7829982116285418825
+New snapshot parent ID : 8625072115902793184
+New snapshot operation : overwrite
+Exactly one new snapshot was committed [PASS]
+New snapshot parent points to previous current snapshot [PASS]
+
+[10] Reading PRE-UPDATE snapshot
+{"ts": "2026-10-06 17:20:31.211", "level": "ERROR", "logger": "SQLQueryContextLogger","msg": "[UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `demo_note` cannot be resolved. Did you mean one of the following? [`source`,`latitude`, `longitude`, `timestamp`, `wind_speed`]. SQLSTATE: 42703", "context": {"errorClass": "UNRESOLVED_COLUMN.WITH_SUGGESTION"}, "exception": {"class": "Py4JJavaError", "msg": "An error occurred while calling o57.sql.\n: org.apache.spark.sql.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `demo_note` cannot be resolved. Did you mean one of the following? [`source`, `latitude`, `longitude`, `timestamp`, `wind_speed`]. SQLSTATE: 42703; line 8 pos 12;\n'Project [timestamp#536, temperature_c#537, humidity_pct#538, source#545, source_file#546, 'demo_note]\n+- Filter ((source#545 = ICEBERG_DEMO) AND (source_file#546 = snapshot_demo_generated_record))\n   +- SubqueryAlias lakehouse.demo.weather_iceberg_demo\n      +- RelationV2[timestamp#536, temperature_c#537, humidity_pct#538, pressure_hpa#539, wind_speed#540, wind_direction#541, latitude#542, longitude#543, quality_flag#544, source#545, source_file#546, silver_processed_at#547] lakehouse.demo.weather_iceberg_demo VERSION AS OF '8625072115902793184'\n\r\n\tat org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:430)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:166)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:406)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:404)\r\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:273)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:404)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:404)\r\n\tat scala.collection.immutable.List.foreach(List.scala:323)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:404)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:281)\r\n\tat org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:273)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:281)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:252)\r\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:289)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:241)\r\n\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:228)\r\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:289)\r\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:238)\r\n\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)\r\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)\r\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:238)\r\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:91)\r\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:122)\r\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:84)\r\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:322)\r\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)\r\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:322)\r\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:139)\r\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)\r\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:330)\r\n\tat org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)\r\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:330)\r\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\r\n\tat org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:329)\r\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:139)\r\n\tat scala.util.Try$.apply(Try.scala:217)\r\n\tat org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)\r\n\tat org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1453)\r\n\tat org.apache.spark.util.LazyTry.get(LazyTry.scala:58)\r\n\tat org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:150)\r\n\tat org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:90)\r\n\tat org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$5(Dataset.scala:138)\r\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\r\n\tat org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:135)\r\n\tat org.apache.spark.sql.classic.SparkSession.$anonfun$sql$1(SparkSession.scala:532)\r\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\r\n\tat org.apache.spark.sql.classic.SparkSession.sql(SparkSession.scala:502)\r\n\tat org.apache.spark.sql.classic.SparkSession.sql(SparkSession.scala:537)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\r\n\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\r\n\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\r\n\tatpy4j.Gateway.invoke(Gateway.java:282)\r\n\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\r\n\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\r\n\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)\r\n\tat py4j.ClientServerConnection.run(ClientServerConnection.java:108)\r\n\tat java.base/java.lang.Thread.run(Thread.java:840)\r\n\tSuppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller\r\n\t\tat org.apache.spark.sql.errors.QueryCompilationErrors$.unresolvedAttributeError(QueryCompilationErrors.scala:430)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.org$apache$spark$sql$catalyst$analysis$CheckAnalysis$$failUnresolvedAttribute(CheckAnalysis.scala:166)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7(CheckAnalysis.scala:406)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$7$adapted(CheckAnalysis.scala:404)\r\n\t\tat org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:273)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6(CheckAnalysis.scala:404)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$6$adapted(CheckAnalysis.scala:404)\r\n\t\tat scala.collection.immutable.List.foreach(List.scala:323)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2(CheckAnalysis.scala:404)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.$anonfun$checkAnalysis0$2$adapted(CheckAnalysis.scala:281)\r\n\t\tat org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:273)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0(CheckAnalysis.scala:281)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis0$(CheckAnalysis.scala:252)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis0(Analyzer.scala:289)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis(CheckAnalysis.scala:241)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.CheckAnalysis.checkAnalysis$(CheckAnalysis.scala:228)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:289)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$resolveInFixedPoint$1(HybridAnalyzer.scala:238)\r\n\t\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)\r\n\t\tat org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:238)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:91)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:122)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:84)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:322)\r\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)\r\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:322)\r\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:139)\r\n\t\tat org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)\r\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:330)\r\n\t\tat org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)\r\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:330)\r\n\t\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\r\n\t\tat org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:329)\r\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:139)\r\n\t\tat scala.util.Try$.apply(Try.scala:217)\r\n\t\tat org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)\r\n\t\tat org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)\r\n\t\tat org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)\r\n\t\t... 22 more\r\n", "stacktrace": [{"class": null, "method": "deco", "file": "C:\\Users\\User\\OneDrive\\Documents\\TLCN\\.venv\\lib\\site-packages\\pyspark\\errors\\exceptions\\captured.py", "line": "263"}, {"class": null, "method": "get_return_value", "file": "C:\\Users\\User\\OneDrive\\Documents\\TLCN\\.venv\\lib\\site-packages\\py4j\\protocol.py", "line": "327"}]}}
+26/10/06 17:20:31 WARN SparkEnv: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-450a37c6-56df-4057-9164-1cf9b98c03df\userFiles-33e87217-b4a3-4e03-84df-854fd09e391b
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-450a37c6-56df-4057-9164-1cf9b98c03df\userFiles-33e87217-b4a3-4e03-84df-854fd09e391b\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.SparkEnv.stop(SparkEnv.scala:131)
+        at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2406)
+        at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1314)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2406)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2308)
+        at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:552)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+        at py4j.Gateway.invoke(Gateway.java:282)
+        at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+        at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196,in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\User\OneDrive\Documents\TLCN\demo\iceberg\demo_acid.py", line 667, in<module>
+    main()
+  File "C:\Users\User\OneDrive\Documents\TLCN\demo\iceberg\demo_acid.py", line 407, inmain
+    old_target_df = get_target_at_snapshot(
+  File "C:\Users\User\OneDrive\Documents\TLCN\demo\iceberg\demo_acid.py", line 62, in get_target_at_snapshot
+    return spark.sql(
+  File "C:\Users\User\OneDrive\Documents\TLCN\.venv\lib\site-packages\pyspark\sql\session.py", line 1816, in sql
+    return DataFrame(self._jsparkSession.sql(sqlQuery, litArgs), self)
+  File "C:\Users\User\OneDrive\Documents\TLCN\.venv\lib\site-packages\py4j\java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "C:\Users\User\OneDrive\Documents\TLCN\.venv\lib\site-packages\pyspark\errors\exceptions\captured.py", line 269, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column, variable, or function parameter with name `demo_note` cannot be resolved.Did you mean one of the following? [`source`, `latitude`, `longitude`, `timestamp`, `wind_speed`]. SQLSTATE: 42703; line 8 pos 12;
+'Project [timestamp#536, temperature_c#537, humidity_pct#538, source#545, source_file#546, 'demo_note]
++- Filter ((source#545 = ICEBERG_DEMO) AND (source_file#546 = snapshot_demo_generated_record))
+   +- SubqueryAlias lakehouse.demo.weather_iceberg_demo
+      +- RelationV2[timestamp#536, temperature_c#537, humidity_pct#538, pressure_hpa#539, wind_speed#540, wind_direction#541, latitude#542, longitude#543, quality_flag#544, source#545, source_file#546, silver_processed_at#547] lakehouse.demo.weather_iceberg_demo VERSION AS OF '8625072115902793184'
+
+26/10/06 17:20:31 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-450a37c6-56df-4057-9164-1cf9b98c03df\userFiles-33e87217-b4a3-4e03-84df-854fd09e391b
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-450a37c6-56df-4057-9164-1cf9b98c03df\userFiles-33e87217-b4a3-4e03-84df-854fd09e391b\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:70)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:67)
+        at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1324)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:67)
+        at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:231)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at scala.util.Try$.apply(Try.scala:217)
+        at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:205)
+        at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:184)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/06 17:20:31 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-450a37c6-56df-4057-9164-1cf9b98c03df
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-450a37c6-56df-4057-9164-1cf9b98c03df\userFiles-33e87217-b4a3-4e03-84df-854fd09e391b\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:70)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:67)
+        at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1324)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:67)
+        at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:231)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at scala.util.Try$.apply(Try.scala:217)
+        at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:205)
+        at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:184)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> SUCCESS: The process with PID 28508 (child process of PID 4968) has been terminated.
+SUCCESS: The process with PID 4968 (child process of PID 35152) has been terminated.
+SUCCESS: The process with PID 35152 (child process of PID 25552) has been terminated.

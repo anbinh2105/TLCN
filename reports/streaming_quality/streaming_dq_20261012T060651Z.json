@@ -1,0 +1,281 @@
+{
+  "generated_at_utc": "2026-10-12T06:06:51.732295+00:00",
+  "pipeline": "historical_replay_streaming",
+  "record_counts": {
+    "silver": 10,
+    "gold_hourly": 3,
+    "gold_integrated": 3
+  },
+  "summary": {
+    "PASS": 31,
+    "FAIL": 0,
+    "WARN": 2
+  },
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "rule_id": "S7-TABLE",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": true,
+      "message": "Iceberg table exists"
+    },
+    {
+      "rule_id": "S7-TABLE",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": true,
+      "message": "Iceberg table exists"
+    },
+    {
+      "rule_id": "S7-TABLE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": true,
+      "message": "Iceberg table exists"
+    },
+    {
+      "rule_id": "S7-SCHEMA",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": {},
+      "message": "Required columns and types"
+    },
+    {
+      "rule_id": "S7-SCHEMA",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": {},
+      "message": "Required columns and types"
+    },
+    {
+      "rule_id": "S7-SCHEMA",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": {},
+      "message": "Required columns and types"
+    },
+    {
+      "rule_id": "S7-SILVER-NULL",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Rows with NULL in required columns"
+    },
+    {
+      "rule_id": "S7-SILVER-UNIQUE",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Duplicate logical key groups"
+    },
+    {
+      "rule_id": "S7-SILVER-TIME-UNIQUE",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Duplicate logical key groups"
+    },
+    {
+      "rule_id": "S7-SILVER-NUMERIC",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Rows with NULL, NaN or infinite numeric values"
+    },
+    {
+      "rule_id": "S7-HOURLY-NULL",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Rows with NULL in required columns"
+    },
+    {
+      "rule_id": "S7-HOURLY-UNIQUE",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Duplicate logical key groups"
+    },
+    {
+      "rule_id": "S7-HOURLY-NUMERIC",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Rows with NULL, NaN or infinite numeric values"
+    },
+    {
+      "rule_id": "S7-HOURLY-RANGE",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Min <= Mean <= Max"
+    },
+    {
+      "rule_id": "S7-HOURLY-FLAG",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Allowed values for hour_quality_flag: ['COMPLETE', 'PARTIAL', 'EXCESS']"
+    },
+    {
+      "rule_id": "S7-HOURLY-COUNT",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Observation count agrees with quality flag"
+    },
+    {
+      "rule_id": "S7-HOURLY-GRAIN",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Timestamp aligned to full hour"
+    },
+    {
+      "rule_id": "S7-INTEGRATED-NULL",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Rows with NULL in required columns"
+    },
+    {
+      "rule_id": "S7-INTEGRATED-UNIQUE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Duplicate logical key groups"
+    },
+    {
+      "rule_id": "S7-INTEGRATED-RANGE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Min <= Mean <= Max"
+    },
+    {
+      "rule_id": "S7-INTEGRATED-COUNTS",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Source counts within valid range"
+    },
+    {
+      "rule_id": "S7-INTEGRATED-ALL-FIVE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "All-five flags agree with source counts"
+    },
+    {
+      "rule_id": "S7-SOURCE-PRESENT",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "present_source_count equals component flags"
+    },
+    {
+      "rule_id": "S7-SOURCE-USABLE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "usable_source_count equals component flags"
+    },
+    {
+      "rule_id": "S7-WATER-USABLE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Water-level usability follows S6 policy"
+    },
+    {
+      "rule_id": "S7-LINEAGE-ORIGIN",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Water-level origin is historical replay"
+    },
+    {
+      "rule_id": "S7-LINEAGE-SIMULATION",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Replay rows are marked as simulation"
+    },
+    {
+      "rule_id": "S7-CROSS-LAYER",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Cross-layer consistency"
+    },
+    {
+      "rule_id": "S7-WARN-PARTIAL",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "WARN",
+      "severity": "WARNING",
+      "observed": 2,
+      "message": "Hours with incomplete water-level observations"
+    },
+    {
+      "rule_id": "S7-WARN-TIDE",
+      "table": "lakehouse.gold.hourly_hydrology_stream",
+      "status": "WARN",
+      "severity": "WARNING",
+      "observed": 3,
+      "message": "Hours without tide observations"
+    },
+    {
+      "rule_id": "S7-DEMO-COUNT",
+      "table": "silver",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 10,
+      "message": "Expected demo count: 10"
+    },
+    {
+      "rule_id": "S7-DEMO-COUNT",
+      "table": "gold_hourly",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 3,
+      "message": "Expected demo count: 3"
+    },
+    {
+      "rule_id": "S7-DEMO-COUNT",
+      "table": "gold_integrated",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 3,
+      "message": "Expected demo count: 3"
+    }
+  ]
+}

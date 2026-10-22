@@ -1,0 +1,263 @@
+{
+  "validation_name": "gold_alignment",
+  "validated_at": "2026-10-08T10:38:15.291583",
+  "passed_tables": 5,
+  "failed_tables": 0,
+  "results": [
+    {
+      "table": "lakehouse.gold.water_level_hourly",
+      "success": true,
+      "row_count": 54982,
+      "min_timestamp": "2018-04-25 14:00:00",
+      "max_timestamp": "2026-09-18 15:00:00",
+      "checks": [
+        {
+          "name": "required_columns",
+          "success": true,
+          "actual": [],
+          "expected": []
+        },
+        {
+          "name": "record_count",
+          "success": true,
+          "actual": 54982,
+          "expected": 54982
+        },
+        {
+          "name": "null_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "duplicate_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "off_hour_timestamps",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "table": "lakehouse.gold.rainfall_hourly",
+      "success": true,
+      "row_count": 31752,
+      "min_timestamp": "2018-04-25 00:00:00",
+      "max_timestamp": "2026-09-18 23:00:00",
+      "checks": [
+        {
+          "name": "required_columns",
+          "success": true,
+          "actual": [],
+          "expected": []
+        },
+        {
+          "name": "record_count",
+          "success": true,
+          "actual": 31752,
+          "expected": 31752
+        },
+        {
+          "name": "null_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "duplicate_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "off_hour_timestamps",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "quality_distribution",
+          "success": true,
+          "actual": {
+            "OBSERVED": 31735,
+            "MISSING": 17
+          },
+          "expected": {
+            "OBSERVED": 31735,
+            "MISSING": 17
+          }
+        }
+      ]
+    },
+    {
+      "table": "lakehouse.gold.weather_hourly",
+      "success": true,
+      "row_count": 31752,
+      "min_timestamp": "2018-04-25 00:00:00",
+      "max_timestamp": "2026-09-18 23:00:00",
+      "checks": [
+        {
+          "name": "required_columns",
+          "success": true,
+          "actual": [],
+          "expected": []
+        },
+        {
+          "name": "record_count",
+          "success": true,
+          "actual": 31752,
+          "expected": 31752
+        },
+        {
+          "name": "null_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "duplicate_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "off_hour_timestamps",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "quality_distribution",
+          "success": true,
+          "actual": {
+            "OBSERVED": 31735,
+            "MISSING": 17
+          },
+          "expected": {
+            "OBSERVED": 31735,
+            "MISSING": 17
+          }
+        }
+      ]
+    },
+    {
+      "table": "lakehouse.gold.tide_hourly",
+      "success": true,
+      "row_count": 43822,
+      "min_timestamp": "2021-01-01 00:00:00",
+      "max_timestamp": "2025-12-31 23:00:00",
+      "checks": [
+        {
+          "name": "required_columns",
+          "success": true,
+          "actual": [],
+          "expected": []
+        },
+        {
+          "name": "record_count",
+          "success": true,
+          "actual": 43822,
+          "expected": 43822
+        },
+        {
+          "name": "null_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "duplicate_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "off_hour_timestamps",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "quality_distribution",
+          "success": true,
+          "actual": {
+            "OBSERVED": 38836,
+            "RECOVERED": 4986
+          },
+          "expected": {
+            "OBSERVED": 38836,
+            "RECOVERED": 4986
+          }
+        },
+        {
+          "name": "recovery_metadata",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "known_missing_hours",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "table": "lakehouse.gold.discharge_hourly",
+      "success": true,
+      "row_count": 31752,
+      "min_timestamp": "2018-04-25 00:00:00",
+      "max_timestamp": "2026-09-18 23:00:00",
+      "checks": [
+        {
+          "name": "required_columns",
+          "success": true,
+          "actual": [],
+          "expected": []
+        },
+        {
+          "name": "record_count",
+          "success": true,
+          "actual": 31752,
+          "expected": 31752
+        },
+        {
+          "name": "null_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "duplicate_keys",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "off_hour_timestamps",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "alignment_metadata",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        },
+        {
+          "name": "daily_expansion_24h",
+          "success": true,
+          "actual": 0,
+          "expected": 0
+        }
+      ]
+    }
+  ]
+}

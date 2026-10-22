@@ -1,0 +1,30 @@
+{
+  "silver": {
+    "table": "lakehouse.silver.water_level_stream",
+    "count": 10,
+    "duplicates": 0,
+    "snapshot_id": "6973899890999063579",
+    "content_sha256": "1339b40e2bc38a80eebee53ad41907514cd8ebe212dc37dc7cb68ebe4bb65369"
+  },
+  "gold_hourly": {
+    "table": "lakehouse.gold.water_level_hourly_stream",
+    "count": 3,
+    "duplicates": 0,
+    "snapshot_id": "2967883121101773820",
+    "content_sha256": "e19f022ca2290f2734c702ebab79c1a3504a7810371bf3faa0490d59f2414339"
+  },
+  "gold_integrated": {
+    "table": "lakehouse.gold.hourly_hydrology_stream",
+    "count": 3,
+    "duplicates": 0,
+    "snapshot_id": "6828438264351571237",
+    "content_sha256": "f123164222a443f0d4ba9240027c2eff89de86dba125b7b993d1b0229f6c4183"
+  },
+  "batch": {
+    "table": "lakehouse.gold.hourly_hydrology",
+    "count": 73656,
+    "duplicates": 0,
+    "snapshot_id": "5232994262495386058",
+    "content_sha256": null
+  }
+}

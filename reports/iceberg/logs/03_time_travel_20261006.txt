@@ -1,0 +1,199 @@
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> python -m demo.iceberg.demo_time_travel
+WARNING: Using incubator modules: jdk.incubator.vector
+:: loading settings :: url = jar:file:/C:/Users/User/OneDrive/Documents/TLCN/.venv/Lib/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: C:\Users\User\.ivy2.5.2\cache
+The jars for the packages stored in: C:\Users\User\.ivy2.5.2\jars
+org.apache.hadoop#hadoop-aws added as a dependency
+org.apache.iceberg#iceberg-spark-runtime-4.1_2.13 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-186f0948-43cc-4c59-901b-b667c93f2b7a;1.0
+        confs: [default]
+        found org.apache.hadoop#hadoop-aws;3.4.2 in central
+        found software.amazon.awssdk#bundle;2.29.52 in central
+        found software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 in central
+        found org.wildfly.openssl#wildfly-openssl;2.1.4.Final in central
+        found org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 in central
+:: resolution report :: resolve 413ms :: artifacts dl 12ms
+        :: modules in use:
+        org.apache.hadoop#hadoop-aws;3.4.2 from central in [default]
+        org.apache.iceberg#iceberg-spark-runtime-4.1_2.13;1.12.0 from central in [default]
+        org.wildfly.openssl#wildfly-openssl;2.1.4.Final from central in [default]
+        software.amazon.awssdk#bundle;2.29.52 from central in [default]
+        software.amazon.s3.analyticsaccelerator#analyticsaccelerator-s3;1.2.1 from central in [default]
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   5   |   0   |   0   |   0   ||   5   |   0   |
+        ---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-186f0948-43cc-4c59-901b-b667c93f2b7a
+        confs: [default]
+        0 artifacts copied, 5 already retrieved (0kB/13ms)
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+====================================================================================================
+ICEBERG CAPABILITY DEMO — TIME TRAVEL
+====================================================================================================
+
+[1] Checking demo table: lakehouse.demo.weather_iceberg_demo
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+[2] Reading Iceberg snapshot history
++-----------------------+-------------------+-------------------+---------+
+|committed_at           |snapshot_id        |parent_id          |operation|
++-----------------------+-------------------+-------------------+---------+
+|2026-10-06 15:09:56.856|4064462945497131262|NULL               |append   |
+|2026-10-06 15:20:24.982|8625072115902793184|4064462945497131262|append   |
++-----------------------+-------------------+-------------------+---------+
+
+Snapshot count before Time Travel: 2
+
+Snapshot 1 ID : 4064462945497131262
+Snapshot 2 ID : 8625072115902793184
+
+[3] Verifying snapshot lineage
+Snapshot 2 parent_id matches Snapshot 1 ID [PASS]
+
+[4] Reading CURRENT table
+Current record count: 101
+Current table = Snapshot 2 state (101 records) [PASS]
+
+[5] Time Travel to Snapshot 1: 4064462945497131262
+Snapshot 1 record count: 100
+Time Travel Snapshot 1 = 100 records [PASS]
+
+[6] Time Travel to Snapshot 2: 8625072115902793184
+Snapshot 2 record count: 101
+Time Travel Snapshot 2 = 101 records [PASS]
+
+[7] Checking demo record in Snapshot 1
+ICEBERG_DEMO records in Snapshot 1: 0
+Demo record does NOT exist in Snapshot 1 [PASS]
+
+[8] Checking demo record in Snapshot 2
+ICEBERG_DEMO records in Snapshot 2: 1                                           
++-------------------+-------------+------------+------------+------------------------------+
+|timestamp          |temperature_c|humidity_pct|source      |source_file   |
++-------------------+-------------+------------+------------+------------------------------+
+|2018-04-29 04:00:00|27.0         |88.0        |ICEBERG_DEMO|snapshot_demo_generated_record|
++-------------------+-------------+------------+------------+------------------------------+
+
+Demo record exists in Snapshot 2 [PASS]
+
+[9] Comparing historical and current states
+Snapshot 1 : 100 records
+Snapshot 2 : 101 records
+Current    : 101 records
+Historical state comparison [PASS]
+
+[10] Verifying Time Travel is READ ONLY
+Snapshots before queries : 2
+Snapshots after queries  : 2
+No new snapshot was created [PASS]
+
+====================================================================================================
+ICEBERG TIME TRAVEL DEMO: PASS
+====================================================================================================
+Table              : lakehouse.demo.weather_iceberg_demo
+Snapshot 1 ID      : 4064462945497131262
+Snapshot 1 records : 100
+Snapshot 2 ID      : 8625072115902793184
+Snapshot 2 records : 101
+Current records    : 101
+Snapshots before   : 2
+Snapshots after    : 2
+
+RESULT: Iceberg successfully queried historical table state using Snapshot 1 without modifying the current table.
+
+Snapshot 1 does not contain the ICEBERG_DEMO row, while Snapshot 2 does.
+26/10/06 16:21:05 WARN SparkEnv: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-ecd62517-fcde-4a40-b626-11cf06f74e94\userFiles-d7d0d4fc-e7f9-4917-bc3b-92a3ca633fcc
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-ecd62517-fcde-4a40-b626-11cf06f74e94\userFiles-d7d0d4fc-e7f9-4917-bc3b-92a3ca633fcc\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.SparkEnv.stop(SparkEnv.scala:131)
+        at org.apache.spark.SparkContext.$anonfun$stop$25(SparkContext.scala:2406)
+        at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1314)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2406)
+        at org.apache.spark.SparkContext.stop(SparkContext.scala:2308)
+        at org.apache.spark.api.java.JavaSparkContext.stop(JavaSparkContext.scala:552)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+        at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+        at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+        at py4j.Gateway.invoke(Gateway.java:282)
+        at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+        at py4j.commands.CallCommand.execute(CallCommand.java:79)
+        at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+        at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/06 16:21:05 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-ecd62517-fcde-4a40-b626-11cf06f74e94
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-ecd62517-fcde-4a40-b626-11cf06f74e94\userFiles-d7d0d4fc-e7f9-4917-bc3b-92a3ca633fcc\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:70)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:67)
+        at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1324)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:67)
+        at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:231)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at scala.util.Try$.apply(Try.scala:217)
+        at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:205)
+        at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:184)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+26/10/06 16:21:05 ERROR ShutdownHookManager: Exception while deleting Spark temp dir: C:\Users\User\AppData\Local\Temp\spark-ecd62517-fcde-4a40-b626-11cf06f74e94\userFiles-d7d0d4fc-e7f9-4917-bc3b-92a3ca633fcc
+java.io.IOException: Failed to delete: C:\Users\User\AppData\Local\Temp\spark-ecd62517-fcde-4a40-b626-11cf06f74e94\userFiles-d7d0d4fc-e7f9-4917-bc3b-92a3ca633fcc\software.amazon.s3.analyticsaccelerator_analyticsaccelerator-s3-1.2.1.jar
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:308)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingJavaIO(JavaUtils.java:291)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:277)
+        at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:248)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:158)
+        at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:157)
+        at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1062)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4(ShutdownHookManager.scala:70)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$4$adapted(ShutdownHookManager.scala:67)
+        at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1324)
+        at org.apache.spark.util.ShutdownHookManager$.$anonfun$new$2(ShutdownHookManager.scala:67)
+        at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:231)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1941)
+        at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:205)
+        at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+        at scala.util.Try$.apply(Try.scala:217)
+        at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:205)
+        at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:184)
+        at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base/java.lang.Thread.run(Thread.java:840)
+(.venv) PS C:\Users\User\OneDrive\Documents\TLCN> SUCCESS: The process with PID 20864 (child process of PID 4628) has been terminated.
+SUCCESS: The process with PID 4628 (child process of PID 5356) has been terminated.
+SUCCESS: The process with PID 5356 (child process of PID 17676) has been terminated.

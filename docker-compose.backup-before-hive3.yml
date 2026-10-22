@@ -1,0 +1,104 @@
+services:
+
+  # ==========================================================
+  # MINIO - DATA LAKE STORAGE
+  # ==========================================================
+  minio:
+    image: minio/minio:latest
+    container_name: cantho-flood-minio
+
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: admin12345
+
+    command: server /data --console-address ":9001"
+
+    volumes:
+      - minio_data:/data
+
+    restart: unless-stopped
+
+
+  # ==========================================================
+  # POSTGRESQL - HIVE METASTORE DATABASE
+  # ==========================================================
+  postgres:
+    image: postgres:16
+    container_name: cantho-flood-postgres
+
+    environment:
+      POSTGRES_DB: metastore
+      POSTGRES_USER: hive
+      POSTGRES_PASSWORD: hivepassword
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U hive -d metastore"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+    restart: unless-stopped
+
+
+  # ==========================================================
+  # HIVE METASTORE
+  # ==========================================================
+  hive-metastore:
+    image: apache/hive:4.0.1
+    container_name: cantho-flood-hive-metastore
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_started
+
+    ports:
+      - "9083:9083"
+
+    environment:
+
+      SERVICE_NAME: metastore
+
+      DB_DRIVER: postgres
+
+      SERVICE_OPTS: >-
+        -Djavax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+        -Djavax.jdo.option.ConnectionURL=jdbc:postgresql://postgres:5432/metastore
+        -Djavax.jdo.option.ConnectionUserName=hive
+        -Djavax.jdo.option.ConnectionPassword=hivepassword
+
+    volumes:
+      - ./docker/hive/postgresql-42.7.4.jar:/opt/hive/lib/postgresql.jar
+      - ./docker/hive/lib/hadoop-aws-3.3.6.jar:/opt/hive/lib/hadoop-aws-3.3.6.jar
+      - ./docker/hive/lib/aws-java-sdk-bundle-1.12.367.jar:/opt/hive/lib/aws-java-sdk-bundle-1.12.367.jar
+      - ./docker/hive/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
+
+    restart: unless-stopped
+
+
+# ============================================================
+# PERSISTENT VOLUMES
+# ============================================================
+volumes:
+
+  # Existing MinIO volume
+  # DO NOT DELETE
+  minio_data:
+
+  # Hive Metastore PostgreSQL data
+  postgres_data:

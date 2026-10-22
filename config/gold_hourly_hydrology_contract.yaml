@@ -1,0 +1,153 @@
+
+dataset:
+  name: lakehouse.gold.hourly_hydrology
+  layer: gold
+  status: draft
+  purpose: analytics_and_ml
+
+grain:
+  description: "One hour per study location"
+  primary_key:
+    - hour_start
+    - location_id
+
+
+location:
+  location_id: CAN_THO_URBAN_CENTER
+  mapping_status: pending_verification
+
+  sources:
+    weather:
+      latitude: 10.0
+      longitude: 105.75
+
+    rainfall:
+      latitude: 10.0
+      longitude: 105.75
+
+    discharge:
+      station: "Hau River - Can Tho"
+
+    water_level:
+      station_code: "039803"
+
+    tide:
+      reference_location: "Dinh An"
+      publisher: "SPTC"
+      source_url: "https://sptc.com.vn/lich-thuy-trieu-dinh-an-nam-2022/"
+      source_period: "2021-2025"
+      source_file_count: 60
+      role: external_tidal_feature
+      vertical_datum: unknown
+      observation_or_prediction: unverified
+
+time:
+  column: hour_start
+  timezone: Asia/Ho_Chi_Minh
+  frequency: 1h
+  start: "2018-04-25 00:00:00"
+  end: "2026-09-18 23:00:00"
+  expected_hours: 73656
+
+sources:
+  weather:
+    table: lakehouse.gold.weather_hourly
+    required_columns:
+      hour_start: timestamp
+      temperature_c: double
+      humidity_pct: double
+      pressure_hpa: double
+      wind_speed: double
+      wind_direction: double
+      weather_quality_flag: string
+    quality_column: weather_quality_flag
+    allowed_flags: [OBSERVED, MISSING]
+    usable_flags: [OBSERVED]
+
+  rainfall:
+    table: lakehouse.gold.rainfall_hourly
+    required_columns:
+      hour_start: timestamp
+      rainfall_mm: double
+      rainfall_quality_flag: string
+    quality_column: rainfall_quality_flag
+    allowed_flags: [OBSERVED, MISSING]
+    usable_flags: [OBSERVED]
+
+  discharge:
+    table: lakehouse.gold.discharge_hourly
+    required_columns:
+      hour_start: timestamp
+      station: string
+      discharge_m3s: double
+      discharge_quality_flag: string
+      alignment_method: string
+      source_date: date
+      source_temporal_grain: string
+      is_hourly_observation: boolean
+    quality_column: discharge_quality_flag
+    allowed_flags: [OBSERVED]
+    usable_flags: [OBSERVED]
+    alignment_column: alignment_method
+    expected_alignment: DAILY_EXPANDED
+
+  water_level:
+    table: lakehouse.gold.water_level_hourly
+    required_columns:
+      hour_start: timestamp
+      station_code: string
+      water_level_mean: double
+      water_level_min: double
+      water_level_max: double
+      water_level_last: double
+      water_level_obs_count: bigint
+      water_level_completeness: double
+      water_level_quality_flag: string
+    quality_column: water_level_quality_flag
+    allowed_flags:
+      - COMPLETE
+      - INCOMPLETE
+      - OFF_GRID_OBSERVATIONS
+    usable_flags: [COMPLETE]
+
+  tide:
+    table: lakehouse.gold.tide_hourly
+    required_columns:
+      hour_start: timestamp
+      tide_height_m: double
+      tide_quality_flag: string
+      tide_is_recovered: boolean
+      recovery_method: string
+    quality_column: tide_quality_flag
+    allowed_flags: [OBSERVED, RECOVERED]
+    usable_flags: [OBSERVED, RECOVERED]
+    preserve_recovery_metadata: true
+
+
+integration:
+  base: canonical_hourly_timeline
+  join_type: left
+  join_column: hour_start
+
+  preserve_nulls: true
+  preserve_missing_measurements: true
+  preserve_quality_flags: true
+  preserve_availability_flags: true
+
+  drop_incomplete_rows: false
+  fill_missing_with_zero: false
+
+
+ml:
+  experiment_1: [water_level]
+  experiment_2: [water_level, rainfall, discharge]
+  experiment_3: [water_level, rainfall, discharge, tide]
+  experiment_4: [water_level, rainfall, discharge, tide, weather]
+  filter_at_integrated_gold: false
+  require_future_target_for_training: true
+
+validation:
+  require_unique_business_key: true
+  require_non_null_business_key: true
+  expected_rows_per_location: 73656
+  compare_cross_source_coverage: true

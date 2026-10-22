@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-10-12T10:55:53.218247+00:00",
+  "stage": "S7.6",
+  "pipeline": "historical_replay_streaming",
+  "overall_status": "PASS",
+  "record_counts": {
+    "bronze": 10,
+    "silver": 10,
+    "gold_hourly": 3
+  },
+  "bronze_objects": [
+    {
+      "object": "bronze/streaming/water_level/ingestion_date=2026-10-11/batch_id=7a21a3565a87a63acafc1d61/events.jsonl",
+      "bytes": 6046,
+      "sha256": "54f84cd35a6c49339b4d9411651d5bb60bd4028731d53fea49c4f5bbe8fd05ee",
+      "records": 10,
+      "checksum_verified": true
+    }
+  ],
+  "checks": [
+    {
+      "rule_id": "S76-BRONZE-SILVER",
+      "table": "lakehouse.silver.water_level_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Cross-layer consistency"
+    },
+    {
+      "rule_id": "S76-SILVER-GOLD",
+      "table": "lakehouse.gold.water_level_hourly_stream",
+      "status": "PASS",
+      "severity": "CRITICAL",
+      "observed": 0,
+      "message": "Cross-layer consistency"
+    }
+  ]
+}

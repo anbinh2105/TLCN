@@ -1,0 +1,132 @@
+silver:
+
+  timezone: "Asia/Ho_Chi_Minh"
+
+  weather:
+    business_key:
+      - timestamp
+
+    timestamp_column:
+      source: timestamp
+      target: timestamp
+
+    rename:
+      temperature: temperature_c
+      humidity: humidity_pct
+      pressure: pressure_hpa
+
+    numeric_columns:
+      - temperature_c
+      - humidity_pct
+      - pressure_hpa
+      - wind_speed
+      - wind_direction
+
+    missing_policy:
+      strategy: keep_null
+      quality_flag: MISSING
+
+    duplicate_policy:
+      exact: keep_one
+      conflicting: flag
+
+
+  rainfall:
+    business_key:
+      - timestamp
+
+    timestamp_column:
+      source: timestamp
+      target: timestamp
+
+    rename: {}
+
+    numeric_columns:
+      - rainfall_mm
+
+    missing_policy:
+      strategy: keep_null
+      quality_flag: MISSING
+
+    duplicate_policy:
+      exact: keep_one
+      conflicting: flag
+
+
+  water_level:
+    business_key:
+      - station_code
+      - timestamp
+
+    timestamp_column:
+      source: "Timestamp (UTC+07:00)"
+      target: timestamp
+
+    rename:
+      "Station Code": station_code
+      "Value": water_level_m
+      "Unit": unit
+
+    numeric_columns:
+      - water_level_m
+
+    missing_policy:
+      strategy: keep_null
+      quality_flag: MISSING
+
+    duplicate_policy:
+      exact: keep_one
+      conflicting: flag
+
+
+  river_discharge:
+    business_key:
+      - station
+      - timestamp
+
+    timestamp_column:
+      source: timestamp
+      target: timestamp
+
+    rename: {}
+
+    numeric_columns:
+      - discharge_m3s
+
+    missing_policy:
+      strategy: keep_null
+      quality_flag: MISSING
+
+    duplicate_policy:
+      exact: keep_one
+      conflicting: flag
+
+
+  tide:
+    business_key:
+      - timestamp
+
+    source_columns:
+      date: "Ngày"
+      time: "Giờ"
+      value: "Độ cao (m)"
+
+    target_columns:
+      timestamp: timestamp
+      value: tide_m
+
+    numeric_columns:
+      - tide_m
+
+    missing_policy:
+      strategy: keep_null
+      quality_flag: MISSING
+
+    duplicate_policy:
+      exact: keep_one
+      conflicting: flag
+
+    recovery:
+      enabled: true
+      preserve_original: true
+      quality_flag: RECOVERED

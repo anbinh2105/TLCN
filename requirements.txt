@@ -1,0 +1,7 @@
+minio
+python-dotenv
+pyyaml
+openpyxl
+pandas
+great-expectations
+pyspark

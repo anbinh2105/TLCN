@@ -1,0 +1,770 @@
+{
+  "step": "9.3",
+  "generated_at": "2026-10-10T05:57:20.548791+00:00",
+  "table": "lakehouse.gold.hourly_hydrology",
+  "status": "PASS",
+  "passed": 93,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "target.table_exists",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "check": "schema.hour_start",
+      "status": "PASS",
+      "details": {
+        "expected": "timestamp",
+        "actual": "timestamp"
+      }
+    },
+    {
+      "check": "schema.location_id",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.present_source_count",
+      "status": "PASS",
+      "details": {
+        "expected": "int",
+        "actual": "int"
+      }
+    },
+    {
+      "check": "schema.usable_source_count",
+      "status": "PASS",
+      "details": {
+        "expected": "int",
+        "actual": "int"
+      }
+    },
+    {
+      "check": "schema.all_five_present",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.all_five_usable",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.gold_processed_at",
+      "status": "PASS",
+      "details": {
+        "expected": "timestamp",
+        "actual": "timestamp"
+      }
+    },
+    {
+      "check": "schema.weather_present",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.weather_usable",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.rainfall_present",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.rainfall_usable",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.discharge_present",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.discharge_usable",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.water_level_present",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.water_level_usable",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.tide_present",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.tide_usable",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.weather.temperature_c",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.weather.humidity_pct",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.weather.pressure_hpa",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.weather.wind_speed",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.weather.wind_direction",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.weather.weather_quality_flag",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.rainfall.rainfall_mm",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.rainfall.rainfall_quality_flag",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_station",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_m3s",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_quality_flag",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_alignment_method",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_source_date",
+      "status": "PASS",
+      "details": {
+        "expected": "date",
+        "actual": "date"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_source_temporal_grain",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.discharge.discharge_is_hourly_observation",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_station_code",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_mean",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_min",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_max",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_last",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_last_timestamp",
+      "status": "PASS",
+      "details": {
+        "expected": "timestamp",
+        "actual": "timestamp"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_obs_count",
+      "status": "PASS",
+      "details": {
+        "expected": "bigint",
+        "actual": "bigint"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_total_rows",
+      "status": "PASS",
+      "details": {
+        "expected": "bigint",
+        "actual": "bigint"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_on_grid_count",
+      "status": "PASS",
+      "details": {
+        "expected": "bigint",
+        "actual": "bigint"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_off_grid_count",
+      "status": "PASS",
+      "details": {
+        "expected": "bigint",
+        "actual": "bigint"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_non_observed_count",
+      "status": "PASS",
+      "details": {
+        "expected": "bigint",
+        "actual": "bigint"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_expected_count",
+      "status": "PASS",
+      "details": {
+        "expected": "int",
+        "actual": "int"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_completeness",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.water_level.water_level_quality_flag",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.tide.tide_height_m",
+      "status": "PASS",
+      "details": {
+        "expected": "double",
+        "actual": "double"
+      }
+    },
+    {
+      "check": "schema.tide.tide_quality_flag",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "schema.tide.tide_is_recovered",
+      "status": "PASS",
+      "details": {
+        "expected": "boolean",
+        "actual": "boolean"
+      }
+    },
+    {
+      "check": "schema.tide.tide_recovery_method",
+      "status": "PASS",
+      "details": {
+        "expected": "string",
+        "actual": "string"
+      }
+    },
+    {
+      "check": "business_key.row_count",
+      "status": "PASS",
+      "details": {
+        "rows": 73656,
+        "non_null_hours": 73656,
+        "unique_keys": 73656,
+        "min_hour": "2018-04-25 00:00:00",
+        "max_hour": "2026-09-18 23:00:00"
+      }
+    },
+    {
+      "check": "business_key.not_null",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "check": "business_key.unique",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "check": "location_id.matches_contract",
+      "status": "PASS",
+      "details": {}
+    },
+    {
+      "check": "temporal.exact_canonical_timeline",
+      "status": "PASS",
+      "details": {
+        "missing_hours": 0,
+        "unexpected_hours": 0
+      }
+    },
+    {
+      "check": "baseline.weather_present",
+      "status": "PASS",
+      "details": {
+        "expected": 73656,
+        "actual": 73656
+      }
+    },
+    {
+      "check": "baseline.weather_usable",
+      "status": "PASS",
+      "details": {
+        "expected": 73639,
+        "actual": 73639
+      }
+    },
+    {
+      "check": "baseline.rainfall_present",
+      "status": "PASS",
+      "details": {
+        "expected": 73656,
+        "actual": 73656
+      }
+    },
+    {
+      "check": "baseline.rainfall_usable",
+      "status": "PASS",
+      "details": {
+        "expected": 73639,
+        "actual": 73639
+      }
+    },
+    {
+      "check": "baseline.discharge_present",
+      "status": "PASS",
+      "details": {
+        "expected": 73656,
+        "actual": 73656
+      }
+    },
+    {
+      "check": "baseline.discharge_usable",
+      "status": "PASS",
+      "details": {
+        "expected": 73656,
+        "actual": 73656
+      }
+    },
+    {
+      "check": "baseline.water_level_present",
+      "status": "PASS",
+      "details": {
+        "expected": 54982,
+        "actual": 54982
+      }
+    },
+    {
+      "check": "baseline.water_level_usable",
+      "status": "PASS",
+      "details": {
+        "expected": 54485,
+        "actual": 54485
+      }
+    },
+    {
+      "check": "baseline.tide_present",
+      "status": "PASS",
+      "details": {
+        "expected": 43822,
+        "actual": 43822
+      }
+    },
+    {
+      "check": "baseline.tide_usable",
+      "status": "PASS",
+      "details": {
+        "expected": 43822,
+        "actual": 43822
+      }
+    },
+    {
+      "check": "baseline.all_five_present",
+      "status": "PASS",
+      "details": {
+        "expected": 39571,
+        "actual": 39571
+      }
+    },
+    {
+      "check": "baseline.all_five_usable",
+      "status": "PASS",
+      "details": {
+        "expected": 39150,
+        "actual": 39150
+      }
+    },
+    {
+      "check": "baseline.tide_recovered",
+      "status": "PASS",
+      "details": {
+        "expected": 4986,
+        "actual": 4986
+      }
+    },
+    {
+      "check": "baseline.discharge_daily_expanded",
+      "status": "PASS",
+      "details": {
+        "expected": 73656,
+        "actual": 73656
+      }
+    },
+    {
+      "check": "weather.usable_semantics",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "weather.missing_measurement_is_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "weather.flags_not_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "rainfall.usable_semantics",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "rainfall.missing_measurement_is_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "rainfall.flags_not_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "discharge.usable_semantics",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "discharge.missing_measurement_is_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "discharge.flags_not_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "water_level.usable_semantics",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "water_level.missing_measurement_is_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "water_level.flags_not_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "tide.usable_semantics",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "tide.missing_measurement_is_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "tide.flags_not_null",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "cross_source.row_level_counts",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "tide.recovery_flag_consistency",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "discharge.daily_expansion_semantics",
+      "status": "PASS",
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "check": "source_integrity.weather",
+      "status": "PASS",
+      "details": {
+        "source_table": "lakehouse.gold.weather_hourly",
+        "mismatched_rows": 0,
+        "compared_columns": [
+          "temperature_c",
+          "humidity_pct",
+          "pressure_hpa",
+          "wind_speed",
+          "wind_direction",
+          "weather_quality_flag"
+        ]
+      }
+    },
+    {
+      "check": "source_integrity.rainfall",
+      "status": "PASS",
+      "details": {
+        "source_table": "lakehouse.gold.rainfall_hourly",
+        "mismatched_rows": 0,
+        "compared_columns": [
+          "rainfall_mm",
+          "rainfall_quality_flag"
+        ]
+      }
+    },
+    {
+      "check": "source_integrity.discharge",
+      "status": "PASS",
+      "details": {
+        "source_table": "lakehouse.gold.discharge_hourly",
+        "mismatched_rows": 0,
+        "compared_columns": [
+          "discharge_station",
+          "discharge_m3s",
+          "discharge_quality_flag",
+          "discharge_alignment_method",
+          "discharge_source_date",
+          "discharge_source_temporal_grain",
+          "discharge_is_hourly_observation"
+        ]
+      }
+    },
+    {
+      "check": "source_integrity.water_level",
+      "status": "PASS",
+      "details": {
+        "source_table": "lakehouse.gold.water_level_hourly",
+        "mismatched_rows": 0,
+        "compared_columns": [
+          "water_level_station_code",
+          "water_level_mean",
+          "water_level_min",
+          "water_level_max",
+          "water_level_last",
+          "water_level_last_timestamp",
+          "water_level_obs_count",
+          "water_level_total_rows",
+          "water_level_on_grid_count",
+          "water_level_off_grid_count",
+          "water_level_non_observed_count",
+          "water_level_expected_count",
+          "water_level_completeness",
+          "water_level_quality_flag"
+        ]
+      }
+    },
+    {
+      "check": "source_integrity.tide",
+      "status": "PASS",
+      "details": {
+        "source_table": "lakehouse.gold.tide_hourly",
+        "mismatched_rows": 0,
+        "compared_columns": [
+          "tide_height_m",
+          "tide_quality_flag",
+          "tide_is_recovered",
+          "tide_recovery_method"
+        ]
+      }
+    }
+  ]
+}

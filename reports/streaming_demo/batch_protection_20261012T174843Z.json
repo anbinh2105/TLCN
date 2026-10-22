@@ -1,0 +1,108 @@
+{
+  "stage": "S8.4",
+  "mode": "read_only",
+  "created_at_utc": "2026-10-12T17:48:12.458728+00:00",
+  "baseline": {
+    "count": 73656,
+    "snapshot_id": "5232994262495386058"
+  },
+  "checks": [
+    {
+      "name": "batch_table_exists",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "batch_record_count",
+      "status": "PASS",
+      "observed": 73656,
+      "expected": 73656
+    },
+    {
+      "name": "batch_key_columns",
+      "status": "PASS",
+      "observed": [
+        "hour_start",
+        "location_id"
+      ],
+      "expected": [
+        "hour_start",
+        "location_id"
+      ]
+    },
+    {
+      "name": "batch_null_keys",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "name": "batch_duplicate_key_groups",
+      "status": "PASS",
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "name": "batch_snapshot_unchanged",
+      "status": "PASS",
+      "observed": "5232994262495386058",
+      "expected": "5232994262495386058"
+    },
+    {
+      "name": "batch_simulation_column_absent",
+      "status": "PASS",
+      "observed": "not present (not a replay marker)",
+      "expected": "not present"
+    },
+    {
+      "name": "batch_mixed_simulation_column_absent",
+      "status": "PASS",
+      "observed": "not present (not a replay marker)",
+      "expected": "not present"
+    },
+    {
+      "name": "batch_stream_replay_origin_column_absent",
+      "status": "PASS",
+      "observed": "not present (not a replay marker)",
+      "expected": "not present"
+    },
+    {
+      "name": "silver_table_exists",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "silver_record_count",
+      "status": "PASS",
+      "observed": 10,
+      "expected": 10
+    },
+    {
+      "name": "gold_hourly_table_exists",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "gold_hourly_record_count",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    },
+    {
+      "name": "gold_integrated_table_exists",
+      "status": "PASS",
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "gold_integrated_record_count",
+      "status": "PASS",
+      "observed": 3,
+      "expected": 3
+    }
+  ],
+  "status": "PASS"
+}

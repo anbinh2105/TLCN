@@ -1,0 +1,564 @@
+{
+  "analysis": "gold_missing_data",
+  "generated_at": "2026-10-08T11:34:05.010363",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "scope": "Between first and last observed hour per station; yearly coverage uses full calendar years.",
+  "tables": {
+    "water_level": {
+      "table": "lakehouse.gold.water_level_hourly",
+      "row_count": 54982,
+      "first_hour": "2018-04-25 14:00:00",
+      "last_hour": "2026-09-18 15:00:00",
+      "null_statistics": {
+        "water_level_mean": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "water_level_min": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "water_level_max": {
+          "null_count": 0,
+          "null_pct": 0.0
+        },
+        "water_level_last": {
+          "null_count": 0,
+          "null_pct": 0.0
+        }
+      },
+      "timestamp_gaps": {
+        "observed_hours": 54982,
+        "missing_hours": 18652,
+        "gap_count": 48,
+        "longest_streak_hours": 4704,
+        "top_5_gaps": [
+          {
+            "station_code": "039803",
+            "start": "2019-11-11 14:00:00",
+            "end": "2020-05-25 13:00:00",
+            "missing_hours": 4704
+          },
+          {
+            "station_code": "039803",
+            "start": "2020-08-04 11:00:00",
+            "end": "2020-10-27 14:00:00",
+            "missing_hours": 2020
+          },
+          {
+            "station_code": "039803",
+            "start": "2020-12-16 12:00:00",
+            "end": "2021-02-25 10:00:00",
+            "missing_hours": 1703
+          },
+          {
+            "station_code": "039803",
+            "start": "2021-04-02 10:00:00",
+            "end": "2021-06-09 10:00:00",
+            "missing_hours": 1633
+          },
+          {
+            "station_code": "039803",
+            "start": "2019-09-13 09:00:00",
+            "end": "2019-11-03 13:00:00",
+            "missing_hours": 1229
+          }
+        ]
+      },
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "available_hour_keys": 4754,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 54.27
+        },
+        {
+          "year": 2019,
+          "available_hour_keys": 2967,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 33.87
+        },
+        {
+          "year": 2020,
+          "available_hour_keys": 1540,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 17.53
+        },
+        {
+          "year": 2021,
+          "available_hour_keys": 4771,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 54.46
+        },
+        {
+          "year": 2022,
+          "available_hour_keys": 8756,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 99.95
+        },
+        {
+          "year": 2023,
+          "available_hour_keys": 8625,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 98.46
+        },
+        {
+          "year": 2024,
+          "available_hour_keys": 8784,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 100.0
+        },
+        {
+          "year": 2025,
+          "available_hour_keys": 8637,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 98.6
+        },
+        {
+          "year": 2026,
+          "available_hour_keys": 6148,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 70.18
+        }
+      ],
+      "quality_distribution": {}
+    },
+    "rainfall": {
+      "table": "lakehouse.gold.rainfall_hourly",
+      "row_count": 31752,
+      "first_hour": "2018-04-25 00:00:00",
+      "last_hour": "2026-09-18 23:00:00",
+      "null_statistics": {
+        "rainfall_mm": {
+          "null_count": 17,
+          "null_pct": 0.0535
+        }
+      },
+      "timestamp_gaps": {
+        "observed_hours": 31752,
+        "missing_hours": 41904,
+        "gap_count": 8,
+        "longest_streak_hours": 5256,
+        "top_5_gaps": [
+          {
+            "start": "2019-09-19 00:00:00",
+            "end": "2020-04-24 23:00:00",
+            "missing_hours": 5256
+          },
+          {
+            "start": "2023-09-19 00:00:00",
+            "end": "2024-04-24 23:00:00",
+            "missing_hours": 5256
+          },
+          {
+            "start": "2018-09-19 00:00:00",
+            "end": "2019-04-24 23:00:00",
+            "missing_hours": 5232
+          },
+          {
+            "start": "2020-09-19 00:00:00",
+            "end": "2021-04-24 23:00:00",
+            "missing_hours": 5232
+          },
+          {
+            "start": "2021-09-19 00:00:00",
+            "end": "2022-04-24 23:00:00",
+            "missing_hours": 5232
+          }
+        ]
+      },
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2019,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2020,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 40.16
+        },
+        {
+          "year": 2021,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2022,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2023,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2024,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 40.16
+        },
+        {
+          "year": 2025,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2026,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        }
+      ],
+      "quality_distribution": {
+        "OBSERVED": 31735,
+        "MISSING": 17
+      }
+    },
+    "weather": {
+      "table": "lakehouse.gold.weather_hourly",
+      "row_count": 31752,
+      "first_hour": "2018-04-25 00:00:00",
+      "last_hour": "2026-09-18 23:00:00",
+      "null_statistics": {
+        "temperature_c": {
+          "null_count": 17,
+          "null_pct": 0.0535
+        },
+        "humidity_pct": {
+          "null_count": 17,
+          "null_pct": 0.0535
+        },
+        "pressure_hpa": {
+          "null_count": 17,
+          "null_pct": 0.0535
+        },
+        "wind_speed": {
+          "null_count": 17,
+          "null_pct": 0.0535
+        },
+        "wind_direction": {
+          "null_count": 17,
+          "null_pct": 0.0535
+        }
+      },
+      "timestamp_gaps": {
+        "observed_hours": 31752,
+        "missing_hours": 41904,
+        "gap_count": 8,
+        "longest_streak_hours": 5256,
+        "top_5_gaps": [
+          {
+            "start": "2019-09-19 00:00:00",
+            "end": "2020-04-24 23:00:00",
+            "missing_hours": 5256
+          },
+          {
+            "start": "2023-09-19 00:00:00",
+            "end": "2024-04-24 23:00:00",
+            "missing_hours": 5256
+          },
+          {
+            "start": "2018-09-19 00:00:00",
+            "end": "2019-04-24 23:00:00",
+            "missing_hours": 5232
+          },
+          {
+            "start": "2020-09-19 00:00:00",
+            "end": "2021-04-24 23:00:00",
+            "missing_hours": 5232
+          },
+          {
+            "start": "2021-09-19 00:00:00",
+            "end": "2022-04-24 23:00:00",
+            "missing_hours": 5232
+          }
+        ]
+      },
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2019,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2020,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 40.16
+        },
+        {
+          "year": 2021,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2022,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2023,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2024,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 40.16
+        },
+        {
+          "year": 2025,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2026,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        }
+      ],
+      "quality_distribution": {
+        "OBSERVED": 31735,
+        "MISSING": 17
+      }
+    },
+    "tide": {
+      "table": "lakehouse.gold.tide_hourly",
+      "row_count": 43822,
+      "first_hour": "2021-01-01 00:00:00",
+      "last_hour": "2025-12-31 23:00:00",
+      "null_statistics": {
+        "tide_height_m": {
+          "null_count": 0,
+          "null_pct": 0.0
+        }
+      },
+      "timestamp_gaps": {
+        "observed_hours": 43822,
+        "missing_hours": 2,
+        "gap_count": 1,
+        "longest_streak_hours": 2,
+        "top_5_gaps": [
+          {
+            "start": "2021-11-29 01:00:00",
+            "end": "2021-11-29 02:00:00",
+            "missing_hours": 2
+          }
+        ]
+      },
+      "yearly_coverage": [
+        {
+          "year": 2021,
+          "available_hour_keys": 8758,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 99.98
+        },
+        {
+          "year": 2022,
+          "available_hour_keys": 8760,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 100.0
+        },
+        {
+          "year": 2023,
+          "available_hour_keys": 8760,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 100.0
+        },
+        {
+          "year": 2024,
+          "available_hour_keys": 8784,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 100.0
+        },
+        {
+          "year": 2025,
+          "available_hour_keys": 8760,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 100.0
+        }
+      ],
+      "quality_distribution": {
+        "OBSERVED": 38836,
+        "RECOVERED": 4986
+      }
+    },
+    "discharge": {
+      "table": "lakehouse.gold.discharge_hourly",
+      "row_count": 31752,
+      "first_hour": "2018-04-25 00:00:00",
+      "last_hour": "2026-09-18 23:00:00",
+      "null_statistics": {
+        "discharge_m3s": {
+          "null_count": 0,
+          "null_pct": 0.0
+        }
+      },
+      "timestamp_gaps": {
+        "observed_hours": 31752,
+        "missing_hours": 41904,
+        "gap_count": 8,
+        "longest_streak_hours": 5256,
+        "top_5_gaps": [
+          {
+            "station": "Hau River - Can Tho",
+            "start": "2019-09-19 00:00:00",
+            "end": "2020-04-24 23:00:00",
+            "missing_hours": 5256
+          },
+          {
+            "station": "Hau River - Can Tho",
+            "start": "2023-09-19 00:00:00",
+            "end": "2024-04-24 23:00:00",
+            "missing_hours": 5256
+          },
+          {
+            "station": "Hau River - Can Tho",
+            "start": "2018-09-19 00:00:00",
+            "end": "2019-04-24 23:00:00",
+            "missing_hours": 5232
+          },
+          {
+            "station": "Hau River - Can Tho",
+            "start": "2020-09-19 00:00:00",
+            "end": "2021-04-24 23:00:00",
+            "missing_hours": 5232
+          },
+          {
+            "station": "Hau River - Can Tho",
+            "start": "2021-09-19 00:00:00",
+            "end": "2022-04-24 23:00:00",
+            "missing_hours": 5232
+          }
+        ]
+      },
+      "yearly_coverage": [
+        {
+          "year": 2018,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2019,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2020,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 40.16
+        },
+        {
+          "year": 2021,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2022,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2023,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2024,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8784,
+          "calendar_coverage_pct": 40.16
+        },
+        {
+          "year": 2025,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        },
+        {
+          "year": 2026,
+          "available_hour_keys": 3528,
+          "station_count": 1,
+          "calendar_expected_keys": 8760,
+          "calendar_coverage_pct": 40.27
+        }
+      ],
+      "quality_distribution": {
+        "OBSERVED": 31752
+      }
+    }
+  }
+}

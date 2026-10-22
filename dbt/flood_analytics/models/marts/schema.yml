@@ -1,0 +1,105 @@
+
+version: 2
+
+models:
+  - name: mart_hydrology_overview
+    description: "Hourly integrated hydrological analytics mart."
+    columns:
+      - name: hour_start
+        data_tests:
+          - not_null
+      - name: location_key
+        data_tests:
+          - not_null
+
+  
+  - name: mart_water_level
+    description: "Hourly water level analytics and rolling metrics."
+    columns:
+      - name: hour_start
+        data_tests:
+          - not_null
+
+      - name: location_key
+        data_tests:
+          - not_null
+
+      - name: water_level_usable
+        data_tests:
+          - not_null
+
+  - name: mart_rainfall
+    description: "Hourly rainfall analytics and accumulated rainfall."
+    columns:
+      - name: hour_start
+        data_tests:
+          - not_null
+      - name: location_key
+        data_tests:
+          - not_null
+      - name: rainfall_usable
+        data_tests:
+          - not_null
+
+  - name: mart_data_quality
+    description: "Hourly data quality summary across five data sources."
+    columns:
+      - name: hour_start
+        data_tests:
+          - not_null
+      - name: location_key
+        data_tests:
+          - not_null
+      - name: quality_status
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - COMPLETE
+                  - PARTIAL
+                  - NO_USABLE_DATA
+
+  
+  - name: mart_flood_risk
+    description: >
+      Hourly reference flood alarm classification for Can Tho
+      based on water_level_max and Decision 05/2020/QD-TTg.
+      Vertical datum compatibility is unverified.
+      Results are for reference analysis only.
+
+    columns:
+      - name: hour_start
+        description: Hourly timestamp.
+        data_tests:
+          - not_null
+
+      - name: location_key
+        description: Location identifier.
+        data_tests:
+          - not_null
+
+      - name: reference_alarm_level
+        description: Reference alarm classification.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - BELOW_LEVEL_1
+                  - LEVEL_1
+                  - LEVEL_2
+                  - LEVEL_3_OR_ABOVE
+                  - UNKNOWN
+
+      - name: threshold_comparison_status
+        description: Threshold applicability status.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - THRESHOLD_NOT_FOUND
+                  - DATUM_VERIFIED
+                  - REFERENCE_ONLY
+
