@@ -1,0 +1,5 @@
+
+minio
+PyYAML
+openpyxl
+python-dotenv

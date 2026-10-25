@@ -57,6 +57,22 @@ CREATE TABLE IF NOT EXISTS lakehouse.dw.dim_station (
 ) USING iceberg;
 
 -- Grain for each fact: hour_start x location_key.
+-- Flood warning thresholds by water-level station.
+-- Threshold values and vertical datum must be verified against
+-- authoritative references before being used for official alerts.
+CREATE TABLE IF NOT EXISTS lakehouse.dw.dim_flood_threshold (
+  station_key STRING,
+  station_code STRING,
+  station_name STRING,
+  river_name STRING,
+  alarm_level_1_m DOUBLE,
+  alarm_level_2_m DOUBLE,
+  alarm_level_3_m DOUBLE,
+  legal_document STRING,
+  effective_from DATE,
+  vertical_datum STRING,
+  datum_status STRING
+) USING iceberg;
 -- Station role-specific keys are nullable; never assume all stations are identical.
 CREATE TABLE IF NOT EXISTS lakehouse.dw.fact_hydrology (
   hour_start TIMESTAMP,

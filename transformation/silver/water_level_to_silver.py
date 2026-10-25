@@ -953,7 +953,6 @@ def main():
 
         spark = create_spark_session(
             app_name="water-level-to-silver",
-            master="local[*]",
         )
 
         ensure_silver_namespace(

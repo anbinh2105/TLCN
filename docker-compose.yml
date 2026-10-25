@@ -1,5 +1,5 @@
 x-airflow-common: &airflow-common
-  image: apache/airflow:3.1.5
+  image: tlcn-airflow-spark:3.1.5
   environment:
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
@@ -8,12 +8,22 @@ x-airflow-common: &airflow-common
     AIRFLOW__API__SECRET_KEY: "tlcn-local-demo-secret-change-before-sharing"
     AIRFLOW__API_AUTH__JWT_SECRET: "tlcn-local-demo-jwt-change-before-sharing"
     AIRFLOW__CORE__EXECUTION_API_SERVER_URL: "http://airflow-apiserver:8080/execution/"
+    SPARK_MODE: docker
+    SPARK_HOME: /opt/spark
+    MINIO_ENDPOINT: minio:9000
+    HIVE_METASTORE_URI: thrift://hive-metastore:9083
+    AIRFLOW_CONN_SPARK_DEFAULT: '{"conn_type":"spark","host":"spark://spark-master","port":7077,"extra":{"deploy-mode":"client","spark-binary":"spark-submit"}}'
+    MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:?MINIO_ACCESS_KEY is required}
+    MINIO_SECRET_KEY: ${MINIO_SECRET_KEY:?MINIO_SECRET_KEY is required}
+    MINIO_BUCKET: ${MINIO_BUCKET:-flood-lakehouse}
   volumes:
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/plugins:/opt/airflow/plugins
     - ./airflow/config:/opt/airflow/config
     - ./reports/quality:/opt/airflow/project-reports/quality:ro
+    - ./reports/quality/batch:/opt/airflow/batch-quality-reports
+    - ./:/opt/project:ro
   networks:
     - default
     - airflow_internal
@@ -284,6 +294,50 @@ services:
     networks:
       - default
 
+    restart: unless-stopped
+
+  
+  # ==========================================================
+  # APACHE SPARK STANDALONE
+  # ==========================================================
+
+  spark-master:
+    image: tlcn-spark:4.1.1
+    container_name: tlcn-spark-master
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.master.Master
+      - --host
+      - spark-master
+      - --port
+      - "7077"
+      - --webui-port
+      - "8080"
+    ports:
+      - "127.0.0.1:8081:8080"
+    networks:
+      - default
+    restart: unless-stopped
+
+  spark-worker:
+    image: tlcn-spark:4.1.1-py312-test
+    container_name: tlcn-spark-worker
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://spark-master:7077
+      - --cores
+      - "2"
+      - --memory
+      - "2g"
+      - --webui-port
+      - "8081"
+    ports:
+      - "127.0.0.1:8082:8081"
+    depends_on:
+      - spark-master
+    networks:
+      - default
     restart: unless-stopped
 
 # ============================================================

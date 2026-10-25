@@ -1,6 +1,7 @@
 
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -19,9 +20,14 @@ CONTRACT_PATH = (
     ROOT / "config" / "gold_hourly_hydrology_contract.yaml"
 )
 
-REPORT_PATH = (
-    ROOT / "reports" / "gold" / "quality"
-    / "hourly_hydrology_dry_run.json"
+REPORT_PATH = Path(
+    os.getenv(
+        "GOLD_REPORT_PATH",
+        str(
+            ROOT / "reports" / "gold" / "quality"
+            / "hourly_hydrology_dry_run.json"
+        ),
+    )
 )
 
 TARGET_TABLE = "lakehouse.gold.hourly_hydrology"
@@ -429,7 +435,6 @@ def main():
 
         spark = create_spark_session(
             app_name="gold-hourly-hydrology",
-            master="local[2]",
         )
 
         spark.sparkContext.setLogLevel("WARN")

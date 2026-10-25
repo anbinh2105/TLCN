@@ -1,0 +1,96 @@
+﻿from __future__ import annotations
+
+from datetime import datetime, timedelta
+
+from airflow.sdk import dag, task
+from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
+import os
+
+SPARK_CONF = {
+    "spark.driver.host": "airflow-scheduler",
+    "spark.driver.bindAddress": "0.0.0.0",
+    "spark.driver.port": "37077",
+    "spark.blockManager.port": "37078",
+    "spark.executor.memory": "1g",
+    "spark.executor.cores": "1",
+    "spark.cores.max": "1",
+    "spark.dynamicAllocation.enabled": "false",
+    "spark.executorEnv.PYSPARK_PYTHON": "/usr/local/bin/python3",
+}
+
+
+@dag(
+    dag_id="lakehouse_batch_orchestration",
+    start_date=datetime(2026, 10, 1),
+    schedule=None,
+    catchup=False,
+    max_active_runs=1,
+    default_args={
+        "owner": "tlcn",
+        "retries": 0,
+        "retry_delay": timedelta(minutes=5),
+    },
+    tags=["tlcn", "batch", "spark", "orchestration"],
+    description="Safe orchestration skeleton for TLCN Batch Lakehouse",
+)
+def lakehouse_batch_orchestration():
+
+    @task
+    def preflight():
+        print("Preflight completed.")
+        print("Execution mode: SAFE / NO ICEBERG WRITES")
+
+    @task
+    def ingestion_stage():
+        print("Ingestion stage placeholder.")
+        print("No Bronze ingestion executed.")
+
+    silver_stage = SparkSubmitOperator(
+        task_id="silver_batch_dry_run",
+        conn_id="spark_default",
+        application="/opt/project/scripts/spark/silver_batch_dry_run.py",
+        name="TLCN-Silver-Batch-Dry-Run",
+        deploy_mode="client",
+        conf=SPARK_CONF,
+        env_vars={
+            "PYTHONPATH": (
+                "/opt/project:"
+                "/opt/spark/python:"
+                "/opt/spark/python/lib/py4j-0.10.9.9-src.zip"
+            ),
+        },
+        verbose=False,
+    )
+
+    @task
+    def gold_stage():
+        print("Gold stage placeholder.")
+        print("No Gold write executed.")
+
+    @task
+    def warehouse_stage():
+        print("Warehouse stage placeholder.")
+        print("No dimensions or facts loaded.")
+
+    @task
+    def dbt_stage():
+        print("dbt stage placeholder.")
+        print("No dbt run executed.")
+
+    @task
+    def quality_stage():
+        print("Quality stage placeholder.")
+        print("No data modified.")
+
+    (
+        preflight()
+        >> ingestion_stage()
+        >> silver_stage
+        >> gold_stage()
+        >> warehouse_stage()
+        >> dbt_stage()
+        >> quality_stage()
+    )
+
+
+lakehouse_batch_orchestration()

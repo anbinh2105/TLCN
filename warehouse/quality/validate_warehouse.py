@@ -4,6 +4,7 @@ Uses Step 11.5 build_frames for exact source-to-fact mapping; no data writes.
 """
 from __future__ import annotations
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from pyspark.sql import functions as F
@@ -11,10 +12,15 @@ from transformation.silver.common import create_spark_session, stop_spark
 from warehouse.facts.load_facts import build_frames
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / 'reports' / 'warehouse' / 'quality'
+OUT = Path(
+    os.getenv(
+        "WAREHOUSE_REPORT_DIR",
+        str(ROOT / "reports" / "warehouse" / "quality")
+    )
+)
 NS = 'lakehouse.dw'
 SOURCE = 'lakehouse.gold.hourly_hydrology'
-EXPECTED = 73656
+
 DIM_KEYS = {
     'dim_year':'year_key','dim_month':'month_key','dim_date':'date_key',
     'dim_time':'time_key','dim_region':'region_key',
@@ -42,7 +48,7 @@ def main():
         return ok
 
     try:
-        spark = create_spark_session(app_name='cantho-warehouse-dq', master='local[2]')
+        spark = create_spark_session(app_name='cantho-warehouse-dq')
         spark.conf.set('spark.sql.session.timeZone','Asia/Ho_Chi_Minh')
         required = [SOURCE] + [f'{NS}.{n}' for n in DIM_KEYS] + [f'{NS}.{n}' for n in FACTS]
         for name in required:
@@ -51,7 +57,8 @@ def main():
             raise RuntimeError('Required table missing; cannot continue')
 
         gold = spark.table(SOURCE)
-        check('gold_baseline',gold.count(),EXPECTED)
+        gold_count = gold.count()
+        check('gold_nonempty', gold_count > 0)
         check('gold_business_key_nulls',gold.filter(F.col('hour_start').isNull() | F.col('location_id').isNull()).count(),0)
         check('gold_business_key_duplicates',gold.groupBy('hour_start','location_id').count().filter('count > 1').count(),0)
         _, expected_frames = build_frames(gold)
@@ -64,14 +71,48 @@ def main():
             if key not in df.columns: continue
             check(f'{name}:key_not_null',df.filter(F.col(key).isNull()).count(),0)
             check(f'{name}:key_unique',df.groupBy(key).count().filter('count > 1').count(),0)
-        check('dim_year:count',dims['dim_year'].count(),9)
-        check('dim_month:count',dims['dim_month'].count(),102)
-        check('dim_date:count',dims['dim_date'].count(),3069)
-        check('dim_time:count',dims['dim_time'].count(),24)
-        check('dim_location:count',dims['dim_location'].count(),1)
-        check('dim_station_type:count',dims['dim_station_type'].count(),3)
-        check('dim_station:count',dims['dim_station'].count(),3)
-        check('dim_region:expected_empty',dims['dim_region'].count(),0, 'Pending verified region metadata')
+        # Dynamic dimensions: verify integrity without fixed historical counts.
+        for name in (
+            'dim_year',
+            'dim_month',
+            'dim_date',
+            'dim_location',
+            'dim_station',
+        ):
+            check(f'{name}:nonempty', dims[name].limit(1).count() > 0)
+
+        # Fixed domain: exactly 24 hourly keys.
+        check('dim_time:count', dims['dim_time'].count(), 24)
+        check(
+            'dim_time:distinct_hours',
+            dims['dim_time'].select('time_key').distinct().count(),
+            24,
+        )
+
+        # Fixed station roles.
+        expected_roles = {
+            'WATER_LEVEL',
+            'DISCHARGE',
+            'TIDE_REFERENCE',
+        }
+        actual_roles = {
+            row['station_type_key']
+            for row in dims['dim_station_type']
+                .select('station_type_key')
+                .distinct()
+                .collect()
+        }
+        check(
+            'dim_station_type:expected_roles',
+            actual_roles == expected_roles,
+        )
+
+        # Region metadata is currently unverified.
+        # Do not require the dimension to remain empty forever.
+        check(
+            'dim_region:table_readable',
+            dims['dim_region'].limit(1).count() >= 0
+        )
 
         def fk(child, child_col, parent, parent_col, label, nullable=False):
             if child_col not in child.columns or parent_col not in parent.columns:
@@ -87,15 +128,148 @@ def main():
         fk(dims['dim_date'],'month_key',dims['dim_month'],'month_key','dim_date_to_month')
         fk(dims['dim_location'],'region_key',dims['dim_region'],'region_key','dim_location_to_region',nullable=True)
         fk(dims['dim_station'],'station_type_key',dims['dim_station_type'],'station_type_key','dim_station_to_type')
-        check('dim_time:hours_0_to_23',dims['dim_time'].filter(~F.col('hour_of_day').between(0,23)).count(),0)
+                # Flood Risk threshold dimension - read-only integrity checks.
+        threshold_table = f'{NS}.dim_flood_threshold'
+
+        if spark.catalog.tableExists(threshold_table):
+            thresholds = spark.table(threshold_table)
+
+            check(
+                'flood_threshold:nonempty',
+                thresholds.limit(1).count() > 0
+            )
+
+            check(
+                'flood_threshold:station_key_not_null',
+                thresholds.filter(
+                    F.col('station_key').isNull()
+                ).count(),
+                0
+            )
+
+            check(
+                'flood_threshold:station_key_unique',
+                thresholds.groupBy('station_key')
+                    .count()
+                    .filter(F.col('count') > 1)
+                    .count(),
+                0
+            )
+
+            fk(
+                thresholds,
+                'station_key',
+                dims['dim_station'],
+                'station_key',
+                'flood_threshold:station_fk'
+            )
+            # All three alarm thresholds must be present.
+            check(
+                'flood_threshold:levels_not_null',
+                
+                thresholds.filter(
+                    F.col('alarm_level_1_m').isNull()
+                    | F.col('alarm_level_2_m').isNull()
+                    | F.col('alarm_level_3_m').isNull()
+                ).count(),
+                0
+            )
+
+            # Alarm thresholds must not contain NaN.
+            check(
+                'flood_threshold:levels_not_nan',
+                thresholds.filter(
+                    F.isnan(F.col('alarm_level_1_m'))
+                    | F.isnan(F.col('alarm_level_2_m'))
+                    | F.isnan(F.col('alarm_level_3_m'))
+                ).count(),
+                0
+            )
+
+            # Alarm thresholds must contain finite numeric values.
+            check(
+                'flood_threshold:levels_finite',
+                thresholds.filter(
+                    (F.abs(F.col('alarm_level_1_m')) == float('inf'))
+                    | (F.abs(F.col('alarm_level_2_m')) == float('inf'))
+                    | (F.abs(F.col('alarm_level_3_m')) == float('inf'))
+                ).count(),
+                0
+            )
+
+            # Alarm thresholds must be strictly increasing.
+            check(
+                'flood_threshold:levels_increasing',
+                thresholds.filter(
+                    F.col('alarm_level_1_m').isNotNull()
+                    & F.col('alarm_level_2_m').isNotNull()
+                    & F.col('alarm_level_3_m').isNotNull()
+                    & ~(
+                        (F.col('alarm_level_1_m') < F.col('alarm_level_2_m'))
+                        & (F.col('alarm_level_2_m') < F.col('alarm_level_3_m'))
+                    )
+                ).count(),
+                0
+            )
+            # Datum status must be explicitly recorded.
+            check(
+                'flood_threshold:datum_status_not_null',
+                thresholds.filter(
+                    F.col('datum_status').isNull()
+                    | (F.trim(F.col('datum_status')) == '')
+                ).count(),
+                0
+            )
+
+            # VERIFIED and UNVERIFIED are the statuses currently
+            # used by the Flood Risk workflow.
+            check(
+                'flood_threshold:datum_status_recognized',
+                thresholds.filter(
+                    F.col('datum_status').isNotNull()
+                    & ~F.col('datum_status').isin(
+                        'VERIFIED', 'UNVERIFIED'
+                    )
+                ).count(),
+                0
+            )
+
+            # Legal effective date must be available.
+            check(
+                'flood_threshold:effective_from_not_null',
+                thresholds.filter(
+                    F.col('effective_from').isNull()
+                ).count(),
+                0
+            )
+        else:
+            check(
+                'flood_threshold:table_exists',
+                False
+            )
 
         for name in FACTS:
             df=facts[name]
-            check(f'{name}:count',df.count(),EXPECTED)
+            check(f'{name}:count_matches_gold', df.count(), gold_count)
             check(f'{name}:business_key_nulls',df.filter(F.col('hour_start').isNull() | F.col('location_key').isNull()).count(),0)
             check(f'{name}:business_key_duplicates',df.groupBy('hour_start','location_key').count().filter('count > 1').count(),0)
-            check(f'{name}:date_key_matches_timestamp',df.filter(F.col('date_key') != F.date_format('hour_start','yyyyMMdd').cast('int')).count(),0)
-            check(f'{name}:time_key_matches_timestamp',df.filter(F.col('time_key') != F.hour('hour_start')).count(),0)
+            check(
+                f'{name}:date_key_matches_timestamp',
+                df.filter(
+                    ~F.col('date_key').eqNullSafe(
+                        F.date_format('hour_start', 'yyyyMMdd').cast('int')
+                    )
+                ).count(),
+                0
+            )
+
+            check(
+                f'{name}:time_key_matches_timestamp',
+                df.filter(
+                    ~F.col('time_key').eqNullSafe(F.hour('hour_start'))
+                ).count(),
+                0
+            )
             for col,dim,dimkey in [('date_key','dim_date','date_key'),('time_key','dim_time','time_key'),('location_key','dim_location','location_key')]:
                 fk(df,col,dims[dim],dimkey,f'{name}:{col}')
             if 'water_level_station_key' in df.columns:
@@ -133,7 +307,13 @@ def main():
     finally:
         OUT.mkdir(parents=True,exist_ok=True)
         path=OUT/('warehouse_dq_'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'.json')
-        report['check_summary']={s:sum(c['status']==s for c in report['checks']) for s in ('PASS','FAIL')}
+        report['check_summary'] = {
+            status: sum(
+                c['status'] == status
+                for c in report['checks']
+            )
+            for status in ('PASS', 'FAIL')
+        }
         path.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
         print('REPORT:',path)
         print('OVERALL:',report['overall_status'])

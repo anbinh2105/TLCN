@@ -237,75 +237,77 @@ def configure_local_spark_environment() -> None:
 # 8. CREATE SPARK SESSION
 # ============================================================
 
+
 def create_spark_session(
     app_name: str = "cantho-flood-silver",
-    master: str = "local[2]",
+    master: str | None = None,
 ) -> SparkSession:
     """
-    Create the standard SparkSession used by all Silver pipelines.
+    Create SparkSession for Windows Local or Docker Standalone.
 
-    Configuration includes:
-        - Apache Iceberg extensions
-        - Hive Metastore catalog
-        - MinIO through S3A
-        - Asia/Ho_Chi_Minh timezone
+    Local:
+        - master defaults to local[2]
+        - use Maven packages
+        - configure Windows Hadoop/Python environment
 
-    Parameters
-    ----------
-    app_name:
-        Spark application name.
-
-    master:
-        Spark master.
-        Local development defaults to local[*].
-
-    Returns
-    -------
-    SparkSession
+    Docker:
+        - master supplied by spark-submit
+        - dependencies already baked into Spark image
+        - memory/resources supplied by spark-submit
     """
 
-    configure_local_spark_environment()
+    spark_mode = os.getenv("SPARK_MODE", "local").strip().lower()
+
+    if spark_mode not in {"local", "docker"}:
+        raise ValueError(
+            "SPARK_MODE must be 'local' or 'docker'"
+        )
+
+    if spark_mode == "local":
+        configure_local_spark_environment()
 
     protocol = "https" if MINIO_SECURE else "http"
     minio_url = f"{protocol}://{MINIO_ENDPOINT}"
 
-    builder = (
-        SparkSession.builder
-        .appName(app_name)
-        .master(master)
+    builder = SparkSession.builder.appName(app_name)
 
-        # ----------------------------------------------------
-        # External packages
-        # ----------------------------------------------------
-        .config(
-            "spark.jars.packages",
-            SPARK_PACKAGES,
+    # --------------------------------------------------------
+    # Local Spark settings
+    # --------------------------------------------------------
+    if spark_mode == "local":
+        builder = (
+            builder
+            .master(master or "local[2]")
+            .config("spark.jars.packages", SPARK_PACKAGES)
+            .config("spark.driver.memory", "4g")
+            .config("spark.executor.memory", "4g")
         )
-        .config("spark.driver.memory", "4g")
-        .config("spark.executor.memory", "4g")
+
+    # --------------------------------------------------------
+    # Docker Spark settings
+    # --------------------------------------------------------
+    else:
+        # Do not override --master unless explicitly requested.
+        if master is not None:
+            builder = builder.master(master)
+
+    # --------------------------------------------------------
+    # Shared Spark settings
+    # --------------------------------------------------------
+    builder = (
+        builder
         .config("spark.sql.shuffle.partitions", "8")
         .config("spark.sql.adaptive.enabled", "true")
+        .config("spark.sql.session.timeZone", TIMEZONE)
 
-        # ----------------------------------------------------
-        # Timezone
-        # ----------------------------------------------------
-        .config(
-            "spark.sql.session.timeZone",
-            TIMEZONE,
-        )
-
-        # ----------------------------------------------------
-        # Iceberg Spark extensions
-        # ----------------------------------------------------
+        # Iceberg extensions
         .config(
             "spark.sql.extensions",
             "org.apache.iceberg.spark.extensions."
             "IcebergSparkSessionExtensions",
         )
 
-        # ----------------------------------------------------
-        # Iceberg catalog
-        # ----------------------------------------------------
+        # Iceberg Hive Catalog
         .config(
             f"spark.sql.catalog.{ICEBERG_CATALOG}",
             "org.apache.iceberg.spark.SparkCatalog",
@@ -323,9 +325,7 @@ def create_spark_session(
             ICEBERG_WAREHOUSE,
         )
 
-        # ----------------------------------------------------
         # MinIO / Hadoop S3A
-        # ----------------------------------------------------
         .config(
             "spark.hadoop.fs.s3a.endpoint",
             minio_url,
@@ -337,6 +337,11 @@ def create_spark_session(
         .config(
             "spark.hadoop.fs.s3a.secret.key",
             MINIO_SECRET_KEY,
+        )
+        .config(
+            "spark.hadoop.fs.s3a.aws.credentials.provider",
+            "org.apache.hadoop.fs.s3a."
+            "SimpleAWSCredentialsProvider",
         )
         .config(
             "spark.hadoop.fs.s3a.path.style.access",
@@ -354,14 +359,12 @@ def create_spark_session(
 
     spark = builder.getOrCreate()
 
-    # Keep runtime timezone explicit as an additional safeguard.
     spark.conf.set(
         "spark.sql.session.timeZone",
         TIMEZONE,
     )
 
     return spark
-
 
 # ============================================================
 # 9. BRONZE PATH HELPERS

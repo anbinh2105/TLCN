@@ -514,7 +514,6 @@ def main():
 
         spark = create_spark_session(
             app_name="weather-to-silver",
-            master="local[*]",
         )
 
         # ----------------------------------------------------

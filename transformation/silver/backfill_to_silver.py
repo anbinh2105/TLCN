@@ -302,7 +302,6 @@ def main():
 
         spark = create_spark_session(
             app_name="silver-incremental-backfill",
-            master="local[2]",
         )
 
         # Validate all three sources before any writes.

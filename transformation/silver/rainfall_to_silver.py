@@ -502,7 +502,6 @@ def main():
 
         spark = create_spark_session(
             app_name="rainfall-to-silver",
-            master="local[*]",
         )
 
         # ----------------------------------------------------

@@ -576,7 +576,6 @@ def main():
 
         spark = create_spark_session(
             app_name="river-discharge-to-silver",
-            master="local[*]",
         )
 
         # ----------------------------------------------------
